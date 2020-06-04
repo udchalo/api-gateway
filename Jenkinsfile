@@ -37,7 +37,7 @@ pipeline {
     stage('API Build and Deploy') {
       steps {
         script {
-	  sh "echo '$DOMAIN_URL'
+	  sh "echo '$DOMAIN_URL'"
           sh "chmod +x -R ${env.WORKSPACE}/build.sh"
 		  withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
 		  sh "./build.sh $NODE_ENV"
