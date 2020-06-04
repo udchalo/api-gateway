@@ -11,6 +11,7 @@ export BUCKET="api-gateway-$NODE_EVN"
 
 # Replace the variable with the real value
 
+sed -i=' ' "s/<NODE_ENV>/$ENV/g" swagger.yaml
 sed -i=' ' "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml
 sed -i=' ' "s/<USER_URL>/$USER_URL_URL/g" swagger.yaml
 sed -i=' ' "s/<STACK>/$STACK/g" template.yaml
