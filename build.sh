@@ -26,4 +26,4 @@ sed -i='' "s/<NODE_ENV>/$NODE_ENV/g" template.yaml
 
 
 # Delete CloudFormation Stack
-aws cloudformation delete-stack --stack-name $STACK
+#aws cloudformation delete-stack --stack-name $STACK
