@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "Test Serverless API",
-    "title": "<NODE_ENV>-API Test proxy"
+    "title": "<NODE_ENV>-api-gateway"
   },
   "schemes": [
     "https"
