@@ -22,7 +22,7 @@ sed -i -e "s/<USER_URL>/$USER_URL/g" swagger.yaml
 #sed -i -e "s/<STACK>/$STACK/g" template.yaml
 sed -i='' "s/<NODE_ENV>/$NODE_ENV/g" template.yaml
 
-aws s3 mb s3://$BUCKET
+#aws s3 mb s3://$BUCKET
 
 # Uploads files to S3 bucket and creates CloudFormation template
 sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file package.yaml
