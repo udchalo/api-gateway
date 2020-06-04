@@ -18,7 +18,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":$USER_URL/"login"
+          "uri":<USER_URL>/"login"
         }
       }
     },
