@@ -5,8 +5,8 @@ pipeline {
   agent any
   environment {
         NODE_ENV = 'dev'
-	DOMAIN_URL=https://'$NODE_ENV'-server.udchalo.com
-	USER_URL=https://users-'$NODE_ENV'-api.udchalo.com
+	DOMAIN_URL="https://$NODE_ENV-server.udchalo.com"
+	USER_URL="https://users-$NODE_ENV-api.udchalo.com"
   }
   stages {
     stage('Build preparations') {
