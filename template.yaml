@@ -3,8 +3,8 @@ Transform: AWS::Serverless-2016-10-31
 Description: Test Serverless API
 
 Resources:
-  APITestProxy: 
+  APIProxy: 
     Type: AWS::Serverless::Api
     Properties:
-      StageName: Dev
+      StageName: <NODE_ENV>
       DefinitionUri: ./swagger.yaml
