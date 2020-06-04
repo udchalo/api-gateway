@@ -37,10 +37,12 @@ pipeline {
     stage('API Build and Deploy') {
       steps {
         script {
-	  sh "echo '$DOMAIN_URL'"
+	  sh "sed -i=' ' "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml"
+	  sh "sed -i=' ' "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml"
+	  sh "sed -i=' ' "s/<USER_URL>/$USER_URL_URL/g" swagger.yaml"
           sh "chmod +x -R ${env.WORKSPACE}/build.sh"
 		  withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
-		  sh "./build.sh $NODE_ENV"
+		  sh "./build.sh"
 		  }
         }
       }
