@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: Test Serverless API
 
 Resources:
-  APIProxy: 
+  <STACK>: 
     Type: AWS::Serverless::Api
     Properties:
       StageName: <NODE_ENV>
