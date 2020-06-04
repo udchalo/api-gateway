@@ -6,7 +6,7 @@
 
 export AWS_DEFAULT_REGION=ap-south-1
 export STACK=$NODE_ENV-api-gateway
-export BUCKET="api-gateway-$NODE_EVN"
+export BUCKET=api-gateway-$NODE_EVN
 
 
 # Replace the variable with the real value
