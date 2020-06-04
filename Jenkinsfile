@@ -4,7 +4,7 @@ pipeline {
   }
   agent any
   environment {
-    //NODE_ENV = 'dev'
+        NODE_ENV = 'dev'
 	DOMAIN_URL="https://'$NODE_ENV'-server.udchalo.com"
 	USER_URL="https://users-'$NODE_ENV'-api.udchalo.com"
   }
@@ -30,7 +30,7 @@ pipeline {
           VERSION = "$NODE_ENV-$shortCommitHash"
           // set the build display name
           currentBuild.displayName = "#${BUILD_ID}-${VERSION}"
-		  echo 'git_branch:' + env.GIT_BRANCH
+          echo 'git_branch:' + env.GIT_BRANCH
         }
       }
     }
@@ -38,9 +38,9 @@ pipeline {
       steps {
         script {
           sh "chmod +x -R ${env.WORKSPACE}/build.sh"
-		  withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
-		  sh "./build.sh $NODE_ENV"
-		  }
+	  withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
+	  sh "./build.sh $NODE_ENV"
+	  }
         }
       }
     }
