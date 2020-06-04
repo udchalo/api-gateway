@@ -6,7 +6,7 @@
 
 export AWS_DEFAULT_REGION=ap-south-1
 export STACK=$NODE_ENV-api-gateway
-export BUCKET=uc-api-gateway-$NODE_ENV
+export BUCKET=uc-deploy-api-gateway-$NODE_ENV
 
 
 # Replace the variable with the real value
