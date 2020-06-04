@@ -10,10 +10,15 @@ export BUCKET=uc-deploy-api-gateway-$NODE_ENV
 
 
 # Replace the variable with the real value
+sed -Ei "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml
+sed -Ei "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml
+sed -Ei "s/<USER_URL>/$USER_URL/g" swagger.yaml
+#sed -Ei "s/<$Key>/$Value/g" Dockerrun.aws.json
+echo "$DOMAIN_URL $USER_URL $NODE_ENV"
 
-sed -i=' ' "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml
-sed -i=' ' "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml
-sed -i=' ' "s/<USER_URL>/$USER_URL_URL/g" swagger.yaml
+#sed -i=' ' "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml
+#sed -i=' ' "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml
+#sed -i=' ' "s/<USER_URL>/$USER_URL_URL/g" swagger.yaml
 #sed -i=' ' "s/<STACK>/$STACK/g" template.yaml
 sed -i=' ' "s/<NODE_ENV>/$NODE_ENV/g" template.yaml
 
