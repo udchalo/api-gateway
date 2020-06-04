@@ -1,3 +1,4 @@
+#!/bin/sh 
 set -x
 #export AWS_DEFAULT_OUTPUT="text"
 #export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
@@ -15,9 +16,9 @@ export BUCKET=uc-deploy-api-gateway-$NODE_ENV
 #sed -Ei "s/<$Key>/$Value/g" Dockerrun.aws.json
 echo "$DOMAIN_URL $USER_URL $NODE_ENV"
 
-sed -i -e "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml
-sed -i -e "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml
-sed -i -e "s/$USER_URL/$USER_URL/g" swagger.yaml
+sed -i='' "s/<DOMAIN_URL>/$DOMAIN_URL/g" swagger.yaml
+sed -i='' "s/$USER_URL/$USER_URL/g" swagger.yaml
+sed -i='' "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml
 #sed -i -e "s/<STACK>/$STACK/g" template.yaml
 sed -i='' "s/<NODE_ENV>/$NODE_ENV/g" template.yaml
 
