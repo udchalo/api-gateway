@@ -1,10 +1,14 @@
 AWSTemplateFormatVersion : "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: Test Serverless API
+Description: Serverless API Gateway
 
 Resources:
-  APIProxy: 
+  ApiGateway<NODE_ENV>: 
     Type: AWS::Serverless::Api
     Properties:
       StageName: <NODE_ENV>
       DefinitionUri: ./swagger.yaml
+Outputs:
+    ApiGateway<NODE_ENV>:
+    Description: 'API Gateway endpoint URL for <NODE_ENV> stage'
+    Value: !Sub 'https://${ApiGateway<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
