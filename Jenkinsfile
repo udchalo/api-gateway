@@ -38,16 +38,17 @@ pipeline {
     stage('API Build and Deploy') {
       steps {
         script {
-          if(env.GIT_BRANCH == "master"){
-            NODE_ENV = 'prod'
-          } else
-          if(env.GIT_BRANCH == "stage"){
-            NODE_ENV = 'stage'
-          if(env.GIT_BRANCH == "uat"){
-            NODE_ENV = 'uat'
-          } else {
-            NODE_ENV = 'dev'
-          }
+            if(env.GIT_BRANCH == "master"){
+              NODE_ENV = 'prod'
+            } else
+            if(env.GIT_BRANCH == "stage"){
+              NODE_ENV = 'stage'
+             } else
+            if(env.GIT_BRANCH == "uat"){
+              NODE_ENV = 'uat'
+            } else {
+              NODE_ENV = 'dev'
+            }
           sh "chmod +x -R ${env.WORKSPACE}/build.sh"
           withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
           sh "./build.sh $NODE_ENV"
