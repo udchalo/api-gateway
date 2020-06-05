@@ -6,14 +6,14 @@ set -x
 
 export AWS_DEFAULT_REGION=ap-south-1
 export STACK=$NODE_ENV-api-gateway
-export BUCKET=uc-deploy-api-gateway-$1
+export BUCKET=uc-deploy-api-gateway-$NODE_ENV
 
-echo "$DOMAIN_URL $USER_URL $1"
+echo "$DOMAIN_URL $USER_URL $NODE_ENV"
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" swagger.yaml
 sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
-sed -i='' "s/<NODE_ENV>/$1/g" swagger.yaml
-sed -i='' "s/<NODE_ENV>/$1/g" template.yaml
+sed -i='' "s/<NODE_ENV>/$NODE_ENV/g" swagger.yaml
+sed -i='' "s/<NODE_ENV>/$NODE_ENV/g" template.yaml
 
 #aws s3 mb s3://$BUCKET
 
