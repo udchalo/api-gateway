@@ -8,7 +8,3 @@ Resources:
     Properties:
       StageName: <NODE_ENV>
       DefinitionUri: ./swagger.yaml
-Outputs:
-    ApiGateway<NODE_ENV>:
-    Description: 'API Gateway endpoint URL for <NODE_ENV> stage'
-    Value: !Sub 'https://${ApiGateway<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
