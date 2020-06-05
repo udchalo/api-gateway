@@ -3,11 +3,11 @@ pipeline {
       buildDiscarder(logRotator(numToKeepStr: '3'))
   }
   agent any
-  environment {
+  //environment {
     //NODE_ENV = 'dev'
     //DOMAIN_URL="https://'$1'-server.udchalo.com"
     //USER_URL="https://users-'$1'-api.udchalo.com"
-  }
+  //}
   stages {
     stage('Build preparations') {
       steps {
