@@ -46,8 +46,8 @@ pipeline {
       steps {
         script {
           withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
-            sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file package.yaml
-            sam deploy --template-file package.yaml --stack-name $STACK --capabilities CAPABILITY_IAM
+            sh "sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file package.yaml"
+            sh "sam deploy --template-file package.yaml --stack-name $STACK --capabilities CAPABILITY_IAM"
           }
       }
     }
