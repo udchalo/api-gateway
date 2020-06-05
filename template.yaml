@@ -2,8 +2,7 @@ AWSTemplateFormatVersion : "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: Serverless API Gateway
 
-Resources:
-  ApiGateway<NODE_ENV>: 
+Resources: 
     Type: AWS::Serverless::Api
     Properties:
       StageName: <NODE_ENV>
