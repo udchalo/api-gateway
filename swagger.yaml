@@ -932,7 +932,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>"/api/support/getInvoicePdf/{pnr}/{email}"
+          "uri":"<DOMAIN_URL>/api/support/getInvoicePdf/{pnr}/{email}"
         }
       }
     },
