@@ -15,21 +15,21 @@ pipeline {
           // calculate GIT lastest commit short-hash
           gitCommitHash = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
           shortCommitHash = gitCommitHash.take(7)
-          if(env.GIT_BRANCH == "master"){
-            NODE_ENV = 'prod'
-          } else 
-          if(env.GIT_BRANCH == "stage"){
-            NODE_ENV = 'stage'
-          } else
-          if(env.GIT_BRANCH == "uat"){
-            NODE_ENV = 'uat'
-          } else {
-            NODE_ENV = 'dev'
-          }
+          //if(env.GIT_BRANCH == "master"){
+          //  NODE_ENV = 'prod'
+          //} else 
+          //if(env.GIT_BRANCH == "stage"){
+          //  NODE_ENV = 'stage'
+          //} else
+          //if(env.GIT_BRANCH == "uat"){
+          //  NODE_ENV = 'uat'
+          //} else {
+          //  NODE_ENV = 'dev'
+          //}
           // calculate a sample version tag
-          VERSION = "$NODE_ENV-$shortCommitHash"
+          VERSION = "$shortCommitHash"
           // set the build display name
-          NODE_ENV = '$NODE_ENV'
+          //NODE_ENV = '$NODE_ENV'
           currentBuild.displayName = "#${BUILD_ID}-${VERSION}"
           echo 'git_branch:' + env.GIT_BRANCH
         }
