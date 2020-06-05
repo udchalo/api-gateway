@@ -27,7 +27,7 @@ pipeline {
           //  NODE_ENV = 'dev'
           //}
           // calculate a sample version tag
-          VERSION = env.GIT_BRANCH-"$shortCommitHash"
+          VERSION = "env.GIT_BRANCH-$shortCommitHash"
           // set the build display name
           //NODE_ENV = '$NODE_ENV'
           currentBuild.displayName = "#${BUILD_ID}-${VERSION}"
