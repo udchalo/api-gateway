@@ -39,7 +39,7 @@ pipeline {
         script {
           sh "chmod +x -R ${env.WORKSPACE}/build.sh"
           withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWS_OPSUSER_GLOBAL', variable: 'AWS_ACCESS_KEY_ID']]) {
-          sh "./build.sh"
+          sh "./build.sh $NODE_ENV"
           }
         }
       }
