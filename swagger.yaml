@@ -693,7 +693,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>/api/wallet/create/{userId}/"
+          "uri":"<DOMAIN_URL>/api/wallet/create/{userId}"
         }
       }
     },
