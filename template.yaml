@@ -12,8 +12,8 @@ Resources:
       DefinitionUri: ./swagger.yaml
 Outputs:
   ApiGateway<NODE_ENV>:
-    Description: 'API Gateway endpoint URL for <NODE_ENV> stage for Hello World function'
-    Value: !Sub 'https://${ApiGateway<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_EN>/'
+    Description: 'API Gateway endpoint URL'
+    Value: !Sub 'https://${ApiGateway<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
   ApiGateway<NODE_ENV>RestApiId:
     Description: 'API Gateway ARN for Basic AWS API Gateway'
     Value: !Ref ApiGateway<NODE_ENV>
