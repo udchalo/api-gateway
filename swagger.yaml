@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "Test Serverless API",
-    "title": "<NODE_ENV>-API Test proxy"
+    "title": "<NODE_ENV>-api-gateway-proxy"
   },
   "schemes": [
     "https"
@@ -932,7 +932,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>"/api/support/getInvoicePdf/{pnr}/{email}"
+          "uri":"<DOMAIN_URL>/api/support/getInvoicePdf/{pnr}/{email}"
         }
       }
     },
