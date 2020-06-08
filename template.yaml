@@ -5,7 +5,7 @@ Globals:
   Api:
     OpenApiVersion: 3.0.1
 Resources:
-    ApiGateway<NODE_ENV>:
+  ApiGateway<NODE_ENV>:
     Type: AWS::Serverless::Api
     Properties:
       StageName: <NODE_ENV>
