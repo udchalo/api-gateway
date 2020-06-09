@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Test Serverless API",
-    "title": "<NODE_ENV>-api-gateway"
+    "description": "Serverless API Gateway",
+    "title": "<NODE_ENV>-api-gateway-proxy"
   },
   "schemes": [
     "https"
@@ -18,7 +18,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<USER_URL>/"login"
+          "uri":"<USER_URL>/login"
         }
       }
     },
@@ -32,7 +32,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<USER_URL>/"profile"
+          "uri":"<USER_URL>/profile"
         }
       }
     },
@@ -46,7 +46,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getProfile"
+          "uri":"<DOMAIN_URL>/api/user/getProfile"
         }
       }
     },
@@ -60,7 +60,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/updateProfile"
+          "uri":"<DOMAIN_URL>/api/user/updateProfile"
         }
       }
     },
@@ -74,7 +74,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/updatePassword"
+          "uri":"<DOMAIN_URL>/api/user/updatePassword"
         }
       }
     },
@@ -88,7 +88,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/updatePasswordViaForgotLink"
+          "uri":"<DOMAIN_URL>/api/user/updatePasswordViaForgotLink"
         }
       }
     },
@@ -102,7 +102,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/updateProfilePic"
+          "uri":"<DOMAIN_URL>/api/user/updateProfilePic"
         }
       }
     },
@@ -116,7 +116,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/updateSettings"
+          "uri":"<DOMAIN_URL>/api/user/updateSettings"
         }
       }
     },
@@ -130,7 +130,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/forgotPassword"
+          "uri":"<DOMAIN_URL>/api/user/forgotPassword"
         }
       }
     },
@@ -144,7 +144,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/verifyPasswordResetLink"
+          "uri":"<DOMAIN_URL>/api/user/verifyPasswordResetLink"
         }
       }
     },
@@ -158,7 +158,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/deleteAccount"
+          "uri":"<DOMAIN_URL>/api/user/deleteAccount"
         }
       }
     },
@@ -172,7 +172,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/auth/facebook"
+          "uri":"<DOMAIN_URL>/api/user/auth/facebook"
         }
       }
     },
@@ -186,7 +186,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/auth/facebook/callback"
+          "uri":"<DOMAIN_URL>/api/user/auth/facebook/callback"
         }
       }
     },
@@ -200,7 +200,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/auth/google"
+          "uri":"<DOMAIN_URL>/api/user/auth/google"
         }
       }
     },
@@ -214,7 +214,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/auth/google/callback"
+          "uri":"<DOMAIN_URL>/api/user/auth/google/callback"
         }
       }
     },
@@ -228,7 +228,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/auth/linkedin"
+          "uri":"<DOMAIN_URL>/api/user/auth/linkedin"
         }
       }
     },
@@ -242,7 +242,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/auth/linkedin/callback"
+          "uri":"<DOMAIN_URL>/api/user/auth/linkedin/callback"
         }
       }
     },
@@ -256,7 +256,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/signup"
+          "uri":"<DOMAIN_URL>/api/user/signup"
         }
       }
     },
@@ -270,7 +270,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/login"
+          "uri":"<DOMAIN_URL>/api/user/login"
         }
       }
     },
@@ -284,7 +284,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/authenticated"
+          "uri":"<DOMAIN_URL>/api/user/authenticated"
         }
       }
     },
@@ -298,7 +298,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/logout"
+          "uri":"<DOMAIN_URL>/api/user/logout"
         }
       }
     },
@@ -312,7 +312,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/sendEmailVerificationLink"
+          "uri":"<DOMAIN_URL>/api/user/sendEmailVerificationLink"
         }
       }
     },
@@ -326,7 +326,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/verifyEmail"
+          "uri":"<DOMAIN_URL>/api/user/verifyEmail"
         }
       }
     },
@@ -340,7 +340,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/sendOtp"
+          "uri":"<DOMAIN_URL>/api/user/sendOtp"
         }
       }
     },
@@ -354,7 +354,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/requestUsercategoryVerification"
+          "uri":"<DOMAIN_URL>/api/user/requestUsercategoryVerification"
         }
       }
     },
@@ -368,7 +368,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/cashDeposit"
+          "uri":"<DOMAIN_URL>/api/user/cashDeposit"
         }
       }
     },
@@ -382,7 +382,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/cashDeposits"
+          "uri":"<DOMAIN_URL>/api/user/cashDeposits"
         }
       }
     },
@@ -396,7 +396,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/cashDeposits/count"
+          "uri":"<DOMAIN_URL>/api/user/cashDeposits/count"
         }
       }
     },
@@ -410,7 +410,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/cashDeposits/update"
+          "uri":"<DOMAIN_URL>/api/user/cashDeposits/update"
         }
       }
     },
@@ -424,7 +424,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/addTraveller"
+          "uri":"<DOMAIN_URL>/api/user/addTraveller"
         }
       }
     },
@@ -438,7 +438,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/updateTraveller"
+          "uri":"<DOMAIN_URL>/api/user/updateTraveller"
         }
       }
     },
@@ -452,7 +452,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/getAllBookings"
+          "uri":"<DOMAIN_URL>/api/user/getAllBookings"
         }
       }
     },
@@ -466,7 +466,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/getBooking"
+          "uri":"<DOMAIN_URL>/api/user/getBooking"
         }
       }
     },
@@ -480,7 +480,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/getCancellations"
+          "uri":"<DOMAIN_URL>/api/user/getCancellations"
         }
       }
     },
@@ -494,7 +494,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/getTripsTillDate"
+          "uri":"<DOMAIN_URL>/api/user/getTripsTillDate"
         }
       }
     },
@@ -508,7 +508,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/createAgent"
+          "uri":"<DOMAIN_URL>/api/user/createAgent"
         }
       }
     },
@@ -522,7 +522,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/sendOtpForLogin"
+          "uri":"<DOMAIN_URL>/api/user/sendOtpForLogin"
         }
       }
     },
@@ -536,7 +536,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/loginViaOtp"
+          "uri":"<DOMAIN_URL>/api/user/loginViaOtp"
         }
       }
     },
@@ -550,7 +550,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/sendOtpForSignup"
+          "uri":"<DOMAIN_URL>/api/user/sendOtpForSignup"
         }
       }
     },
@@ -564,7 +564,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/signupViaOtp"
+          "uri":"<DOMAIN_URL>/api/user/signupViaOtp"
         }
       }
     },
@@ -578,7 +578,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/merge"
+          "uri":"<DOMAIN_URL>/api/user/merge"
         }
       }
     },
@@ -592,7 +592,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getCancellations"
+          "uri":"<DOMAIN_URL>/api/user/getCancellations"
         }
       }
     },
@@ -606,7 +606,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getTravellers"
+          "uri":"<DOMAIN_URL>/api/user/getTravellers"
         }
       }
     },
@@ -620,7 +620,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/wallet/getBalance"
+          "uri":"<DOMAIN_URL>/api/wallet/getBalance"
         }
       }
     },
@@ -634,7 +634,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/wallet/getTransactions"
+          "uri":"<DOMAIN_URL>/api/wallet/getTransactions"
         }
       }
     },
@@ -648,7 +648,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/wallet/sendBalAlert"
+          "uri":"<DOMAIN_URL>/api/wallet/sendBalAlert"
         }
       }
     },
@@ -662,7 +662,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/wallet/refund"
+          "uri":"<DOMAIN_URL>/api/wallet/refund"
         }
       }
     },
@@ -676,7 +676,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/verification/categoryVerification"
+          "uri":"<DOMAIN_URL>/api/verification/categoryVerification"
         }
       }
     },
@@ -693,7 +693,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/wallet/create/{userId}/"
+          "uri":"<DOMAIN_URL>/api/wallet/create/{userId}"
         }
       }
     },
@@ -710,7 +710,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/wallet/closingBalance/{token}"
+          "uri":"<DOMAIN_URL>/api/wallet/closingBalance/{token}"
         }
       }
     },
@@ -727,7 +727,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/wallet/walletReconcile/{token}"
+          "uri":"<DOMAIN_URL>/api/wallet/walletReconcile/{token}"
         }
       }
     },
@@ -744,7 +744,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getTravellersCount/{category}"
+          "uri":"<DOMAIN_URL>/api/user/getTravellersCount/{category}"
         }
       }
     },
@@ -761,7 +761,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/deleteTraveller/{travellerId}"
+          "uri":"<DOMAIN_URL>/api/user/deleteTraveller/{travellerId}"
         }
       }
     },
@@ -778,7 +778,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getTravellersCount/{category}"
+          "uri":"<DOMAIN_URL>/api/user/getTravellersCount/{category}"
         }
       }
     },
@@ -795,7 +795,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getTripsCount/{category}"
+          "uri":"<DOMAIN_URL>/api/user/getTripsCount/{category}"
         }
       }
     },
@@ -813,7 +813,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getBookingDetails/{bookingId}/{flightId}"
+          "uri":"<DOMAIN_URL>/api/user/getBookingDetails/{bookingId}/{flightId}"
         }
       }
     },
@@ -830,7 +830,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/sendOtp/{otp}"
+          "uri":"<DOMAIN_URL>/api/user/sendOtp/{otp}"
         }
       }
     },
@@ -847,7 +847,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/getUserDetails/{userId}"
+          "uri":"<DOMAIN_URL>/api/user/getUserDetails/{userId}"
         }
       }
     },
@@ -861,7 +861,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/user/getTravellerDetails/{travellerId}"
+          "uri":"<DOMAIN_URL>/api/user/getTravellerDetails/{travellerId}"
         }
       }
     },
@@ -878,7 +878,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/user/requestTravellerVerification/{travellerId}"
+          "uri":"<DOMAIN_URL>/api/user/requestTravellerVerification/{travellerId}"
         }
       }
     },
@@ -896,7 +896,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/getBookingDetails/{pnr}/{email}"
+          "uri":"<DOMAIN_URL>/api/support/getBookingDetails/{pnr}/{email}"
         }
       }
     },
@@ -914,7 +914,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/getPdf/{pnr}/{email}"
+          "uri":"<DOMAIN_URL>/api/support/getPdf/{pnr}/{email}"
         }
       }
     },
@@ -932,7 +932,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/getInvoicePdf/{pnr}/{email}"
+          "uri":"<DOMAIN_URL>/api/support/getInvoicePdf/{pnr}/{email}"
         }
       }
     },
@@ -949,7 +949,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/sendEmail/{pnr}"
+          "uri":"<DOMAIN_URL>/api/support/sendEmail/{pnr}"
         }
       }
     },
@@ -966,7 +966,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/emailInvoice/{pnr}"
+          "uri":"<DOMAIN_URL>/api/support/emailInvoice/{pnr}"
         }
       }
     },
@@ -983,7 +983,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/sendSms/{pnr}"
+          "uri":"<DOMAIN_URL>/api/support/sendSms/{pnr}"
         }
       }
     },
@@ -1000,7 +1000,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/isLatest/{version}"
+          "uri":"<DOMAIN_URL>/api/support/isLatest/{version}"
         }
       }
     },
@@ -1017,7 +1017,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/isLatestIOS/{version}"
+          "uri":"<DOMAIN_URL>/api/support/isLatestIOS/{version}"
         }
       }
     },
@@ -1034,7 +1034,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/allok/{bookingId}"
+          "uri":"<DOMAIN_URL>/api/support/allok/{bookingId}"
         }
       }
     },
@@ -1051,7 +1051,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/getLTC/{bookingId}"
+          "uri":"<DOMAIN_URL>/api/support/getLTC/{bookingId}"
         }
       }
     },
@@ -1069,7 +1069,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/getPolicies/{type}/{hotelName}"
+          "uri":"<DOMAIN_URL>/api/support/getPolicies/{type}/{hotelName}"
         }
       }
     },
@@ -1086,7 +1086,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/support/getVisaRequirements/{destinationCountryCode}"
+          "uri":"<DOMAIN_URL>/api/support/getVisaRequirements/{destinationCountryCode}"
         }
       }
     },
@@ -1103,7 +1103,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/support/getVisaRequirements/{destinationCountryCode}"
+          "uri":"<DOMAIN_URL>/api/support/getVisaRequirements/{destinationCountryCode}"
         }
       }
     },
@@ -1121,7 +1121,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/support/notifySupport"
+          "uri":"<DOMAIN_URL>/api/support/notifySupport"
         }
       }
     },
@@ -1135,7 +1135,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/support/log"
+          "uri":"<DOMAIN_URL>/api/support/log"
         }
       }
     },
@@ -1149,7 +1149,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/support/log"
+          "uri":"<DOMAIN_URL>/api/support/log"
         }
       }
     },
@@ -1163,7 +1163,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/referral"
+          "uri":"<DOMAIN_URL>/api/referral"
         }
       }
     },
@@ -1177,7 +1177,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/supplier/add"
+          "uri":"<DOMAIN_URL>/api/supplier/add"
         }
       }
     },
@@ -1191,7 +1191,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/supplier/update"
+          "uri":"<DOMAIN_URL>/api/supplier/update"
         }
       }
     },
@@ -1205,7 +1205,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/supplier/all"
+          "uri":"<DOMAIN_URL>/api/supplier/all"
         }
       }
     },
@@ -1219,11 +1219,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/health"
+          "uri":"<DOMAIN_URL>/api/flights/health"
         }
       }
     },
-    "/api/flights/searchInit": {
+    "/api/supplier/searchInit": {
       "post": {
         "produces": [
           "application/json"
@@ -1233,11 +1233,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/searchInit"
+          "uri":"<DOMAIN_URL>/api/supplier/searchInit"
         }
       }
     },
-    "/api/flights/rebooking": {
+    "/api/supplier/rebooking": {
       "get": {
         "produces": [
           "application/json"
@@ -1247,11 +1247,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/rebooking"
+          "uri":"<DOMAIN_URL>/api/supplier/rebooking"
         }
       }
     },
-    "/api/flights/getRequest/{sessionId}": {
+    "/api/supplier/getRequest/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1264,11 +1264,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/getRequest/{sessionId}"
+          "uri":"<DOMAIN_URL>/api/supplier/getRequest/{sessionId}"
         }
       }
     },
-    "/api/flights/searchStatus/{sessionId}": {
+    "/api/supplier/searchStatus/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1281,11 +1281,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/searchStatus/{sessionId}"
+          "uri":"<DOMAIN_URL>/api/supplier/searchStatus/{sessionId}"
         }
       }
     },
-    "/api/flights/searchResult/{sessionId}": {
+    "/api/supplier/searchResult/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1298,11 +1298,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/searchResult/{sessionId}"
+          "uri":"<DOMAIN_URL>/api/supplier/searchResult/{sessionId}"
         }
       }
     },
-    "/api/flights/price": {
+    "/api/supplier/price": {
       "post": {
         "produces": [
           "application/json"
@@ -1312,11 +1312,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/price"
+          "uri":"<DOMAIN_URL>/api/supplier/price"
         }
       }
     },
-    "/api/flights/saveBooking": {
+    "/api/supplier/saveBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -1326,11 +1326,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/saveBooking"
+          "uri":"<DOMAIN_URL>/api/supplier/saveBooking"
         }
       }
     },
-    "/api/flights/bookStatus/{bookingId}": {
+    "/api/supplier/bookStatus/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1343,11 +1343,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/bookStatus/{bookingId}"
+          "uri":"<DOMAIN_URL>/api/supplier/bookStatus/{bookingId}"
         }
       }
     },
-    "/api/flights/bookResult/{bookingId}": {
+    "/api/supplier/bookResult/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1360,11 +1360,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/bookResult/{bookingId}"
+          "uri":"<DOMAIN_URL>/api/supplier/bookResult/{bookingId}"
         }
       }
     },
-    "/api/flights/createBooking": {
+    "/api/supplier/createBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -1374,11 +1374,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/createBooking"
+          "uri":"<DOMAIN_URL>/api/supplier/createBooking"
         }
       }
     },
-    "/api/flights/updateBooking": {
+    "/api/supplier/updateBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -1388,11 +1388,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/updateBooking"
+          "uri":"<DOMAIN_URL>/api/supplier/updateBooking"
         }
       }
     },
-    "/api/flights/getTicket/{bookingId}": {
+    "/api/supplier/getTicket/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1402,11 +1402,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/getTicket/{bookingId}"
+          "uri":"<DOMAIN_URL>/api/supplier/getTicket/{bookingId}"
         }
       }
     },
-    "/api/flights/airports": {
+    "/api/supplier/airports": {
       "get": {
         "produces": [
           "application/json"
@@ -1416,11 +1416,11 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/airports"
+          "uri":"<DOMAIN_URL>/api/supplier/airports"
         }
       }
     },
-    "/api/flights/airports/invalidate": {
+    "/api/supplier/airports/invalidate": {
       "get": {
         "produces": [
           "application/json"
@@ -1430,7 +1430,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/airports/invalidate"
+          "uri":"<DOMAIN_URL>/api/flights/airports/invalidate"
         }
       }
     },
@@ -1444,7 +1444,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/getAirports"
+          "uri":"<DOMAIN_URL>/api/supplier/getAirports"
         }
       }
     },
@@ -1458,7 +1458,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/addAirports"
+          "uri":"<DOMAIN_URL>/api/flights/addAirports"
         }
       }
     },
@@ -1472,7 +1472,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/addPaymentCollentionDetails"
+          "uri":"<DOMAIN_URL>/api/flights/addPaymentCollentionDetails"
         }
       }
     },
@@ -1486,7 +1486,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/collectLaterCount"
+          "uri":"<DOMAIN_URL>/api/flights/collectLaterCount"
         }
       }
     },
@@ -1500,7 +1500,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/accountPendingCount"
+          "uri":"<DOMAIN_URL>/api/flights/accountPendingCount"
         }
       }
     },
@@ -1514,7 +1514,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/estimatedRefund"
+          "uri":"<DOMAIN_URL>/api/flights/estimatedRefund"
         }
       }
     },
@@ -1528,7 +1528,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/priceAndSave"
+          "uri":"<DOMAIN_URL>/api/flights/priceAndSave"
         }
       }
     },
@@ -1546,7 +1546,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/savedBooking/{sessionId}/{bookingId}"
+          "uri":"<DOMAIN_URL>/api/flights/savedBooking/{sessionId}/{bookingId}"
         }
       }
     },
@@ -1563,7 +1563,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/savedBooking/{sessionId}"
+          "uri":"<DOMAIN_URL>/api/flights/savedBooking/{sessionId}"
         }
       }
     },
@@ -1577,7 +1577,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/getToken"
+          "uri":"<DOMAIN_URL>/api/flights/getToken"
         }
       }
     },
@@ -1597,7 +1597,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}"
+          "uri":"<DOMAIN_URL>/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}"
         }
       }
     },
@@ -1615,7 +1615,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/monthlyRefunds/{value}/{token}"
+          "uri":"<DOMAIN_URL>/api/flights/monthlyRefunds/{value}/{token}"
         }
       }
     },
@@ -1633,7 +1633,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/dailyRefunds/{value}/{token}"
+          "uri":"<DOMAIN_URL>/api/flights/dailyRefunds/{value}/{token}"
         }
       }
     },
@@ -1652,7 +1652,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/bookingReports/{duration}/{value}/{token}"
+          "uri":"<DOMAIN_URL>/api/flights/bookingReports/{duration}/{value}/{token}"
         }
       }
     },
@@ -1669,7 +1669,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/bookingFailedClean/{token}"
+          "uri":"<DOMAIN_URL>/api/flights/bookingFailedClean/{token}"
         }
       }
     },
@@ -1683,7 +1683,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/reschedule/searchInit"
+          "uri":"<DOMAIN_URL>/api/flights/reschedule/searchInit"
         }
       }
     },
@@ -1697,7 +1697,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/reschedule/saveBooking"
+          "uri":"<DOMAIN_URL>/api/flights/reschedule/saveBooking"
         }
       }
     },
@@ -1711,7 +1711,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/flights/requestRescheduling"
+          "uri":"<DOMAIN_URL>/api/flights/requestRescheduling"
         }
       }
     },
@@ -1728,7 +1728,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/reschedule/searchResult/{sessionId}"
+          "uri":"<DOMAIN_URL>/api/flights/reschedule/searchResult/{sessionId}"
         }
       }
     },
@@ -1746,7 +1746,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/flights/airlines/rules/{bookingId}/{pnr}"
+          "uri":"<DOMAIN_URL>/api/flights/airlines/rules/{bookingId}/{pnr}"
         }
       }
     },
@@ -1760,7 +1760,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/paymentInit"
+          "uri":"<DOMAIN_URL>/api/payments/paymentInit"
         }
       }
     },
@@ -1774,7 +1774,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/newPaymentInit"
+          "uri":"<DOMAIN_URL>/api/payments/newPaymentInit"
         }
       }
     },
@@ -1791,7 +1791,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/success/{orderId}"
+          "uri":"<DOMAIN_URL>/api/payments/success/{orderId}"
         }
       }
     },
@@ -1805,7 +1805,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/success"
+          "uri":"<DOMAIN_URL>/api/payments/success"
         }
       }
     },
@@ -1819,7 +1819,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/add"
+          "uri":"<DOMAIN_URL>/api/payments/add"
         }
       }
     },
@@ -1833,7 +1833,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/fail"
+          "uri":"<DOMAIN_URL>/api/payments/fail"
         }
       }
     },
@@ -1847,7 +1847,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/payments/cancel"
+          "uri":"<DOMAIN_URL>/api/payments/cancel"
         }
       }
     },
@@ -1864,7 +1864,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/payments/transactions/{date}"
+          "uri":"<DOMAIN_URL>/api/payments/transactions/{date}"
         }
       }
     },
@@ -1882,7 +1882,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/payments/paymentProviders/{sessionId}/{product}"
+          "uri":"<DOMAIN_URL>/api/payments/paymentProviders/{sessionId}/{product}"
         }
       }
     },
@@ -1896,7 +1896,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/neft/add"
+          "uri":"<DOMAIN_URL>/api/neft/add"
         }
       }
     },
@@ -1910,7 +1910,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/neft/add/cashLedger"
+          "uri":"<DOMAIN_URL>/api/neft/add/cashLedger"
         }
       }
     },
@@ -1927,7 +1927,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/neft/validateIFSC/{code}"
+          "uri":"<DOMAIN_URL>/api/neft/validateIFSC/{code}"
         }
       }
     },
@@ -1941,7 +1941,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/coupon/list"
+          "uri":"<DOMAIN_URL>/api/coupon/list"
         }
       }
     },
@@ -1955,7 +1955,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/coupon"
+          "uri":"<DOMAIN_URL>/api/coupon"
         }
       }
     },
@@ -1972,7 +1972,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/coupon/all/{token}"
+          "uri":"<DOMAIN_URL>/api/coupon/all/{token}"
         }
       }
     },
@@ -1989,7 +1989,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/coupon/generateEmployeeCoupon/{sessionId}"
+          "uri":"<DOMAIN_URL>/api/coupon/generateEmployeeCoupon/{sessionId}"
         }
       }
     },
@@ -2003,7 +2003,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/common/careers/getAll"
+          "uri":"<DOMAIN_URL>/api/common/careers/getAll"
         }
       }
     },
@@ -2020,7 +2020,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/common/careers/get/{careerId}"
+          "uri":"<DOMAIN_URL>/api/common/careers/get/{careerId}"
         }
       }
     },
@@ -2034,7 +2034,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/common/careers/jobApplication"
+          "uri":"<DOMAIN_URL>/api/common/careers/jobApplication"
         }
       }
     },
@@ -2048,7 +2048,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/common/locations/getAll"
+          "uri":"<DOMAIN_URL>/api/common/locations/getAll"
         }
       }
     },
@@ -2062,7 +2062,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/common/news/getAll"
+          "uri":"<DOMAIN_URL>/api/common/news/getAll"
         }
       }
     },
@@ -2076,7 +2076,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/cancellations/add"
+          "uri":"<DOMAIN_URL>/api/cancellations/add"
         }
       }
     },
@@ -2090,7 +2090,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/cancellations/addCancellation"
+          "uri":"<DOMAIN_URL>/api/cancellations/addCancellation"
         }
       }
     },
@@ -2104,7 +2104,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":<DOMAIN_URL>"/api/cancellations/update"
+          "uri":"<DOMAIN_URL>/api/cancellations/update"
         }
       }
     },
@@ -2118,7 +2118,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/cancellations/{pnr}"
+          "uri":"<DOMAIN_URL>/api/cancellations/{pnr}"
         }
       }
     },
@@ -2136,7 +2136,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":<DOMAIN_URL>"/api/cancellations/listRefundModes/{bookingId}/{flightId}"
+          "uri":"<DOMAIN_URL>/api/cancellations/listRefundModes/{bookingId}/{flightId}"
         }
       }
     },
