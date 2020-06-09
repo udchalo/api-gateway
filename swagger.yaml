@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Test Serverless API",
+    "description": "Serverless API Gateway",
     "title": "<NODE_ENV>-api-gateway-proxy"
   },
   "schemes": [
