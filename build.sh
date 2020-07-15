@@ -23,7 +23,7 @@ sed -i='' "s/<NODE_ENV>/$1/g" template.yaml
 sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file package.yaml
 
 # Deploys your stack   
-sam deploy --template-file package.yaml --stack-name $STACK --capabilities CAPABILITY_IAM
+sam deploy --template-file package.yaml --stack-name $STACK --capabilities CAPABILITY_IAM --no-fail-on-empty-changeset
 
 
 
