@@ -25,7 +25,11 @@ sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-
 # Deploys your stack   
 sam deploy --template-file package.yaml --stack-name $STACK --capabilities CAPABILITY_IAM
 
-
+if [ "$?" -eq 255 ]
+then
+    echo "No changes to deploy."
+    true
+fi
 
 # Delete CloudFormation Stack
 #aws cloudformation delete-stack --stack-name $STACK
