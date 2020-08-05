@@ -61,7 +61,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>/api/user/getProfile"
+          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com/api/user/getProfile"
         }
       }
     },
@@ -80,7 +80,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":"<DOMAIN_URL>/api/user/updateProfile"
+          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com/api/user/updateProfile"
         }
       }
     },
@@ -99,7 +99,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":"<DOMAIN_URL>/api/user/updatePassword"
+          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com/api/user/updatePassword"
         }
       }
     },
