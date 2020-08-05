@@ -9,7 +9,7 @@ export STACK=$1-api-gateway
 export BUCKET=uc-deploy-api-gateway-$1
 
 echo "$DOMAIN_URL $USER_URL $1"
-DOMAIN_URL="https://$1-server-proxy.udchalo.com/server"
+DOMAIN_URL="http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/"
 USER_URL="https://users-$1-api.udchalo.com"
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" swagger.yaml
