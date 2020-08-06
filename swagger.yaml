@@ -17,20 +17,15 @@
         ],
         "parameters": [
           {
-            "name": "proxy",
-            "in": "path",
+            "name": "Cookie",
+            "in": "header",
             "required": true,
-            "type": "string"
           }
         ],
         "responses": {},
         "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
           "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
           "requestParameters": {
             "integration.request.path.proxy": "method.request.path.proxy"
           },
