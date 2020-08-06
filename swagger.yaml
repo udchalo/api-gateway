@@ -2845,7 +2845,7 @@
         }
       }
     },
-	    "/server": {
+    "/server": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
         "x-amazon-apigateway-integration": {
@@ -2856,7 +2856,7 @@
         }
       }
     },
-	    "/hotel": {
+    "/hotel": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
         "x-amazon-apigateway-integration": {
