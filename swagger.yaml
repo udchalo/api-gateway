@@ -8,7 +8,7 @@
     "https"
   ],
   "paths": {
-    "admin":{
+    "/admin":{
      "/api/user/login": {
       "post": {
         "produces": [
