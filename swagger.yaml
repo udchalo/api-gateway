@@ -2846,6 +2846,31 @@
       }
     },
     "/admin": {
+      "/{proxy+}": {
+        "x-amazon-apigateway-any-method": {
+          "description": "Test API",
+          "x-amazon-apigateway-integration": {
+            "passthroughBehavior": "WHEN_NO_MATCH",
+            "type": "HTTP_PROXY",
+            "httpMethod": "ANY",
+            "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}"
+         }
+       }
+     }
+   },
+    "/hotel": {
+      "/{proxy+}": {
+       "x-amazon-apigateway-any-method": {
+         "description": "Test API",
+         "x-amazon-apigateway-integration": {
+           "passthroughBehavior": "WHEN_NO_MATCH",
+           "type": "HTTP_PROXY",
+           "httpMethod": "ANY",
+           "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
+         }
+       }
+      }
+     },
      "/{proxy+}": {
        "x-amazon-apigateway-any-method": {
          "description": "Test API",
@@ -2853,32 +2878,7 @@
            "passthroughBehavior": "WHEN_NO_MATCH",
            "type": "HTTP_PROXY",
            "httpMethod": "ANY",
-           "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}"
-         }
-       }
-     }
-	},
-  "/hotel": {
-    "/{proxy+}": {
-      "x-amazon-apigateway-any-method": {
-        "description": "Test API",
-        "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "ANY",
-          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
-        }
-       }
-     }
-    },
-    "/{proxy+}": {
-      "x-amazon-apigateway-any-method": {
-        "description": "Test API",
-        "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "ANY",
-          "uri":"https://<NODE_ENV>-server-admin.udchalo.com"
+           "uri":"https://<NODE_ENV>-server-admin.udchalo.com"
         }
       }
     }
