@@ -2846,18 +2846,20 @@
       }
     },
     "/admin": {
-     "/{proxy+}": {
-      "x-amazon-apigateway-any-method": {
-        "description": "Test API",
-        "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "ANY",
-          "uri":"https://<NODE_ENV>-server-admin.udchalo.com"
-        }
-      }
-    }
-    },
+              "x-amazon-apigateway-any-method": {
+                                                "/{proxy+}": {
+                                                              "x-amazon-apigateway-any-method": {
+                                                                                                 "description": "Test API",
+                                                                                                 "x-amazon-apigateway-integration": {
+                                                                                                                                     "passthroughBehavior": "WHEN_NO_MATCH",
+                                                                                                                                     "type": "HTTP_PROXY",
+                                                                                                                                     "httpMethod": "ANY",
+                                                                                                                                     "uri":"https://<NODE_ENV>-server-admin.udchalo.com"
+                                                                                                                                    }
+                                                                                                }
+                                                              }
+                                                }
+             },                                                
     "/hotel": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
