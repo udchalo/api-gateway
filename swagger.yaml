@@ -2845,7 +2845,7 @@
         }
       }
     },
-    "/admin": {{},
+    "/admin": {
 	 "/{proxy+}": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
@@ -2858,7 +2858,7 @@
       }
 	 }
     },
-    "/hotel": {{},
+    "/hotel": {
 	 "/{proxy+}": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
