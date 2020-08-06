@@ -1,5767 +1,2882 @@
 {
-
   "swagger": "2.0",
-
   "info": {
-
     "description": "Serverless API Gateway",
-
     "title": "<NODE_ENV>-api-gateway-proxy"
-
   },
-
   "schemes": [
-
     "https"
-
   ],
-
-  "paths": {
-
-     "/server": {
- 
-      "/api/user/login": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/login"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/profile": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/profile"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getProfile": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getProfile"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/updateProfile": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/updateProfile"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/updatePassword": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/updatePassword"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/updatePasswordViaForgotLink": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/updatePasswordViaForgotLink"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/updateProfilePic": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/updateProfilePic"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/updateSettings": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/updateSettings"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/forgotPassword": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/forgotPassword"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/verifyPasswordResetLink": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/verifyPasswordResetLink"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/deleteAccount": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/deleteAccount"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/auth/facebook": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/auth/facebook"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/auth/facebook/callback": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/auth/facebook/callback"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/auth/google": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/auth/google"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/auth/google/callback": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/auth/google/callback"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/auth/linkedin": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/auth/linkedin"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/auth/linkedin/callback": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/auth/linkedin/callback"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/signup": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/signup"
- 
-         }
- 
-       }
- 
-     },
- 
+  "paths": {    
      "/api/user/login": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/login"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/authenticated": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/authenticated"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/logout": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/logout"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/sendEmailVerificationLink": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/sendEmailVerificationLink"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/verifyEmail": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/verifyEmail"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/sendOtp": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/sendOtp"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/requestUsercategoryVerification": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/requestUsercategoryVerification"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/cashDeposit": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/cashDeposit"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/cashDeposits": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/cashDeposits"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/cashDeposits/count": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/cashDeposits/count"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/cashDeposits/update": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/cashDeposits/update"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/addTraveller": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/addTraveller"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/updateTraveller": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/updateTraveller"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getAllBookings": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/getAllBookings"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getBooking": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/getBooking"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getCancellations": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/getCancellations"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getTripsTillDate": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/getTripsTillDate"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/createAgent": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/createAgent"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/sendOtpForLogin": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/sendOtpForLogin"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/loginViaOtp": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/loginViaOtp"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/sendOtpForSignup": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/sendOtpForSignup"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/signupViaOtp": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/signupViaOtp"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/merge": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/merge"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getCancellations": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getCancellations"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getTravellers": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getTravellers"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/getBalance": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/getBalance"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/getTransactions": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/getTransactions"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/sendBalAlert": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/sendBalAlert"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/refund": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/refund"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/verification/categoryVerification": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/verification/categoryVerification"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/create/{userId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.userId": "method.request.path.userId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/create/{userId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/closingBalance/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/closingBalance/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/wallet/walletReconcile/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/wallet/walletReconcile/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getTravellersCount/{category}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.category": "method.request.path.category"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getTravellersCount/{category}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/deleteTraveller/{travellerId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.travellerId": "method.request.path.travellerId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/deleteTraveller/{travellerId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getTravellersCount/{category}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/login"
+        }
+      }
+    },
+    "/api/user/profile": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/profile"
+        }
+      }
+    },
+    "/api/user/getProfile": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getProfile"
+        }
+      }
+    },
+    "/api/user/updateProfile": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/updateProfile"
+        }
+      }
+    },
+    "/api/user/updatePassword": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/updatePassword"
+        }
+      }
+    },
+    "/api/user/updatePasswordViaForgotLink": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/updatePasswordViaForgotLink"
+        }
+      }
+    },
+    "/api/user/updateProfilePic": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/updateProfilePic"
+        }
+      }
+    },
+    "/api/user/updateSettings": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/updateSettings"
+        }
+      }
+    },
+    "/api/user/forgotPassword": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/forgotPassword"
+        }
+      }
+    },
+    "/api/user/verifyPasswordResetLink": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/verifyPasswordResetLink"
+        }
+      }
+    },
+    "/api/user/deleteAccount": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/deleteAccount"
+        }
+      }
+    },
+    "/api/user/auth/facebook": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/auth/facebook"
+        }
+      }
+    },
+    "/api/user/auth/facebook/callback": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/auth/facebook/callback"
+        }
+      }
+    },
+    "/api/user/auth/google": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/auth/google"
+        }
+      }
+    },
+    "/api/user/auth/google/callback": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/auth/google/callback"
+        }
+      }
+    },
+    "/api/user/auth/linkedin": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/auth/linkedin"
+        }
+      }
+    },
+    "/api/user/auth/linkedin/callback": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/auth/linkedin/callback"
+        }
+      }
+    },
+    "/api/user/signup": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/signup"
+        }
+      }
+    },
+    "/api/user/login": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/login"
+        }
+      }
+    },
+    "/api/user/authenticated": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/authenticated"
+        }
+      }
+    },
+    "/api/user/logout": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/logout"
+        }
+      }
+    },
+    "/api/user/sendEmailVerificationLink": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/sendEmailVerificationLink"
+        }
+      }
+    },
+    "/api/user/verifyEmail": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/verifyEmail"
+        }
+      }
+    },
+    "/api/user/sendOtp": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/sendOtp"
+        }
+      }
+    },
+    "/api/user/requestUsercategoryVerification": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/requestUsercategoryVerification"
+        }
+      }
+    },
+    "/api/user/cashDeposit": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/cashDeposit"
+        }
+      }
+    },
+    "/api/user/cashDeposits": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/cashDeposits"
+        }
+      }
+    },
+    "/api/user/cashDeposits/count": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/cashDeposits/count"
+        }
+      }
+    },
+    "/api/user/cashDeposits/update": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/cashDeposits/update"
+        }
+      }
+    },
+    "/api/user/addTraveller": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/addTraveller"
+        }
+      }
+    },
+    "/api/user/updateTraveller": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/updateTraveller"
+        }
+      }
+    },
+    "/api/user/getAllBookings": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/getAllBookings"
+        }
+      }
+    },
+    "/api/user/getBooking": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/getBooking"
+        }
+      }
+    },
+    "/api/user/getCancellations": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/getCancellations"
+        }
+      }
+    },
+    "/api/user/getTripsTillDate": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/getTripsTillDate"
+        }
+      }
+    },
+    "/api/user/createAgent": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/createAgent"
+        }
+      }
+    },
+    "/api/user/sendOtpForLogin": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/sendOtpForLogin"
+        }
+      }
+    },
+    "/api/user/loginViaOtp": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/loginViaOtp"
+        }
+      }
+    },
+    "/api/user/sendOtpForSignup": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/sendOtpForSignup"
+        }
+      }
+    },
+    "/api/user/signupViaOtp": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/signupViaOtp"
+        }
+      }
+    },
+    "/api/user/merge": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/merge"
+        }
+      }
+    },
+    "/api/user/getCancellations": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getCancellations"
+        }
+      }
+    },
+    "/api/user/getTravellers": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getTravellers"
+        }
+      }
+    },
+    "/api/wallet/getBalance": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/wallet/getBalance"
+        }
+      }
+    },
+    "/api/wallet/getTransactions": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/wallet/getTransactions"
+        }
+      }
+    },
+    "/api/wallet/sendBalAlert": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/wallet/sendBalAlert"
+        }
+      }
+    },
+    "/api/wallet/refund": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/wallet/refund"
+        }
+      }
+    },
+    "/api/verification/categoryVerification": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/verification/categoryVerification"
+        }
+      }
+    },
+    "/api/wallet/create/{userId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
- 
-             "integration.request.path.category": "method.request.path.category"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getTravellersCount/{category}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getTripsCount/{category}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-             "integration.request.path.category": "method.request.path.category"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getTripsCount/{category}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getBookingDetails/{bookingId}/{flightId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-             "integration.request.path.bookingId": "method.request.path.bookingId",
- 
-             "integration.request.path.flightId": "method.request.path.flightId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getBookingDetails/{bookingId}/{flightId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/verifyOtp/{otp}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-             "integration.request.path.otp": "method.request.path.otp"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/sendOtp/{otp}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "api/user/getUserDetails/{userId}": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "requestParameters": {
- 
-             "integration.request.path.userId": "method.request.path.userId"
- 
-         },
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/getUserDetails/{userId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/getTravellerDetails/{travellerId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/user/getTravellerDetails/{travellerId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/user/requestTravellerVerification/{travellerId}": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-             "integration.request.path.travellerId": "method.request.path.travellerId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/user/requestTravellerVerification/{travellerId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getBookingDetails/{pnr}/{email}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.pnr": "method.request.path.pnr",
- 
-            "integration.request.path.email": "method.request.path.email"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/getBookingDetails/{pnr}/{email}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getPdf/{pnr}/{email}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.pnr": "method.request.path.pnr",
- 
-            "integration.request.path.email": "method.request.path.email"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/getPdf/{pnr}/{email}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getInvoicePdf/{pnr}/{email}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.pnr": "method.request.path.pnr",
- 
-            "integration.request.path.email": "method.request.path.email"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/getInvoicePdf/{pnr}/{email}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/sendEmail/{pnr}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.pnr": "method.request.path.pnr"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/sendEmail/{pnr}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/emailInvoice/{pnr}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.pnr": "method.request.path.pnr"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/emailInvoice/{pnr}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/sendSms/{pnr}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.pnr": "method.request.path.pnr"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/sendSms/{pnr}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/isLatest/{version}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.version": "method.request.path.version"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/isLatest/{version}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/isLatestIOS/{version}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.version": "method.request.path.version"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/isLatestIOS/{version}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/allok/{bookingId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.bookingId": "method.request.path.bookingId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/allok/{bookingId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getLTC/{bookingId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.bookingId": "method.request.path.bookingId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/getLTC/{bookingId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getPolicies/{type}/{hotelName}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.type": "method.request.path.type",
- 
-            "integration.request.path.hotelName": "method.request.path.hotelName"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/getPolicies/{type}/{hotelName}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getVisaRequirements/{destinationCountryCode}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/support/getVisaRequirements/{destinationCountryCode}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/getVisaRequirements/{destinationCountryCode}": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/support/getVisaRequirements/{destinationCountryCode}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/notifySupport": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.type": "method.request.path.type",
- 
-            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/support/notifySupport"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/log": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/support/log"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/support/log": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/support/log"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/referral": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/referral"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/add": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/add"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/update": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/update"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/all": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/all"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/health": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/health"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/searchInit": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/searchInit"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/rebooking": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/rebooking"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/getRequest/{sessionId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/getRequest/{sessionId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/searchStatus/{sessionId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/searchStatus/{sessionId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/searchResult/{sessionId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/searchResult/{sessionId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/price": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/price"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/saveBooking": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/saveBooking"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/bookStatus/{bookingId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.bookingId": "method.request.path.bookingId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/bookStatus/{bookingId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/bookResult/{bookingId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.bookingId": "method.request.path.bookingId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/bookResult/{bookingId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/createBooking": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/createBooking"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/updateBooking": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/updateBooking"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/getTicket/{bookingId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/getTicket/{bookingId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/airports": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/airports"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/supplier/airports/invalidate": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/airports/invalidate"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/getAirports": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/supplier/getAirports"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/addAirports": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/addAirports"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/addPaymentCollentionDetails": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/addPaymentCollentionDetails"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/collectLaterCount": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/collectLaterCount"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/accountPendingCount": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/accountPendingCount"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/estimatedRefund": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/estimatedRefund"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/priceAndSave": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/priceAndSave"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/savedBooking/{sessionId}/{bookingId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId",
- 
-            "integration.request.path.bookingId": "method.request.path.bookingId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/savedBooking/{sessionId}/{bookingId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/savedBooking/{sessionId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/savedBooking/{sessionId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/getToken": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/getToken"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.month": "method.request.path.month",
- 
-            "integration.request.path.year": "method.request.path.year",
- 
-            "integration.request.path.batch": "method.request.path.batch",
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/monthlyRefunds/{value}/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.value": "method.request.path.value",
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/monthlyRefunds/{value}/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/dailyRefunds/{value}/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.value": "method.request.path.value",
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/dailyRefunds/{value}/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/bookingReports/{duration}/{value}/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.duration": "method.request.path.duration",
- 
-            "integration.request.path.value": "method.request.path.value",
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/bookingReports/{duration}/{value}/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/bookingFailedClean/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/bookingFailedClean/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/reschedule/searchInit": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/reschedule/searchInit"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/reschedule/saveBooking": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/reschedule/saveBooking"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/requestRescheduling": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/flights/requestRescheduling"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/reschedule/searchResult/{sessionId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/reschedule/searchResult/{sessionId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/flights/airlines/rules/{bookingId}/{pnr}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
+           "integration.request.path.userId": "method.request.path.userId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/wallet/create/{userId}"
+        }
+      }
+    },
+    "/api/wallet/closingBalance/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/wallet/closingBalance/{token}"
+        }
+      }
+    },
+    "/api/wallet/walletReconcile/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/wallet/walletReconcile/{token}"
+        }
+      }
+    },
+    "/api/user/getTravellersCount/{category}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.category": "method.request.path.category"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getTravellersCount/{category}"
+        }
+      }
+    },
+    "/api/user/deleteTraveller/{travellerId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.travellerId": "method.request.path.travellerId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/deleteTraveller/{travellerId}"
+        }
+      }
+    },
+    "/api/user/getTravellersCount/{category}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+       "requestParameters": {
+            "integration.request.path.category": "method.request.path.category"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getTravellersCount/{category}"
+        }
+      }
+    },
+    "/api/user/getTripsCount/{category}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+            "integration.request.path.category": "method.request.path.category"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getTripsCount/{category}"
+        }
+      }
+    },
+    "/api/user/getBookingDetails/{bookingId}/{flightId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
             "integration.request.path.bookingId": "method.request.path.bookingId",
- 
-            "integration.request.path.pnr": "method.request.path.pnr"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/flights/airlines/rules/{bookingId}/{pnr}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/paymentInit": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/paymentInit"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/newPaymentInit": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/newPaymentInit"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/success/{orderId}": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.orderId": "method.request.path.orderId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/success/{orderId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/success": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/success"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/add": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/add"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/fail": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/fail"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/cancel": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/payments/cancel"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/transactions/{date}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.date": "method.request.path.date"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/payments/transactions/{date}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/payments/paymentProviders/{sessionId}/{product}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId",
- 
-            "integration.request.path.product": "method.request.path.product"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/payments/paymentProviders/{sessionId}/{product}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/neft/add": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/neft/add"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/neft/add/cashLedger": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/neft/add/cashLedger"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/neft/validateIFSC/{code}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.code": "method.request.path.code"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/neft/validateIFSC/{code}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/coupon/list": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/coupon/list"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/coupon": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/coupon"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/coupon/all/{token}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.token": "method.request.path.token"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/coupon/all/{token}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/coupon/generateEmployeeCoupon/{sessionId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.sessionId": "method.request.path.sessionId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/coupon/generateEmployeeCoupon/{sessionId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/common/careers/getAll": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/common/careers/getAll"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/common/careers/get/{careerId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.careerId": "method.request.path.careerId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/common/careers/get/{careerId}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/common/jobApplication": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/common/careers/jobApplication"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/common/locations/getAll": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/common/locations/getAll"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/common/news/getAll": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/common/news/getAll"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/cancellations/add": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/cancellations/add"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/cancellations/addCancellation": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/cancellations/addCancellation"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/cancellations/update": {
- 
-       "post": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "POST",
- 
-           "uri":"<DOMAIN_URL>/api/cancellations/update"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/cancellations/{pnr}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/cancellations/{pnr}"
- 
-         }
- 
-       }
- 
-     },
- 
-     "/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
- 
-       "get": {
- 
-         "produces": [
- 
-           "application/json"
- 
-         ],
- 
-         "parameters": [{
- 
-           "in": "header",
- 
-           "name": "Cookie",
- 
-           "required": true
- 
-         }],
- 
-         "requestParameters": {
- 
-            "integration.request.path.bookingId": "method.request.path.bookingId",
- 
             "integration.request.path.flightId": "method.request.path.flightId"
- 
-         },
- 
-         "responses": {},
- 
-         "x-amazon-apigateway-integration": {
- 
-           "passthroughBehavior": "WHEN_NO_MATCH",
- 
-           "type": "HTTP_PROXY",
- 
-           "httpMethod": "GET",
- 
-           "uri":"<DOMAIN_URL>/api/cancellations/listRefundModes/{bookingId}/{flightId}"
- 
-         }
- 
-       }
- 
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getBookingDetails/{bookingId}/{flightId}"
+        }
       }
- 
-     },
- 
+    },
+    "/api/user/verifyOtp/{otp}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+            "integration.request.path.otp": "method.request.path.otp"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/sendOtp/{otp}"
+        }
+      }
+    },
+    "api/user/getUserDetails/{userId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "requestParameters": {
+            "integration.request.path.userId": "method.request.path.userId"
+        },
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/getUserDetails/{userId}"
+        }
+      }
+    },
+    "/api/user/getTravellerDetails/{travellerId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/user/getTravellerDetails/{travellerId}"
+        }
+      }
+    },
+    "/api/user/requestTravellerVerification/{travellerId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+            "integration.request.path.travellerId": "method.request.path.travellerId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/user/requestTravellerVerification/{travellerId}"
+        }
+      }
+    },
+    "/api/support/getBookingDetails/{pnr}/{email}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.pnr": "method.request.path.pnr",
+           "integration.request.path.email": "method.request.path.email"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/getBookingDetails/{pnr}/{email}"
+        }
+      }
+    },
+    "/api/support/getPdf/{pnr}/{email}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.pnr": "method.request.path.pnr",
+           "integration.request.path.email": "method.request.path.email"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/getPdf/{pnr}/{email}"
+        }
+      }
+    },
+    "/api/support/getInvoicePdf/{pnr}/{email}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.pnr": "method.request.path.pnr",
+           "integration.request.path.email": "method.request.path.email"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/getInvoicePdf/{pnr}/{email}"
+        }
+      }
+    },
+    "/api/support/sendEmail/{pnr}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.pnr": "method.request.path.pnr"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/sendEmail/{pnr}"
+        }
+      }
+    },
+    "/api/support/emailInvoice/{pnr}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.pnr": "method.request.path.pnr"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/emailInvoice/{pnr}"
+        }
+      }
+    },
+    "/api/support/sendSms/{pnr}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.pnr": "method.request.path.pnr"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/sendSms/{pnr}"
+        }
+      }
+    },
+    "/api/support/isLatest/{version}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.version": "method.request.path.version"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/isLatest/{version}"
+        }
+      }
+    },
+    "/api/support/isLatestIOS/{version}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.version": "method.request.path.version"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/isLatestIOS/{version}"
+        }
+      }
+    },
+    "/api/support/allok/{bookingId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.bookingId": "method.request.path.bookingId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/allok/{bookingId}"
+        }
+      }
+    },
+    "/api/support/getLTC/{bookingId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.bookingId": "method.request.path.bookingId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/getLTC/{bookingId}"
+        }
+      }
+    },
+    "/api/support/getPolicies/{type}/{hotelName}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.type": "method.request.path.type",
+           "integration.request.path.hotelName": "method.request.path.hotelName"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/getPolicies/{type}/{hotelName}"
+        }
+      }
+    },
+    "/api/support/getVisaRequirements/{destinationCountryCode}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/support/getVisaRequirements/{destinationCountryCode}"
+        }
+      }
+    },
+    "/api/support/getVisaRequirements/{destinationCountryCode}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/support/getVisaRequirements/{destinationCountryCode}"
+        }
+      }
+    },
+    "/api/support/notifySupport": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.type": "method.request.path.type",
+           "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/support/notifySupport"
+        }
+      }
+    },
+    "/api/support/log": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/support/log"
+        }
+      }
+    },
+    "/api/support/log": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/support/log"
+        }
+      }
+    },
+    "/api/referral": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/referral"
+        }
+      }
+    },
+    "/api/supplier/add": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/add"
+        }
+      }
+    },
+    "/api/supplier/update": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/update"
+        }
+      }
+    },
+    "/api/supplier/all": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/all"
+        }
+      }
+    },
+    "/api/flights/health": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/health"
+        }
+      }
+    },
+    "/api/supplier/searchInit": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/searchInit"
+        }
+      }
+    },
+    "/api/supplier/rebooking": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/rebooking"
+        }
+      }
+    },
+    "/api/supplier/getRequest/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/getRequest/{sessionId}"
+        }
+      }
+    },
+    "/api/supplier/searchStatus/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/searchStatus/{sessionId}"
+        }
+      }
+    },
+    "/api/supplier/searchResult/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/searchResult/{sessionId}"
+        }
+      }
+    },
+    "/api/supplier/price": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/price"
+        }
+      }
+    },
+    "/api/supplier/saveBooking": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/saveBooking"
+        }
+      }
+    },
+    "/api/supplier/bookStatus/{bookingId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.bookingId": "method.request.path.bookingId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/bookStatus/{bookingId}"
+        }
+      }
+    },
+    "/api/supplier/bookResult/{bookingId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.bookingId": "method.request.path.bookingId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/bookResult/{bookingId}"
+        }
+      }
+    },
+    "/api/supplier/createBooking": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/createBooking"
+        }
+      }
+    },
+    "/api/supplier/updateBooking": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/supplier/updateBooking"
+        }
+      }
+    },
+    "/api/supplier/getTicket/{bookingId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/getTicket/{bookingId}"
+        }
+      }
+    },
+    "/api/supplier/airports": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/airports"
+        }
+      }
+    },
+    "/api/supplier/airports/invalidate": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/airports/invalidate"
+        }
+      }
+    },
+    "/api/flights/getAirports": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/supplier/getAirports"
+        }
+      }
+    },
+    "/api/flights/addAirports": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/addAirports"
+        }
+      }
+    },
+    "/api/flights/addPaymentCollentionDetails": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/addPaymentCollentionDetails"
+        }
+      }
+    },
+    "/api/flights/collectLaterCount": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/collectLaterCount"
+        }
+      }
+    },
+    "/api/flights/accountPendingCount": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/accountPendingCount"
+        }
+      }
+    },
+    "/api/flights/estimatedRefund": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/estimatedRefund"
+        }
+      }
+    },
+    "/api/flights/priceAndSave": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/priceAndSave"
+        }
+      }
+    },
+    "/api/flights/savedBooking/{sessionId}/{bookingId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId",
+           "integration.request.path.bookingId": "method.request.path.bookingId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/savedBooking/{sessionId}/{bookingId}"
+        }
+      }
+    },
+    "/api/flights/savedBooking/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/savedBooking/{sessionId}"
+        }
+      }
+    },
+    "/api/flights/getToken": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/getToken"
+        }
+      }
+    },
+    "/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.month": "method.request.path.month",
+           "integration.request.path.year": "method.request.path.year",
+           "integration.request.path.batch": "method.request.path.batch",
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}"
+        }
+      }
+    },
+    "/api/flights/monthlyRefunds/{value}/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.value": "method.request.path.value",
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/monthlyRefunds/{value}/{token}"
+        }
+      }
+    },
+    "/api/flights/dailyRefunds/{value}/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.value": "method.request.path.value",
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/dailyRefunds/{value}/{token}"
+        }
+      }
+    },
+    "/api/flights/bookingReports/{duration}/{value}/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.duration": "method.request.path.duration",
+           "integration.request.path.value": "method.request.path.value",
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/bookingReports/{duration}/{value}/{token}"
+        }
+      }
+    },
+    "/api/flights/bookingFailedClean/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/bookingFailedClean/{token}"
+        }
+      }
+    },
+    "/api/flights/reschedule/searchInit": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/reschedule/searchInit"
+        }
+      }
+    },
+    "/api/flights/reschedule/saveBooking": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/reschedule/saveBooking"
+        }
+      }
+    },
+    "/api/flights/requestRescheduling": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/flights/requestRescheduling"
+        }
+      }
+    },
+    "/api/flights/reschedule/searchResult/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/reschedule/searchResult/{sessionId}"
+        }
+      }
+    },
+    "/api/flights/airlines/rules/{bookingId}/{pnr}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.bookingId": "method.request.path.bookingId",
+           "integration.request.path.pnr": "method.request.path.pnr"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/flights/airlines/rules/{bookingId}/{pnr}"
+        }
+      }
+    },
+    "/api/payments/paymentInit": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/paymentInit"
+        }
+      }
+    },
+    "/api/payments/newPaymentInit": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/newPaymentInit"
+        }
+      }
+    },
+    "/api/payments/success/{orderId}": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.orderId": "method.request.path.orderId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/success/{orderId}"
+        }
+      }
+    },
+    "/api/payments/success": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/success"
+        }
+      }
+    },
+    "/api/payments/add": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/add"
+        }
+      }
+    },
+    "/api/payments/fail": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/fail"
+        }
+      }
+    },
+    "/api/payments/cancel": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/payments/cancel"
+        }
+      }
+    },
+    "/api/payments/transactions/{date}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.date": "method.request.path.date"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/payments/transactions/{date}"
+        }
+      }
+    },
+    "/api/payments/paymentProviders/{sessionId}/{product}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId",
+           "integration.request.path.product": "method.request.path.product"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/payments/paymentProviders/{sessionId}/{product}"
+        }
+      }
+    },
+    "/api/neft/add": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/neft/add"
+        }
+      }
+    },
+    "/api/neft/add/cashLedger": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/neft/add/cashLedger"
+        }
+      }
+    },
+    "/api/neft/validateIFSC/{code}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.code": "method.request.path.code"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/neft/validateIFSC/{code}"
+        }
+      }
+    },
+    "/api/coupon/list": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/coupon/list"
+        }
+      }
+    },
+    "/api/coupon": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/coupon"
+        }
+      }
+    },
+    "/api/coupon/all/{token}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.token": "method.request.path.token"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/coupon/all/{token}"
+        }
+      }
+    },
+    "/api/coupon/generateEmployeeCoupon/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/coupon/generateEmployeeCoupon/{sessionId}"
+        }
+      }
+    },
+    "/api/common/careers/getAll": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/common/careers/getAll"
+        }
+      }
+    },
+    "/api/common/careers/get/{careerId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.careerId": "method.request.path.careerId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/common/careers/get/{careerId}"
+        }
+      }
+    },
+    "/api/common/jobApplication": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/common/careers/jobApplication"
+        }
+      }
+    },
+    "/api/common/locations/getAll": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/common/locations/getAll"
+        }
+      }
+    },
+    "/api/common/news/getAll": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/common/news/getAll"
+        }
+      }
+    },
+    "/api/cancellations/add": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/cancellations/add"
+        }
+      }
+    },
+    "/api/cancellations/addCancellation": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/cancellations/addCancellation"
+        }
+      }
+    },
+    "/api/cancellations/update": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "POST",
+          "uri":"<DOMAIN_URL>/api/cancellations/update"
+        }
+      }
+    },
+    "/api/cancellations/{pnr}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/cancellations/{pnr}"
+        }
+      }
+    },
+    "/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
+        "requestParameters": {
+           "integration.request.path.bookingId": "method.request.path.bookingId",
+           "integration.request.path.flightId": "method.request.path.flightId"
+        },
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "GET",
+          "uri":"<DOMAIN_URL>/api/cancellations/listRefundModes/{bookingId}/{flightId}"
+        }
+      }
+    },
     "/admin": {
-
       "x-amazon-apigateway-any-method": {
-
         "description": "Test API",
-
         "x-amazon-apigateway-integration": {
-
           "passthroughBehavior": "WHEN_NO_MATCH",
-
           "type": "HTTP_PROXY",
-
           "httpMethod": "ANY",
-
           "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}"
-
         }
-
       }
-
     },
-
     "/hotel": {
-
       "x-amazon-apigateway-any-method": {
-
         "description": "Test API",
-
         "x-amazon-apigateway-integration": {
-
           "passthroughBehavior": "WHEN_NO_MATCH",
-
           "type": "HTTP_PROXY",
-
           "httpMethod": "ANY",
-
           "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
-
         }
-
       }
-
     },
-
     "/{proxy+}": {
-
       "x-amazon-apigateway-any-method": {
-
         "description": "Test API",
-
         "x-amazon-apigateway-integration": {
-
           "passthroughBehavior": "WHEN_NO_MATCH",
-
           "type": "HTTP_PROXY",
-
           "httpMethod": "ANY",
-
           "uri":"https://<NODE_ENV>-server-admin.udchalo.com"
-
         }
-
       }
-
     }
-
   }
-
 }
