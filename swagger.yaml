@@ -8,7 +8,7 @@
     "https"
   ],
   "paths": {    
-     "/api/user/login": {
+     "/server/api/user/login": {
       "post": {
         "produces": [
           "application/json"
@@ -27,7 +27,7 @@
         }
       }
     },
-    "/api/user/profile": {
+    "/server/api/user/profile": {
       "get": {
         "produces": [
           "application/json"
@@ -46,7 +46,7 @@
         }
       }
     },
-    "/api/user/getProfile": {
+    "/server/api/user/getProfile": {
       "get": {
         "produces": [
           "application/json"
@@ -65,7 +65,7 @@
         }
       }
     },
-    "/api/user/updateProfile": {
+    "/server/api/user/updateProfile": {
       "post": {
         "produces": [
           "application/json"
@@ -84,7 +84,7 @@
         }
       }
     },
-    "/api/user/updatePassword": {
+    "/server/api/user/updatePassword": {
       "post": {
         "produces": [
           "application/json"
@@ -103,7 +103,7 @@
         }
       }
     },
-    "/api/user/updatePasswordViaForgotLink": {
+    "/server/api/user/updatePasswordViaForgotLink": {
       "post": {
         "produces": [
           "application/json"
@@ -122,7 +122,7 @@
         }
       }
     },
-    "/api/user/updateProfilePic": {
+    "/server/api/user/updateProfilePic": {
       "post": {
         "produces": [
           "application/json"
@@ -141,7 +141,7 @@
         }
       }
     },
-    "/api/user/updateSettings": {
+    "/server/api/user/updateSettings": {
       "post": {
         "produces": [
           "application/json"
@@ -160,7 +160,7 @@
         }
       }
     },
-    "/api/user/forgotPassword": {
+    "/server/api/user/forgotPassword": {
       "post": {
         "produces": [
           "application/json"
@@ -179,7 +179,7 @@
         }
       }
     },
-    "/api/user/verifyPasswordResetLink": {
+    "/server/api/user/verifyPasswordResetLink": {
       "post": {
         "produces": [
           "application/json"
@@ -198,7 +198,7 @@
         }
       }
     },
-    "/api/user/deleteAccount": {
+    "/server/api/user/deleteAccount": {
       "get": {
         "produces": [
           "application/json"
@@ -217,7 +217,7 @@
         }
       }
     },
-    "/api/user/auth/facebook": {
+    "/server/api/user/auth/facebook": {
       "get": {
         "produces": [
           "application/json"
@@ -236,7 +236,7 @@
         }
       }
     },
-    "/api/user/auth/facebook/callback": {
+    "/server/api/user/auth/facebook/callback": {
       "get": {
         "produces": [
           "application/json"
@@ -255,7 +255,7 @@
         }
       }
     },
-    "/api/user/auth/google": {
+    "/server/api/user/auth/google": {
       "get": {
         "produces": [
           "application/json"
@@ -274,7 +274,7 @@
         }
       }
     },
-    "/api/user/auth/google/callback": {
+    "/server/api/user/auth/google/callback": {
       "get": {
         "produces": [
           "application/json"
@@ -293,7 +293,7 @@
         }
       }
     },
-    "/api/user/auth/linkedin": {
+    "/server/api/user/auth/linkedin": {
       "get": {
         "produces": [
           "application/json"
@@ -312,7 +312,7 @@
         }
       }
     },
-    "/api/user/auth/linkedin/callback": {
+    "/server/api/user/auth/linkedin/callback": {
       "get": {
         "produces": [
           "application/json"
@@ -331,7 +331,7 @@
         }
       }
     },
-    "/api/user/signup": {
+    "/server/api/user/signup": {
       "post": {
         "produces": [
           "application/json"
@@ -350,7 +350,7 @@
         }
       }
     },
-    "/api/user/login": {
+    "/server/api/user/login": {
       "post": {
         "produces": [
           "application/json"
@@ -369,7 +369,7 @@
         }
       }
     },
-    "/api/user/authenticated": {
+    "/server/api/user/authenticated": {
       "get": {
         "produces": [
           "application/json"
@@ -388,7 +388,7 @@
         }
       }
     },
-    "/api/user/logout": {
+    "/server/api/user/logout": {
       "get": {
         "produces": [
           "application/json"
@@ -407,7 +407,7 @@
         }
       }
     },
-    "/api/user/sendEmailVerificationLink": {
+    "/server/api/user/sendEmailVerificationLink": {
       "get": {
         "produces": [
           "application/json"
@@ -426,7 +426,7 @@
         }
       }
     },
-    "/api/user/verifyEmail": {
+    "/server/api/user/verifyEmail": {
       "post": {
         "produces": [
           "application/json"
@@ -445,7 +445,7 @@
         }
       }
     },
-    "/api/user/sendOtp": {
+    "/server/api/user/sendOtp": {
       "post": {
         "produces": [
           "application/json"
@@ -464,7 +464,7 @@
         }
       }
     },
-    "/api/user/requestUsercategoryVerification": {
+    "/server/api/user/requestUsercategoryVerification": {
       "post": {
         "produces": [
           "application/json"
@@ -483,7 +483,7 @@
         }
       }
     },
-    "/api/user/cashDeposit": {
+    "/server/api/user/cashDeposit": {
       "post": {
         "produces": [
           "application/json"
@@ -502,7 +502,7 @@
         }
       }
     },
-    "/api/user/cashDeposits": {
+    "/server/api/user/cashDeposits": {
       "get": {
         "produces": [
           "application/json"
@@ -521,7 +521,7 @@
         }
       }
     },
-    "/api/user/cashDeposits/count": {
+    "/server/api/user/cashDeposits/count": {
       "get": {
         "produces": [
           "application/json"
@@ -540,7 +540,7 @@
         }
       }
     },
-    "/api/user/cashDeposits/update": {
+    "/server/api/user/cashDeposits/update": {
       "post": {
         "produces": [
           "application/json"
@@ -559,7 +559,7 @@
         }
       }
     },
-    "/api/user/addTraveller": {
+    "/server/api/user/addTraveller": {
       "post": {
         "produces": [
           "application/json"
@@ -578,7 +578,7 @@
         }
       }
     },
-    "/api/user/updateTraveller": {
+    "/server/api/user/updateTraveller": {
       "post": {
         "produces": [
           "application/json"
@@ -597,7 +597,7 @@
         }
       }
     },
-    "/api/user/getAllBookings": {
+    "/server/api/user/getAllBookings": {
       "post": {
         "produces": [
           "application/json"
@@ -616,7 +616,7 @@
         }
       }
     },
-    "/api/user/getBooking": {
+    "/server/api/user/getBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -635,7 +635,7 @@
         }
       }
     },
-    "/api/user/getCancellations": {
+    "/server/api/user/getCancellations": {
       "post": {
         "produces": [
           "application/json"
@@ -654,7 +654,7 @@
         }
       }
     },
-    "/api/user/getTripsTillDate": {
+    "/server/api/user/getTripsTillDate": {
       "post": {
         "produces": [
           "application/json"
@@ -673,7 +673,7 @@
         }
       }
     },
-    "/api/user/createAgent": {
+    "/server/api/user/createAgent": {
       "post": {
         "produces": [
           "application/json"
@@ -692,7 +692,7 @@
         }
       }
     },
-    "/api/user/sendOtpForLogin": {
+    "/server/api/user/sendOtpForLogin": {
       "post": {
         "produces": [
           "application/json"
@@ -711,7 +711,7 @@
         }
       }
     },
-    "/api/user/loginViaOtp": {
+    "/server/api/user/loginViaOtp": {
       "post": {
         "produces": [
           "application/json"
@@ -730,7 +730,7 @@
         }
       }
     },
-    "/api/user/sendOtpForSignup": {
+    "/server/api/user/sendOtpForSignup": {
       "post": {
         "produces": [
           "application/json"
@@ -749,7 +749,7 @@
         }
       }
     },
-    "/api/user/signupViaOtp": {
+    "/server/api/user/signupViaOtp": {
       "post": {
         "produces": [
           "application/json"
@@ -768,7 +768,7 @@
         }
       }
     },
-    "/api/user/merge": {
+    "/server/api/user/merge": {
       "post": {
         "produces": [
           "application/json"
@@ -787,7 +787,7 @@
         }
       }
     },
-    "/api/user/getCancellations": {
+    "/server/api/user/getCancellations": {
       "get": {
         "produces": [
           "application/json"
@@ -806,7 +806,7 @@
         }
       }
     },
-    "/api/user/getTravellers": {
+    "/server/api/user/getTravellers": {
       "get": {
         "produces": [
           "application/json"
@@ -825,7 +825,7 @@
         }
       }
     },
-    "/api/wallet/getBalance": {
+    "/server/api/wallet/getBalance": {
       "get": {
         "produces": [
           "application/json"
@@ -844,7 +844,7 @@
         }
       }
     },
-    "/api/wallet/getTransactions": {
+    "/server/api/wallet/getTransactions": {
       "post": {
         "produces": [
           "application/json"
@@ -863,7 +863,7 @@
         }
       }
     },
-    "/api/wallet/sendBalAlert": {
+    "/server/api/wallet/sendBalAlert": {
       "post": {
         "produces": [
           "application/json"
@@ -882,7 +882,7 @@
         }
       }
     },
-    "/api/wallet/refund": {
+    "/server/api/wallet/refund": {
       "get": {
         "produces": [
           "application/json"
@@ -901,7 +901,7 @@
         }
       }
     },
-    "/api/verification/categoryVerification": {
+    "/server/api/verification/categoryVerification": {
       "post": {
         "produces": [
           "application/json"
@@ -920,7 +920,7 @@
         }
       }
     },
-    "/api/wallet/create/{userId}": {
+    "/server/api/wallet/create/{userId}": {
       "get": {
         "produces": [
           "application/json"
@@ -942,7 +942,7 @@
         }
       }
     },
-    "/api/wallet/closingBalance/{token}": {
+    "/server/api/wallet/closingBalance/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -964,7 +964,7 @@
         }
       }
     },
-    "/api/wallet/walletReconcile/{token}": {
+    "/server/api/wallet/walletReconcile/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -986,7 +986,7 @@
         }
       }
     },
-    "/api/user/getTravellersCount/{category}": {
+    "/server/api/user/getTravellersCount/{category}": {
       "get": {
         "produces": [
           "application/json"
@@ -1008,7 +1008,7 @@
         }
       }
     },
-    "/api/user/deleteTraveller/{travellerId}": {
+    "/server/api/user/deleteTraveller/{travellerId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1030,7 +1030,7 @@
         }
       }
     },
-    "/api/user/getTravellersCount/{category}": {
+    "/server/api/user/getTravellersCount/{category}": {
       "get": {
         "produces": [
           "application/json"
@@ -1052,7 +1052,7 @@
         }
       }
     },
-    "/api/user/getTripsCount/{category}": {
+    "/server/api/user/getTripsCount/{category}": {
       "get": {
         "produces": [
           "application/json"
@@ -1074,7 +1074,7 @@
         }
       }
     },
-    "/api/user/getBookingDetails/{bookingId}/{flightId}": {
+    "/server/api/user/getBookingDetails/{bookingId}/{flightId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1097,7 +1097,7 @@
         }
       }
     },
-    "/api/user/verifyOtp/{otp}": {
+    "/server/api/user/verifyOtp/{otp}": {
       "get": {
         "produces": [
           "application/json"
@@ -1141,7 +1141,7 @@
         }
       }
     },
-    "/api/user/getTravellerDetails/{travellerId}": {
+    "/server/api/user/getTravellerDetails/{travellerId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1160,7 +1160,7 @@
         }
       }
     },
-    "/api/user/requestTravellerVerification/{travellerId}": {
+    "/server/api/user/requestTravellerVerification/{travellerId}": {
       "post": {
         "produces": [
           "application/json"
@@ -1182,7 +1182,7 @@
         }
       }
     },
-    "/api/support/getBookingDetails/{pnr}/{email}": {
+    "/server/api/support/getBookingDetails/{pnr}/{email}": {
       "get": {
         "produces": [
           "application/json"
@@ -1205,7 +1205,7 @@
         }
       }
     },
-    "/api/support/getPdf/{pnr}/{email}": {
+    "/server/api/support/getPdf/{pnr}/{email}": {
       "get": {
         "produces": [
           "application/json"
@@ -1228,7 +1228,7 @@
         }
       }
     },
-    "/api/support/getInvoicePdf/{pnr}/{email}": {
+    "/server/api/support/getInvoicePdf/{pnr}/{email}": {
       "get": {
         "produces": [
           "application/json"
@@ -1251,7 +1251,7 @@
         }
       }
     },
-    "/api/support/sendEmail/{pnr}": {
+    "/server/api/support/sendEmail/{pnr}": {
       "get": {
         "produces": [
           "application/json"
@@ -1273,7 +1273,7 @@
         }
       }
     },
-    "/api/support/emailInvoice/{pnr}": {
+    "/server/api/support/emailInvoice/{pnr}": {
       "get": {
         "produces": [
           "application/json"
@@ -1295,7 +1295,7 @@
         }
       }
     },
-    "/api/support/sendSms/{pnr}": {
+    "/server/api/support/sendSms/{pnr}": {
       "get": {
         "produces": [
           "application/json"
@@ -1317,7 +1317,7 @@
         }
       }
     },
-    "/api/support/isLatest/{version}": {
+    "/server/api/support/isLatest/{version}": {
       "get": {
         "produces": [
           "application/json"
@@ -1339,7 +1339,7 @@
         }
       }
     },
-    "/api/support/isLatestIOS/{version}": {
+    "/server/api/support/isLatestIOS/{version}": {
       "get": {
         "produces": [
           "application/json"
@@ -1361,7 +1361,7 @@
         }
       }
     },
-    "/api/support/allok/{bookingId}": {
+    "/server/api/support/allok/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1383,7 +1383,7 @@
         }
       }
     },
-    "/api/support/getLTC/{bookingId}": {
+    "/server/api/support/getLTC/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1405,7 +1405,7 @@
         }
       }
     },
-    "/api/support/getPolicies/{type}/{hotelName}": {
+    "/server/api/support/getPolicies/{type}/{hotelName}": {
       "get": {
         "produces": [
           "application/json"
@@ -1428,7 +1428,7 @@
         }
       }
     },
-    "/api/support/getVisaRequirements/{destinationCountryCode}": {
+    "/server/api/support/getVisaRequirements/{destinationCountryCode}": {
       "get": {
         "produces": [
           "application/json"
@@ -1450,7 +1450,7 @@
         }
       }
     },
-    "/api/support/getVisaRequirements/{destinationCountryCode}": {
+    "/server/api/support/getVisaRequirements/{destinationCountryCode}": {
       "post": {
         "produces": [
           "application/json"
@@ -1472,7 +1472,7 @@
         }
       }
     },
-    "/api/support/notifySupport": {
+    "/server/api/support/notifySupport": {
       "post": {
         "produces": [
           "application/json"
@@ -1495,7 +1495,7 @@
         }
       }
     },
-    "/api/support/log": {
+    "/server/api/support/log": {
       "post": {
         "produces": [
           "application/json"
@@ -1514,7 +1514,7 @@
         }
       }
     },
-    "/api/support/log": {
+    "/server/api/support/log": {
       "post": {
         "produces": [
           "application/json"
@@ -1533,7 +1533,7 @@
         }
       }
     },
-    "/api/referral": {
+    "/server/api/referral": {
       "get": {
         "produces": [
           "application/json"
@@ -1552,7 +1552,7 @@
         }
       }
     },
-    "/api/supplier/add": {
+    "/server/api/supplier/add": {
       "post": {
         "produces": [
           "application/json"
@@ -1571,7 +1571,7 @@
         }
       }
     },
-    "/api/supplier/update": {
+    "/server/api/supplier/update": {
       "post": {
         "produces": [
           "application/json"
@@ -1590,7 +1590,7 @@
         }
       }
     },
-    "/api/supplier/all": {
+    "/server/api/supplier/all": {
       "get": {
         "produces": [
           "application/json"
@@ -1609,7 +1609,7 @@
         }
       }
     },
-    "/api/flights/health": {
+    "/server/api/flights/health": {
       "get": {
         "produces": [
           "application/json"
@@ -1628,7 +1628,7 @@
         }
       }
     },
-    "/api/supplier/searchInit": {
+    "/server/api/supplier/searchInit": {
       "post": {
         "produces": [
           "application/json"
@@ -1647,7 +1647,7 @@
         }
       }
     },
-    "/api/supplier/rebooking": {
+    "/server/api/supplier/rebooking": {
       "get": {
         "produces": [
           "application/json"
@@ -1666,7 +1666,7 @@
         }
       }
     },
-    "/api/supplier/getRequest/{sessionId}": {
+    "/server/api/supplier/getRequest/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1688,7 +1688,7 @@
         }
       }
     },
-    "/api/supplier/searchStatus/{sessionId}": {
+    "/server/api/supplier/searchStatus/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1710,7 +1710,7 @@
         }
       }
     },
-    "/api/supplier/searchResult/{sessionId}": {
+    "/server/api/supplier/searchResult/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1732,7 +1732,7 @@
         }
       }
     },
-    "/api/supplier/price": {
+    "/server/api/supplier/price": {
       "post": {
         "produces": [
           "application/json"
@@ -1751,7 +1751,7 @@
         }
       }
     },
-    "/api/supplier/saveBooking": {
+    "/server/api/supplier/saveBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -1770,7 +1770,7 @@
         }
       }
     },
-    "/api/supplier/bookStatus/{bookingId}": {
+    "/server/api/supplier/bookStatus/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1792,7 +1792,7 @@
         }
       }
     },
-    "/api/supplier/bookResult/{bookingId}": {
+    "/server/api/supplier/bookResult/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1814,7 +1814,7 @@
         }
       }
     },
-    "/api/supplier/createBooking": {
+    "/server/api/supplier/createBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -1833,7 +1833,7 @@
         }
       }
     },
-    "/api/supplier/updateBooking": {
+    "/server/api/supplier/updateBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -1852,7 +1852,7 @@
         }
       }
     },
-    "/api/supplier/getTicket/{bookingId}": {
+    "/server/api/supplier/getTicket/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -1871,7 +1871,7 @@
         }
       }
     },
-    "/api/supplier/airports": {
+    "/server/api/supplier/airports": {
       "get": {
         "produces": [
           "application/json"
@@ -1890,7 +1890,7 @@
         }
       }
     },
-    "/api/supplier/airports/invalidate": {
+    "/server/api/supplier/airports/invalidate": {
       "get": {
         "produces": [
           "application/json"
@@ -1909,7 +1909,7 @@
         }
       }
     },
-    "/api/flights/getAirports": {
+    "/server/api/flights/getAirports": {
       "get": {
         "produces": [
           "application/json"
@@ -1928,7 +1928,7 @@
         }
       }
     },
-    "/api/flights/addAirports": {
+    "/server/api/flights/addAirports": {
       "post": {
         "produces": [
           "application/json"
@@ -1947,7 +1947,7 @@
         }
       }
     },
-    "/api/flights/addPaymentCollentionDetails": {
+    "/server/api/flights/addPaymentCollentionDetails": {
       "post": {
         "produces": [
           "application/json"
@@ -1966,7 +1966,7 @@
         }
       }
     },
-    "/api/flights/collectLaterCount": {
+    "/server/api/flights/collectLaterCount": {
       "get": {
         "produces": [
           "application/json"
@@ -1985,7 +1985,7 @@
         }
       }
     },
-    "/api/flights/accountPendingCount": {
+    "/server/api/flights/accountPendingCount": {
       "get": {
         "produces": [
           "application/json"
@@ -2004,7 +2004,7 @@
         }
       }
     },
-    "/api/flights/estimatedRefund": {
+    "/server/api/flights/estimatedRefund": {
       "post": {
         "produces": [
           "application/json"
@@ -2023,7 +2023,7 @@
         }
       }
     },
-    "/api/flights/priceAndSave": {
+    "/server/api/flights/priceAndSave": {
       "post": {
         "produces": [
           "application/json"
@@ -2042,7 +2042,7 @@
         }
       }
     },
-    "/api/flights/savedBooking/{sessionId}/{bookingId}": {
+    "/server/api/flights/savedBooking/{sessionId}/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -2065,7 +2065,7 @@
         }
       }
     },
-    "/api/flights/savedBooking/{sessionId}": {
+    "/server/api/flights/savedBooking/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -2087,7 +2087,7 @@
         }
       }
     },
-    "/api/flights/getToken": {
+    "/server/api/flights/getToken": {
       "get": {
         "produces": [
           "application/json"
@@ -2106,7 +2106,7 @@
         }
       }
     },
-    "/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
+    "/server/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -2131,7 +2131,7 @@
         }
       }
     },
-    "/api/flights/monthlyRefunds/{value}/{token}": {
+    "/server/api/flights/monthlyRefunds/{value}/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -2154,7 +2154,7 @@
         }
       }
     },
-    "/api/flights/dailyRefunds/{value}/{token}": {
+    "/server/api/flights/dailyRefunds/{value}/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -2177,7 +2177,7 @@
         }
       }
     },
-    "/api/flights/bookingReports/{duration}/{value}/{token}": {
+    "/server/api/flights/bookingReports/{duration}/{value}/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -2201,7 +2201,7 @@
         }
       }
     },
-    "/api/flights/bookingFailedClean/{token}": {
+    "/server/api/flights/bookingFailedClean/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -2223,7 +2223,7 @@
         }
       }
     },
-    "/api/flights/reschedule/searchInit": {
+    "/server/api/flights/reschedule/searchInit": {
       "post": {
         "produces": [
           "application/json"
@@ -2242,7 +2242,7 @@
         }
       }
     },
-    "/api/flights/reschedule/saveBooking": {
+    "/server/api/flights/reschedule/saveBooking": {
       "post": {
         "produces": [
           "application/json"
@@ -2261,7 +2261,7 @@
         }
       }
     },
-    "/api/flights/requestRescheduling": {
+    "/server/api/flights/requestRescheduling": {
       "post": {
         "produces": [
           "application/json"
@@ -2280,7 +2280,7 @@
         }
       }
     },
-    "/api/flights/reschedule/searchResult/{sessionId}": {
+    "/server/api/flights/reschedule/searchResult/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -2302,7 +2302,7 @@
         }
       }
     },
-    "/api/flights/airlines/rules/{bookingId}/{pnr}": {
+    "/server/api/flights/airlines/rules/{bookingId}/{pnr}": {
       "get": {
         "produces": [
           "application/json"
@@ -2325,7 +2325,7 @@
         }
       }
     },
-    "/api/payments/paymentInit": {
+    "/server/api/payments/paymentInit": {
       "post": {
         "produces": [
           "application/json"
@@ -2344,7 +2344,7 @@
         }
       }
     },
-    "/api/payments/newPaymentInit": {
+    "/server/api/payments/newPaymentInit": {
       "post": {
         "produces": [
           "application/json"
@@ -2363,7 +2363,7 @@
         }
       }
     },
-    "/api/payments/success/{orderId}": {
+    "/server/api/payments/success/{orderId}": {
       "post": {
         "produces": [
           "application/json"
@@ -2385,7 +2385,7 @@
         }
       }
     },
-    "/api/payments/success": {
+    "/server/api/payments/success": {
       "post": {
         "produces": [
           "application/json"
@@ -2404,7 +2404,7 @@
         }
       }
     },
-    "/api/payments/add": {
+    "/server/api/payments/add": {
       "post": {
         "produces": [
           "application/json"
@@ -2423,7 +2423,7 @@
         }
       }
     },
-    "/api/payments/fail": {
+    "/server/api/payments/fail": {
       "post": {
         "produces": [
           "application/json"
@@ -2442,7 +2442,7 @@
         }
       }
     },
-    "/api/payments/cancel": {
+    "/server/api/payments/cancel": {
       "post": {
         "produces": [
           "application/json"
@@ -2461,7 +2461,7 @@
         }
       }
     },
-    "/api/payments/transactions/{date}": {
+    "/server/api/payments/transactions/{date}": {
       "get": {
         "produces": [
           "application/json"
@@ -2483,7 +2483,7 @@
         }
       }
     },
-    "/api/payments/paymentProviders/{sessionId}/{product}": {
+    "/server/api/payments/paymentProviders/{sessionId}/{product}": {
       "get": {
         "produces": [
           "application/json"
@@ -2506,7 +2506,7 @@
         }
       }
     },
-    "/api/neft/add": {
+    "/server/api/neft/add": {
       "post": {
         "produces": [
           "application/json"
@@ -2525,7 +2525,7 @@
         }
       }
     },
-    "/api/neft/add/cashLedger": {
+    "/server/api/neft/add/cashLedger": {
       "post": {
         "produces": [
           "application/json"
@@ -2544,7 +2544,7 @@
         }
       }
     },
-    "/api/neft/validateIFSC/{code}": {
+    "/server/api/neft/validateIFSC/{code}": {
       "get": {
         "produces": [
           "application/json"
@@ -2566,7 +2566,7 @@
         }
       }
     },
-    "/api/coupon/list": {
+    "/server/api/coupon/list": {
       "post": {
         "produces": [
           "application/json"
@@ -2585,7 +2585,7 @@
         }
       }
     },
-    "/api/coupon": {
+    "/server/api/coupon": {
       "post": {
         "produces": [
           "application/json"
@@ -2604,7 +2604,7 @@
         }
       }
     },
-    "/api/coupon/all/{token}": {
+    "/server/api/coupon/all/{token}": {
       "get": {
         "produces": [
           "application/json"
@@ -2626,7 +2626,7 @@
         }
       }
     },
-    "/api/coupon/generateEmployeeCoupon/{sessionId}": {
+    "/server/api/coupon/generateEmployeeCoupon/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -2648,7 +2648,7 @@
         }
       }
     },
-    "/api/common/careers/getAll": {
+    "/server/api/common/careers/getAll": {
       "get": {
         "produces": [
           "application/json"
@@ -2667,7 +2667,7 @@
         }
       }
     },
-    "/api/common/careers/get/{careerId}": {
+    "/server/api/common/careers/get/{careerId}": {
       "get": {
         "produces": [
           "application/json"
@@ -2689,7 +2689,7 @@
         }
       }
     },
-    "/api/common/jobApplication": {
+    "/server/api/common/jobApplication": {
       "post": {
         "produces": [
           "application/json"
@@ -2708,7 +2708,7 @@
         }
       }
     },
-    "/api/common/locations/getAll": {
+    "/server/api/common/locations/getAll": {
       "get": {
         "produces": [
           "application/json"
@@ -2727,7 +2727,7 @@
         }
       }
     },
-    "/api/common/news/getAll": {
+    "/server/api/common/news/getAll": {
       "get": {
         "produces": [
           "application/json"
@@ -2746,7 +2746,7 @@
         }
       }
     },
-    "/api/cancellations/add": {
+    "/server/api/cancellations/add": {
       "post": {
         "produces": [
           "application/json"
@@ -2765,7 +2765,7 @@
         }
       }
     },
-    "/api/cancellations/addCancellation": {
+    "/server/api/cancellations/addCancellation": {
       "post": {
         "produces": [
           "application/json"
@@ -2784,7 +2784,7 @@
         }
       }
     },
-    "/api/cancellations/update": {
+    "/server/api/cancellations/update": {
       "post": {
         "produces": [
           "application/json"
@@ -2803,7 +2803,7 @@
         }
       }
     },
-    "/api/cancellations/{pnr}": {
+    "/server/api/cancellations/{pnr}": {
       "get": {
         "produces": [
           "application/json"
@@ -2822,7 +2822,7 @@
         }
       }
     },
-    "/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
+    "/server/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
       "get": {
         "produces": [
           "application/json"
@@ -2846,26 +2846,30 @@
       }
     },
     "/admin": {
+     "/{proxy+}": {
+       "x-amazon-apigateway-any-method": {
+         "description": "Test API",
+         "x-amazon-apigateway-integration": {
+           "passthroughBehavior": "WHEN_NO_MATCH",
+           "type": "HTTP_PROXY",
+           "httpMethod": "ANY",
+           "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}"
+         }
+       }
+     }
+	},
+  "/hotel": {
+    "/{proxy+}": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "ANY",
-          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}"
+          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
         }
-      }
-    },
-    "/hotel": {
-      "x-amazon-apigateway-any-method": {
-        "description": "Test API",
-        "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "ANY",
-          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
-        }
-      }
+       }
+     }
     },
     "/{proxy+}": {
       "x-amazon-apigateway-any-method": {
