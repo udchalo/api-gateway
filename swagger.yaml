@@ -1119,7 +1119,7 @@
         }
       }
     },
-    "server//api/user/getUserDetails/{userId}": {
+    "/server/api/user/getUserDetails/{userId}": {
       "post": {
         "produces": [
           "application/json"
@@ -2880,3 +2880,5 @@
     }
   }
 }
+
+   
