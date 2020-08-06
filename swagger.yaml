@@ -8,7 +8,8 @@
     "https"
   ],
   "paths": {
-    "/api/user/login": {
+    "admin":{
+     "/api/user/login": {
       "post": {
         "produces": [
           "application/json"
@@ -2844,6 +2845,7 @@
           "uri":"<DOMAIN_URL>/api/cancellations/listRefundModes/{bookingId}/{flightId}"
         }
       }
+     }
     },
     "/server": {
       "x-amazon-apigateway-any-method": {
