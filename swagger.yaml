@@ -38,16 +38,30 @@
         ],
         "parameters": [
           {
-            "in": "header",
-            "name": "Cookie",
-            "required": true
+            "name": "proxy",
+            "in": "path",
+            "required": true,
+            "type": "string"
           }
         ],
+        "responses": {},
         "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
+          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "requestParameters": {
+            "integration.request.path.proxy": "method.request.path.proxy"
+          },
+          "passthroughBehavior": "when_no_match",
           "httpMethod": "ANY",
-          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
+          "cacheNamespace": "qvkvwf",
+          "cacheKeyParameters": [
+            "method.request.path.proxy"
+          ],
+          "type": "http_proxy"
         }
       }
     },
