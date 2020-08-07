@@ -17,30 +17,17 @@
         ],
         "parameters": [
           {
-            "name": "proxy",
-            "in": "path",
-            "required": true,
-            "type": "string"
+            "in": "header",
+            "name": "Cookie",
+            "required": true
           }
         ],
         "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.proxy": "method.request.path.proxy"
-          },
-          "passthroughBehavior": "when_no_match",
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
           "httpMethod": "ANY",
-          "cacheNamespace": "1dftp6",
-          "cacheKeyParameters": [
-            "method.request.path.proxy"
-          ],
-          "type": "http_proxy"
+          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}"
         }
       }
     },
@@ -51,30 +38,16 @@
         ],
         "parameters": [
           {
-            "name": "proxy",
-            "in": "path",
-            "required": true,
-            "type": "string"
+            "in": "header",
+            "name": "Cookie",
+            "required": true
           }
         ],
-        "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.proxy": "method.request.path.proxy"
-          },
-          "passthroughBehavior": "when_no_match",
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
           "httpMethod": "ANY",
-          "cacheNamespace": "qvkvwf",
-          "cacheKeyParameters": [
-            "method.request.path.proxy"
-          ],
-          "type": "http_proxy"
+          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}"
         }
       }
     },
