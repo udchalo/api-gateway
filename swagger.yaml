@@ -24,6 +24,7 @@
           {
             "in": "header",
             "name": "Cookie",
+            "type": "string",
             "required": true
           }
         ],
