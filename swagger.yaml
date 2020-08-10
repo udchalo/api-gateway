@@ -59,6 +59,11 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "proxy",
+            "in": "path",
+            "required": true
           }
         ],
         "responses": {},
@@ -2663,6 +2668,17 @@
           "passthroughBehavior": "when_no_match",
           "httpMethod": "GET",
           "type": "http_proxy"
+        }
+      }
+    },
+    "/server/{proxy+}": {
+      "x-amazon-apigateway-any-method": {
+        "description": "Test API",
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "ANY",
+          "uri":""http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
         }
       }
     }
