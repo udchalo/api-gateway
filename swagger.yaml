@@ -7,40 +7,55 @@
   "schemes": [
     "https"
   ],
-  "paths": {
-    "/api/user/login": {
+  "paths": {    
+     "/server/api/user/login": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":"<USER_URL>/login"
+          "uri":"https://users-dev-api.udchalo.com/login"
         }
       }
     },
-    "/api/user/profile": {
+    "/server/api/user/profile": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<USER_URL>/profile"
+          "uri":"https://users-dev-api.udchalo.com/profile"
         }
       }
     },
-    "/api/user/getProfile": {
+    "/server/api/user/getProfile": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -50,11 +65,16 @@
         }
       }
     },
-    "/api/user/updateProfile": {
+    "/server/api/user/updateProfile": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -64,11 +84,16 @@
         }
       }
     },
-    "/api/user/updatePassword": {
+    "/server/api/user/updatePassword": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -78,11 +103,16 @@
         }
       }
     },
-    "/api/user/updatePasswordViaForgotLink": {
+    "/server/api/user/updatePasswordViaForgotLink": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -92,11 +122,16 @@
         }
       }
     },
-    "/api/user/updateProfilePic": {
+    "/server/api/user/updateProfilePic": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -106,11 +141,16 @@
         }
       }
     },
-    "/api/user/updateSettings": {
+    "/server/api/user/updateSettings": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -120,11 +160,16 @@
         }
       }
     },
-    "/api/user/forgotPassword": {
+    "/server/api/user/forgotPassword": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -134,11 +179,16 @@
         }
       }
     },
-    "/api/user/verifyPasswordResetLink": {
+    "/server/api/user/verifyPasswordResetLink": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -148,11 +198,16 @@
         }
       }
     },
-    "/api/user/deleteAccount": {
+    "/server/api/user/deleteAccount": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -162,11 +217,16 @@
         }
       }
     },
-    "/api/user/auth/facebook": {
+    "/server/api/user/auth/facebook": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -176,11 +236,16 @@
         }
       }
     },
-    "/api/user/auth/facebook/callback": {
+    "/server/api/user/auth/facebook/callback": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -190,11 +255,16 @@
         }
       }
     },
-    "/api/user/auth/google": {
+    "/server/api/user/auth/google": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -204,11 +274,16 @@
         }
       }
     },
-    "/api/user/auth/google/callback": {
+    "/server/api/user/auth/google/callback": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -218,11 +293,16 @@
         }
       }
     },
-    "/api/user/auth/linkedin": {
+    "/server/api/user/auth/linkedin": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -232,11 +312,16 @@
         }
       }
     },
-    "/api/user/auth/linkedin/callback": {
+    "/server/api/user/auth/linkedin/callback": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -246,11 +331,16 @@
         }
       }
     },
-    "/api/user/signup": {
+    "/server/api/user/signup": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -260,11 +350,16 @@
         }
       }
     },
-    "/api/user/login": {
+    "/server/api/user/login": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -274,11 +369,16 @@
         }
       }
     },
-    "/api/user/authenticated": {
+    "/server/api/user/authenticated": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -288,11 +388,16 @@
         }
       }
     },
-    "/api/user/logout": {
+    "/server/api/user/logout": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -302,11 +407,16 @@
         }
       }
     },
-    "/api/user/sendEmailVerificationLink": {
+    "/server/api/user/sendEmailVerificationLink": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -316,11 +426,16 @@
         }
       }
     },
-    "/api/user/verifyEmail": {
+    "/server/api/user/verifyEmail": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -330,11 +445,16 @@
         }
       }
     },
-    "/api/user/sendOtp": {
+    "/server/api/user/sendOtp": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -344,11 +464,16 @@
         }
       }
     },
-    "/api/user/requestUsercategoryVerification": {
+    "/server/api/user/requestUsercategoryVerification": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -358,11 +483,16 @@
         }
       }
     },
-    "/api/user/cashDeposit": {
+    "/server/api/user/cashDeposit": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -372,11 +502,16 @@
         }
       }
     },
-    "/api/user/cashDeposits": {
+    "/server/api/user/cashDeposits": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -386,11 +521,16 @@
         }
       }
     },
-    "/api/user/cashDeposits/count": {
+    "/server/api/user/cashDeposits/count": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -400,11 +540,16 @@
         }
       }
     },
-    "/api/user/cashDeposits/update": {
+    "/server/api/user/cashDeposits/update": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -414,11 +559,16 @@
         }
       }
     },
-    "/api/user/addTraveller": {
+    "/server/api/user/addTraveller": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -428,11 +578,16 @@
         }
       }
     },
-    "/api/user/updateTraveller": {
+    "/server/api/user/updateTraveller": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -442,11 +597,16 @@
         }
       }
     },
-    "/api/user/getAllBookings": {
+    "/server/api/user/getAllBookings": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -456,11 +616,16 @@
         }
       }
     },
-    "/api/user/getBooking": {
+    "/server/api/user/getBooking": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -470,11 +635,16 @@
         }
       }
     },
-    "/api/user/getCancellations": {
+    "/server/api/user/getCancellations": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -484,11 +654,16 @@
         }
       }
     },
-    "/api/user/getTripsTillDate": {
+    "/server/api/user/getTripsTillDate": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -498,11 +673,16 @@
         }
       }
     },
-    "/api/user/createAgent": {
+    "/server/api/user/createAgent": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -512,11 +692,16 @@
         }
       }
     },
-    "/api/user/sendOtpForLogin": {
+    "/server/api/user/sendOtpForLogin": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -526,11 +711,16 @@
         }
       }
     },
-    "/api/user/loginViaOtp": {
+    "/server/api/user/loginViaOtp": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -540,11 +730,16 @@
         }
       }
     },
-    "/api/user/sendOtpForSignup": {
+    "/server/api/user/sendOtpForSignup": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -554,11 +749,16 @@
         }
       }
     },
-    "/api/user/signupViaOtp": {
+    "/server/api/user/signupViaOtp": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -568,11 +768,16 @@
         }
       }
     },
-    "/api/user/merge": {
+    "/server/api/user/merge": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -582,11 +787,16 @@
         }
       }
     },
-    "/api/user/getCancellations": {
+    "/server/api/user/getCancellations": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -596,11 +806,16 @@
         }
       }
     },
-    "/api/user/getTravellers": {
+    "/server/api/user/getTravellers": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -610,11 +825,16 @@
         }
       }
     },
-    "/api/wallet/getBalance": {
+    "/server/api/wallet/getBalance": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -624,11 +844,16 @@
         }
       }
     },
-    "/api/wallet/getTransactions": {
+    "/server/api/wallet/getTransactions": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -638,11 +863,16 @@
         }
       }
     },
-    "/api/wallet/sendBalAlert": {
+    "/server/api/wallet/sendBalAlert": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -652,11 +882,16 @@
         }
       }
     },
-    "/api/wallet/refund": {
+    "/server/api/wallet/refund": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -666,11 +901,16 @@
         }
       }
     },
-    "/api/verification/categoryVerification": {
+    "/server/api/verification/categoryVerification": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -680,11 +920,16 @@
         }
       }
     },
-    "/api/wallet/create/{userId}": {
+    "/server/api/wallet/create/{userId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.userId": "method.request.path.userId"
         },
@@ -697,11 +942,16 @@
         }
       }
     },
-    "/api/wallet/closingBalance/{token}": {
+    "/server/api/wallet/closingBalance/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -714,11 +964,16 @@
         }
       }
     },
-    "/api/wallet/walletReconcile/{token}": {
+    "/server/api/wallet/walletReconcile/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -731,11 +986,16 @@
         }
       }
     },
-    "/api/user/getTravellersCount/{category}": {
+    "/server/api/user/getTravellersCount/{category}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.category": "method.request.path.category"
         },
@@ -748,11 +1008,16 @@
         }
       }
     },
-    "/api/user/deleteTraveller/{travellerId}": {
+    "/server/api/user/deleteTraveller/{travellerId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.travellerId": "method.request.path.travellerId"
         },
@@ -765,11 +1030,16 @@
         }
       }
     },
-    "/api/user/getTravellersCount/{category}": {
+    "/server/api/user/getTravellersCount/{category}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
        "requestParameters": {
             "integration.request.path.category": "method.request.path.category"
         },
@@ -782,11 +1052,16 @@
         }
       }
     },
-    "/api/user/getTripsCount/{category}": {
+    "/server/api/user/getTripsCount/{category}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
             "integration.request.path.category": "method.request.path.category"
         },
@@ -799,11 +1074,16 @@
         }
       }
     },
-    "/api/user/getBookingDetails/{bookingId}/{flightId}": {
+    "/server/api/user/getBookingDetails/{bookingId}/{flightId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
             "integration.request.path.bookingId": "method.request.path.bookingId",
             "integration.request.path.flightId": "method.request.path.flightId"
@@ -817,11 +1097,16 @@
         }
       }
     },
-    "/api/user/verifyOtp/{otp}": {
+    "/server/api/user/verifyOtp/{otp}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
             "integration.request.path.otp": "method.request.path.otp"
         },
@@ -834,11 +1119,16 @@
         }
       }
     },
-    "api/user/getUserDetails/{userId}": {
+    "server/api/user/getUserDetails/{userId}": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "requestParameters": {
             "integration.request.path.userId": "method.request.path.userId"
@@ -851,11 +1141,16 @@
         }
       }
     },
-    "/api/user/getTravellerDetails/{travellerId}": {
+    "/server/api/user/getTravellerDetails/{travellerId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -865,11 +1160,16 @@
         }
       }
     },
-    "/api/user/requestTravellerVerification/{travellerId}": {
+    "/server/api/user/requestTravellerVerification/{travellerId}": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
             "integration.request.path.travellerId": "method.request.path.travellerId"
         },
@@ -882,11 +1182,16 @@
         }
       }
     },
-    "/api/support/getBookingDetails/{pnr}/{email}": {
+    "/server/api/support/getBookingDetails/{pnr}/{email}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr",
            "integration.request.path.email": "method.request.path.email"
@@ -900,11 +1205,16 @@
         }
       }
     },
-    "/api/support/getPdf/{pnr}/{email}": {
+    "/server/api/support/getPdf/{pnr}/{email}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr",
            "integration.request.path.email": "method.request.path.email"
@@ -918,11 +1228,16 @@
         }
       }
     },
-    "/api/support/getInvoicePdf/{pnr}/{email}": {
+    "/server/api/support/getInvoicePdf/{pnr}/{email}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr",
            "integration.request.path.email": "method.request.path.email"
@@ -936,11 +1251,16 @@
         }
       }
     },
-    "/api/support/sendEmail/{pnr}": {
+    "/server/api/support/sendEmail/{pnr}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr"
         },
@@ -953,11 +1273,16 @@
         }
       }
     },
-    "/api/support/emailInvoice/{pnr}": {
+    "/server/api/support/emailInvoice/{pnr}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr"
         },
@@ -970,11 +1295,16 @@
         }
       }
     },
-    "/api/support/sendSms/{pnr}": {
+    "/server/api/support/sendSms/{pnr}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr"
         },
@@ -987,11 +1317,16 @@
         }
       }
     },
-    "/api/support/isLatest/{version}": {
+    "/server/api/support/isLatest/{version}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.version": "method.request.path.version"
         },
@@ -1004,11 +1339,16 @@
         }
       }
     },
-    "/api/support/isLatestIOS/{version}": {
+    "/server/api/support/isLatestIOS/{version}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.version": "method.request.path.version"
         },
@@ -1021,11 +1361,16 @@
         }
       }
     },
-    "/api/support/allok/{bookingId}": {
+    "/server/api/support/allok/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -1038,11 +1383,16 @@
         }
       }
     },
-    "/api/support/getLTC/{bookingId}": {
+    "/server/api/support/getLTC/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -1055,11 +1405,16 @@
         }
       }
     },
-    "/api/support/getPolicies/{type}/{hotelName}": {
+    "/server/api/support/getPolicies/{type}/{hotelName}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.type": "method.request.path.type",
            "integration.request.path.hotelName": "method.request.path.hotelName"
@@ -1073,11 +1428,16 @@
         }
       }
     },
-    "/api/support/getVisaRequirements/{destinationCountryCode}": {
+    "/server/api/support/getVisaRequirements/{destinationCountryCode}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
         },
@@ -1090,11 +1450,16 @@
         }
       }
     },
-    "/api/support/getVisaRequirements/{destinationCountryCode}": {
+    "/server/api/support/getVisaRequirements/{destinationCountryCode}": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
         },
@@ -1107,11 +1472,16 @@
         }
       }
     },
-    "/api/support/notifySupport": {
+    "/server/api/support/notifySupport": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.type": "method.request.path.type",
            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
@@ -1125,11 +1495,16 @@
         }
       }
     },
-    "/api/support/log": {
+    "/server/api/support/log": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1139,11 +1514,16 @@
         }
       }
     },
-    "/api/support/log": {
+    "/server/api/support/log": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1153,11 +1533,16 @@
         }
       }
     },
-    "/api/referral": {
+    "/server/api/referral": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1167,11 +1552,16 @@
         }
       }
     },
-    "/api/supplier/add": {
+    "/server/api/supplier/add": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1181,11 +1571,16 @@
         }
       }
     },
-    "/api/supplier/update": {
+    "/server/api/supplier/update": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1195,11 +1590,16 @@
         }
       }
     },
-    "/api/supplier/all": {
+    "/server/api/supplier/all": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1209,11 +1609,16 @@
         }
       }
     },
-    "/api/flights/health": {
+    "/server/api/flights/health": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1223,11 +1628,16 @@
         }
       }
     },
-    "/api/supplier/searchInit": {
+    "/server/api/supplier/searchInit": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1237,11 +1647,16 @@
         }
       }
     },
-    "/api/supplier/rebooking": {
+    "/server/api/supplier/rebooking": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1251,11 +1666,16 @@
         }
       }
     },
-    "/api/supplier/getRequest/{sessionId}": {
+    "/server/api/supplier/getRequest/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -1268,11 +1688,16 @@
         }
       }
     },
-    "/api/supplier/searchStatus/{sessionId}": {
+    "/server/api/supplier/searchStatus/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -1285,11 +1710,16 @@
         }
       }
     },
-    "/api/supplier/searchResult/{sessionId}": {
+    "/server/api/supplier/searchResult/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -1302,11 +1732,16 @@
         }
       }
     },
-    "/api/supplier/price": {
+    "/server/api/supplier/price": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1316,11 +1751,16 @@
         }
       }
     },
-    "/api/supplier/saveBooking": {
+    "/server/api/supplier/saveBooking": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1330,11 +1770,16 @@
         }
       }
     },
-    "/api/supplier/bookStatus/{bookingId}": {
+    "/server/api/supplier/bookStatus/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -1347,11 +1792,16 @@
         }
       }
     },
-    "/api/supplier/bookResult/{bookingId}": {
+    "/server/api/supplier/bookResult/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -1364,11 +1814,16 @@
         }
       }
     },
-    "/api/supplier/createBooking": {
+    "/server/api/supplier/createBooking": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1378,11 +1833,16 @@
         }
       }
     },
-    "/api/supplier/updateBooking": {
+    "/server/api/supplier/updateBooking": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1392,11 +1852,16 @@
         }
       }
     },
-    "/api/supplier/getTicket/{bookingId}": {
+    "/server/api/supplier/getTicket/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1406,11 +1871,16 @@
         }
       }
     },
-    "/api/supplier/airports": {
+    "/server/api/supplier/airports": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1420,11 +1890,16 @@
         }
       }
     },
-    "/api/supplier/airports/invalidate": {
+    "/server/api/supplier/airports/invalidate": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1434,25 +1909,35 @@
         }
       }
     },
-    "/api/flights/getAirports": {
+    "/server/api/flights/getAirports": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>/api/supplier/getAirports"
+          "uri":"<DOMAIN_URL>/api/flights/getAirports"
         }
       }
     },
-    "/api/flights/addAirports": {
+    "/server/api/flights/addAirports": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1462,11 +1947,16 @@
         }
       }
     },
-    "/api/flights/addPaymentCollentionDetails": {
+    "/server/api/flights/addPaymentCollentionDetails": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1476,11 +1966,16 @@
         }
       }
     },
-    "/api/flights/collectLaterCount": {
+    "/server/api/flights/collectLaterCount": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1490,11 +1985,16 @@
         }
       }
     },
-    "/api/flights/accountPendingCount": {
+    "/server/api/flights/accountPendingCount": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1504,11 +2004,16 @@
         }
       }
     },
-    "/api/flights/estimatedRefund": {
+    "/server/api/flights/estimatedRefund": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1518,11 +2023,16 @@
         }
       }
     },
-    "/api/flights/priceAndSave": {
+    "/server/api/flights/priceAndSave": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1532,11 +2042,16 @@
         }
       }
     },
-    "/api/flights/savedBooking/{sessionId}/{bookingId}": {
+    "/server/api/flights/savedBooking/{sessionId}/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId",
            "integration.request.path.bookingId": "method.request.path.bookingId"
@@ -1550,11 +2065,16 @@
         }
       }
     },
-    "/api/flights/savedBooking/{sessionId}": {
+    "/server/api/flights/savedBooking/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -1567,11 +2087,16 @@
         }
       }
     },
-    "/api/flights/getToken": {
+    "/server/api/flights/getToken": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1581,11 +2106,16 @@
         }
       }
     },
-    "/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
+    "/server/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.month": "method.request.path.month",
            "integration.request.path.year": "method.request.path.year",
@@ -1601,11 +2131,16 @@
         }
       }
     },
-    "/api/flights/monthlyRefunds/{value}/{token}": {
+    "/server/api/flights/monthlyRefunds/{value}/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.value": "method.request.path.value",
            "integration.request.path.token": "method.request.path.token"
@@ -1619,11 +2154,16 @@
         }
       }
     },
-    "/api/flights/dailyRefunds/{value}/{token}": {
+    "/server/api/flights/dailyRefunds/{value}/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.value": "method.request.path.value",
            "integration.request.path.token": "method.request.path.token"
@@ -1637,11 +2177,16 @@
         }
       }
     },
-    "/api/flights/bookingReports/{duration}/{value}/{token}": {
+    "/server/api/flights/bookingReports/{duration}/{value}/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.duration": "method.request.path.duration",
            "integration.request.path.value": "method.request.path.value",
@@ -1656,11 +2201,16 @@
         }
       }
     },
-    "/api/flights/bookingFailedClean/{token}": {
+    "/server/api/flights/bookingFailedClean/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -1673,11 +2223,16 @@
         }
       }
     },
-    "/api/flights/reschedule/searchInit": {
+    "/server/api/flights/reschedule/searchInit": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1687,11 +2242,16 @@
         }
       }
     },
-    "/api/flights/reschedule/saveBooking": {
+    "/server/api/flights/reschedule/saveBooking": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1701,11 +2261,16 @@
         }
       }
     },
-    "/api/flights/requestRescheduling": {
+    "/server/api/flights/requestRescheduling": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1715,11 +2280,16 @@
         }
       }
     },
-    "/api/flights/reschedule/searchResult/{sessionId}": {
+    "/server/api/flights/reschedule/searchResult/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -1732,11 +2302,16 @@
         }
       }
     },
-    "/api/flights/airlines/rules/{bookingId}/{pnr}": {
+    "/server/api/flights/airlines/rules/{bookingId}/{pnr}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId",
            "integration.request.path.pnr": "method.request.path.pnr"
@@ -1750,11 +2325,16 @@
         }
       }
     },
-    "/api/payments/paymentInit": {
+    "/server/api/payments/paymentInit": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1764,11 +2344,16 @@
         }
       }
     },
-    "/api/payments/newPaymentInit": {
+    "/server/api/payments/newPaymentInit": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1778,11 +2363,16 @@
         }
       }
     },
-    "/api/payments/success/{orderId}": {
+    "/server/api/payments/success/{orderId}": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.orderId": "method.request.path.orderId"
         },
@@ -1795,11 +2385,16 @@
         }
       }
     },
-    "/api/payments/success": {
+    "/server/api/payments/success": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1809,11 +2404,16 @@
         }
       }
     },
-    "/api/payments/add": {
+    "/server/api/payments/add": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1823,11 +2423,16 @@
         }
       }
     },
-    "/api/payments/fail": {
+    "/server/api/payments/fail": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1837,11 +2442,16 @@
         }
       }
     },
-    "/api/payments/cancel": {
+    "/server/api/payments/cancel": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1851,11 +2461,16 @@
         }
       }
     },
-    "/api/payments/transactions/{date}": {
+    "/server/api/payments/transactions/{date}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.date": "method.request.path.date"
         },
@@ -1868,11 +2483,16 @@
         }
       }
     },
-    "/api/payments/paymentProviders/{sessionId}/{product}": {
+    "/server/api/payments/paymentProviders/{sessionId}/{product}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId",
            "integration.request.path.product": "method.request.path.product"
@@ -1886,11 +2506,16 @@
         }
       }
     },
-    "/api/neft/add": {
+    "/server/api/neft/add": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1900,11 +2525,16 @@
         }
       }
     },
-    "/api/neft/add/cashLedger": {
+    "/server/api/neft/add/cashLedger": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1914,11 +2544,16 @@
         }
       }
     },
-    "/api/neft/validateIFSC/{code}": {
+    "/server/api/neft/validateIFSC/{code}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.code": "method.request.path.code"
         },
@@ -1931,11 +2566,16 @@
         }
       }
     },
-    "/api/coupon/list": {
+    "/server/api/coupon/list": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1945,11 +2585,16 @@
         }
       }
     },
-    "/api/coupon": {
+    "/server/api/coupon": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -1959,11 +2604,16 @@
         }
       }
     },
-    "/api/coupon/all/{token}": {
+    "/server/api/coupon/all/{token}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -1976,11 +2626,16 @@
         }
       }
     },
-    "/api/coupon/generateEmployeeCoupon/{sessionId}": {
+    "/server/api/coupon/generateEmployeeCoupon/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -1993,11 +2648,16 @@
         }
       }
     },
-    "/api/common/careers/getAll": {
+    "/server/api/common/careers/getAll": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2007,11 +2667,16 @@
         }
       }
     },
-    "/api/common/careers/get/{careerId}": {
+    "/server/api/common/careers/get/{careerId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.careerId": "method.request.path.careerId"
         },
@@ -2024,11 +2689,16 @@
         }
       }
     },
-    "/api/common/jobApplication": {
+    "/server/api/common/jobApplication": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2038,11 +2708,16 @@
         }
       }
     },
-    "/api/common/locations/getAll": {
+    "/server/api/common/locations/getAll": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2052,11 +2727,16 @@
         }
       }
     },
-    "/api/common/news/getAll": {
+    "/server/api/common/news/getAll": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2066,11 +2746,16 @@
         }
       }
     },
-    "/api/cancellations/add": {
+    "/server/api/cancellations/add": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2080,11 +2765,16 @@
         }
       }
     },
-    "/api/cancellations/addCancellation": {
+    "/server/api/cancellations/addCancellation": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2094,11 +2784,16 @@
         }
       }
     },
-    "/api/cancellations/update": {
+    "/server/api/cancellations/update": {
       "post": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2108,11 +2803,16 @@
         }
       }
     },
-    "/api/cancellations/{pnr}": {
+    "/server/api/cancellations/{pnr}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "responses": {},
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
@@ -2122,11 +2822,16 @@
         }
       }
     },
-    "/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
+    "/server/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
       "get": {
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie",
+          "required": true
+        }],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId",
            "integration.request.path.flightId": "method.request.path.flightId"
@@ -2140,14 +2845,92 @@
         }
       }
     },
-    "/{proxy+}": {
+    "/server/{proxy+}": {
       "x-amazon-apigateway-any-method": {
         "description": "Test API",
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "ANY",
-          "uri":"https://<NODE_ENV>-server-admin.udchalo.com"
+          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
+        }
+      }
+    },
+    "/admin/{proxy+}": {
+      "x-amazon-apigateway-any-method": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "proxy",
+            "in": "path",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "Cookie",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "requestParameters": {
+            "integration.request.path.proxy": "method.request.path.proxy"
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "ANY",
+          "cacheNamespace": "1dftp6",
+          "cacheKeyParameters": [
+            "method.request.path.proxy"
+          ],
+          "type": "http_proxy"
+        }
+      }
+    },
+    "/hotel/{proxy+}": {
+      "x-amazon-apigateway-any-method": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "proxy",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "x-amazon-apigateway-integration": {
+          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "requestParameters": {
+            "integration.request.path.proxy": "method.request.path.proxy"
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "ANY",
+          "cacheNamespace": "qvkvwf",
+          "cacheKeyParameters": [
+            "method.request.path.proxy"
+          ],
+          "type": "http_proxy"
         }
       }
     }
