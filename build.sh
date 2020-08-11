@@ -10,7 +10,7 @@ export BUCKET=uc-deploy-api-gateway-$1
 
 echo "$DOMAIN_URL $USER_URL $1"
 
-DOMAIN_URL="http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:808
+DOMAIN_URL="http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080"
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" swagger.yaml
 sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
