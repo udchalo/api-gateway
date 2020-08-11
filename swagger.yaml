@@ -2325,6 +2325,16 @@
         }
       }
     },
+    "/server/api/flights/{proxy+}": {
+      "x-amazon-apigateway-any-method": {
+        "x-amazon-apigateway-integration": {
+          "passthroughBehavior": "WHEN_NO_MATCH",
+          "type": "HTTP_PROXY",
+          "httpMethod": "ANY",
+          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
+        }
+      }
+    },
     "/server/api/payments/paymentInit": {
       "post": {
         "produces": [
@@ -2847,7 +2857,7 @@
     },
     "/server/{proxy+}": {
       "x-amazon-apigateway-any-method": {
-        "description": "Test API",
+        "description": "Proxy API",
         "x-amazon-apigateway-integration": {
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
