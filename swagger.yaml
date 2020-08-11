@@ -23,7 +23,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":"<USER_URL>/login"
+          "uri":"https://users-dev-api.udchalo.com/login"
         }
       }
     },
@@ -42,7 +42,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<USER_URL>/profile"
+          "uri":"https://users-dev-api.udchalo.com/profile"
         }
       }
     },
