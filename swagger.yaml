@@ -1924,7 +1924,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>/api/supplier/getAirports"
+          "uri":"<DOMAIN_URL>/api/flights/getAirports"
         }
       }
     },
