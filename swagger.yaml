@@ -23,7 +23,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":"<DOMAIN_URL>/login"
+          "uri":"<USER_URL>/login"
         }
       }
     },
@@ -42,7 +42,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"<DOMAIN_URL>/profile"
+          "uri":"<USER_URL>/profile"
         }
       }
     },
@@ -1119,7 +1119,7 @@
         }
       }
     },
-    "server//api/user/getUserDetails/{userId}": {
+    "server/api/user/getUserDetails/{userId}": {
       "post": {
         "produces": [
           "application/json"
