@@ -23,7 +23,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "POST",
-          "uri":"https://users-dev-api.udchalo.com/login"
+          "uri":"https://users-stage-api.udchalo.com/login"
         }
       }
     },
@@ -42,7 +42,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "GET",
-          "uri":"https://users-dev-api.udchalo.com/profile"
+          "uri":"https://users-stage-api.udchalo.com/profile"
         }
       }
     },
@@ -2331,7 +2331,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "ANY",
-          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
+          "uri":"http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
         }
       }
     },
@@ -2862,7 +2862,7 @@
           "passthroughBehavior": "WHEN_NO_MATCH",
           "type": "HTTP_PROXY",
           "httpMethod": "ANY",
-          "uri":"http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
+          "uri":"http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8080/{proxy}"
         }
       }
     },
@@ -2886,7 +2886,7 @@
         ],
         "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}",
+          "uri": "http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:80/{proxy}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2925,7 +2925,7 @@
         ],
         "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri": "http://ucbeanstalkapplications-develop.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}",
+          "uri": "http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}",
           "responses": {
             "default": {
               "statusCode": "200"
