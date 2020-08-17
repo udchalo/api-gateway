@@ -847,131 +847,23 @@
     },
     "/server/api/user/authenticated": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [{
+        "parameters": [
+          {
             "name": "Cookie",
-            "in": "header"
-        }],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
+            "in": "header",
+            "required": true,
+            "type": "string"
           }
-        },
+        ],
+        "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/user/authenticated",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
+          "uri": "<DOMAIN_URL>/api/user/authenticated",
           "passthroughBehavior": "when_no_match",
           "httpMethod": "GET",
           "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'*'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
         }
       }
     },
-    "/server/api/user/logout": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [{
-            "name": "Cookie",
-            "in": "header"
-        }],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/user/logout",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
         "x-amazon-apigateway-integration": {
           "responses": {
             "default": {
@@ -5768,74 +5660,20 @@
     },
     "/server/api/flights/check-in": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": true,
+            "type": "string"
           }
-        },
+        ],
+        "responses": {},
         "x-amazon-apigateway-integration": {
           "uri":"<DOMAIN_URL>/api/flights/check-in",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
           "passthroughBehavior": "when_no_match",
           "httpMethod": "GET",
           "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'*'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
         }
       }
     },
