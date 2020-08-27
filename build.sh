@@ -11,9 +11,11 @@ export BUCKET=uc-deploy-api-gateway-$1
 echo "$DOMAIN_URL $USER_URL $1"
 DOMAIN_URL="https://$1-server.udchalo.com"
 USER_URL="https://users-$1-api.udchalo.com"
+ORIGIN_URL="https://$1-ui.udchalo.com"
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" swagger.yaml
 sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
+sed -i='' "s@<ORIGIN_URL>@$ORIGIN_URL@g" swagger.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" swagger.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" template.yaml
 
