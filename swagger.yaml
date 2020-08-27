@@ -857,14 +857,22 @@
         ],
         "responses": {
           "200": {
-            "description": "200 response"
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
           }
         },
         "x-amazon-apigateway-integration": {
           "uri": "<DOMAIN_URL>/api/user/authenticated",
           "responses": {
             "default": {
-              "statusCode": "200"
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
             }
           },
           "passthroughBehavior": "when_no_match",
@@ -873,6 +881,9 @@
         }
       },
       "options": {
+        "consumes": [
+          "application/json"
+        ],
         "produces": [
           "application/json"
         ],
@@ -896,24 +907,22 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>/api/user/authenticated",
           "responses": {
             "default": {
               "statusCode": "200",
               "responseParameters": {
                 "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'",
+                "method.response.header.Access-Control-Allow-Methods": "'GET'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
                 "method.response.header.Access-Control-Allow-Origin": "'https://stage-ui.udchalo.com'"
-              },
-              "responseTemplates": {
-                "application/json": "{}"
               }
             }
           },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
           "passthroughBehavior": "when_no_match",
-          "httpMethod": "OPTIONS",
-          "type": "http"
+          "type": "mock"
         }
       }
     },
@@ -5702,12 +5711,66 @@
             "type": "string"
           }
         ],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/flights/check-in",
+          "uri": "<DOMAIN_URL>/api/flights/check-in",
           "passthroughBehavior": "when_no_match",
           "httpMethod": "GET",
           "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://stage-ui.udchalo.com'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
         }
       }
     },
