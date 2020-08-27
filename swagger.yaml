@@ -847,25 +847,6 @@
     },
     "/server/api/user/authenticated": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-    "/server/api/user/authenticated": {
-      "get": {
         "parameters": [
           {
             "name": "Cookie",
@@ -915,7 +896,6 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          
           "responses": {
             "default": {
               "statusCode": "200",
