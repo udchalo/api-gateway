@@ -864,6 +864,21 @@
             }
           }
         },
+    "/server/api/user/authenticated": {
+      "get": {
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        },
         "x-amazon-apigateway-integration": {
           "uri": "<DOMAIN_URL>/api/user/authenticated",
           "responses": {
@@ -877,30 +892,47 @@
         }
       },
       "options": {
-        "consumes": [
-          "application/json"
-        ],
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
             "description": "200 response",
-            "headers": {}
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
           }
         },
         "x-amazon-apigateway-integration": {
+          
           "responses": {
             "default": {
               "statusCode": "200",
-              "responseParameters": {}
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://stage-ui.udchalo.com'"
+              },
+              "responseTemplates": {
+                "application/json": "{}"
+              }
             }
           },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
           "passthroughBehavior": "when_no_match",
-          "type": "mock"
+          "httpMethod": "OPTIONS",
+          "type": "http"
         }
       }
     },
