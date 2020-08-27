@@ -9602,6 +9602,9 @@
           "200": {
             "description": "200 response",
             "headers": {
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
