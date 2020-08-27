@@ -896,6 +896,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
+          "uri": "<DOMAIN_URL>/api/user/authenticated",
           "responses": {
             "default": {
               "statusCode": "200",
