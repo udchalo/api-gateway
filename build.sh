@@ -18,6 +18,7 @@ sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
 sed -i='' "s@<ORIGIN_URL>@$ORIGIN_URL@g" swagger.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" swagger.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" template.yaml
+echo "$DOMAIN_URL $USER_URL $ORIGIN_URL $1"
 
 #aws s3 mb s3://$BUCKET
 
