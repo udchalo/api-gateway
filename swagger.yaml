@@ -5615,7 +5615,7 @@
         }
       }
     },
-    "/server/api/supplier/add": {
+    "/server/api/flights/add": {
       "post": {
         "parameters": [
           {
@@ -5636,7 +5636,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/add",
+          "uri":"<DOMAIN_URL>/api/flights/add",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -5690,7 +5690,7 @@
         }
       }
     },
-    "/server/api/supplier/update": {
+    "/server/api/flights/update": {
       "post": {
         "parameters": [
           {
@@ -5711,7 +5711,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/update",
+          "uri":"<DOMAIN_URL>/api/flights/update",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -5765,7 +5765,7 @@
         }
       }
     },
-    "/server/api/supplier/all": {
+    "/server/api/flights/all": {
       "get": {
         "produces": [
           "application/json"
@@ -5785,7 +5785,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/all",
+          "uri":"<DOMAIN_URL>/api/flights/all",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -5919,7 +5919,7 @@
         }
       }
     },
-    "/server/api/supplier/searchInit": {
+    "/server/api/flights/searchInit": {
       "post": {
         "parameters": [
           {
@@ -5940,7 +5940,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/searchInit",
+          "uri":"<DOMAIN_URL>/api/flights/searchInit",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -5994,7 +5994,7 @@
         }
       }
     },
-    "/server/api/supplier/rebooking": {
+    "/server/api/flights/rebooking": {
       "get": {
         "produces": [
           "application/json"
@@ -6014,7 +6014,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/rebooking",
+          "uri":"<DOMAIN_URL>/api/flights/rebooking",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6071,87 +6071,7 @@
         }
       }
     },
-    "/server/api/supplier/getRequest/{sessionId}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
-        "requestParameters": {
-           "integration.request.path.sessionId": "method.request.path.sessionId"
-        },
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/getRequest/{sessionId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/server/api/supplier/searchStatus/{sessionId}": {
+    "/server/api/flights/getRequest/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -6174,7 +6094,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/searchStatus/{sessionId}",
+          "uri":"<DOMAIN_URL>/api/flights/getRequest/{sessionId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6231,7 +6151,7 @@
         }
       }
     },
-    "/server/api/supplier/searchResult/{sessionId}": {
+    "/server/api/flights/searchStatus/{sessionId}": {
       "get": {
         "produces": [
           "application/json"
@@ -6254,7 +6174,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/searchResult/{sessionId}",
+          "uri":"<DOMAIN_URL>/api/flights/searchStatus/{sessionId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6311,7 +6231,87 @@
         }
       }
     },
-    "/server/api/supplier/price": {
+    "/server/api/flights/searchResult/{sessionId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "header",
+          "name": "Cookie"
+        }],
+        "requestParameters": {
+           "integration.request.path.sessionId": "method.request.path.sessionId"
+        },
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri":"<DOMAIN_URL>/api/flights/searchResult/{sessionId}",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "GET",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    },
+    "/server/api/flights/price": {
       "post": {
         "parameters": [
           {
@@ -6332,7 +6332,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/price",
+          "uri":"<DOMAIN_URL>/api/flights/price",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6386,7 +6386,7 @@
         }
       }
     },
-    "/server/api/supplier/saveBooking": {
+    "/server/api/flights/saveBooking": {
       "post": {
         "parameters": [
           {
@@ -6407,7 +6407,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/saveBooking",
+          "uri":"<DOMAIN_URL>/api/flights/saveBooking",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6461,7 +6461,7 @@
         }
       }
     },
-    "/server/api/supplier/bookStatus/{bookingId}": {
+    "/server/api/flights/bookStatus/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -6484,7 +6484,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/bookStatus/{bookingId}",
+          "uri":"<DOMAIN_URL>/api/flights/bookStatus/{bookingId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6541,7 +6541,7 @@
         }
       }
     },
-    "/server/api/supplier/bookResult/{bookingId}": {
+    "/server/api/flights/bookResult/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -6564,7 +6564,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/bookResult/{bookingId}",
+          "uri":"<DOMAIN_URL>/api/flights/bookResult/{bookingId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6621,7 +6621,7 @@
         }
       }
     },
-    "/server/api/supplier/createBooking": {
+    "/server/api/flights/createBooking": {
       "post": {
         "parameters": [
           {
@@ -6642,7 +6642,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/createBooking",
+          "uri":"<DOMAIN_URL>/api/flights/createBooking",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6696,7 +6696,7 @@
         }
       }
     },
-    "/server/api/supplier/updateBooking": {
+    "/server/api/flights/updateBooking": {
       "post": {
         "parameters": [
           {
@@ -6717,7 +6717,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/updateBooking",
+          "uri":"<DOMAIN_URL>/api/flights/updateBooking",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6771,7 +6771,7 @@
         }
       }
     },
-    "/server/api/supplier/getTicket/{bookingId}": {
+    "/server/api/flights/getTicket/{bookingId}": {
       "get": {
         "produces": [
           "application/json"
@@ -6791,7 +6791,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/getTicket/{bookingId}",
+          "uri":"<DOMAIN_URL>/api/flights/getTicket/{bookingId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6848,7 +6848,7 @@
         }
       }
     },
-    "/server/api/supplier/airports": {
+    "/server/api/flights/airports": {
       "get": {
         "produces": [
           "application/json"
@@ -6868,7 +6868,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/supplier/airports",
+          "uri":"<DOMAIN_URL>/api/flights/airports",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -6925,7 +6925,7 @@
         }
       }
     },
-    "/server/api/supplier/airports/invalidate": {
+    "/server/api/flights/airports/invalidate": {
       "get": {
         "produces": [
           "application/json"
@@ -7387,37 +7387,151 @@
     },
     "/server/api/flights/estimatedRefund": {
       "post": {
-        "produces": [
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri":"<DOMAIN_URL>/api/flights/estimatedRefund",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
         "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "POST",
-          "uri":"<DOMAIN_URL>/api/flights/estimatedRefund"
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
         }
       }
     },
     "/server/api/flights/priceAndSave": {
       "post": {
-        "produces": [
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri":"<DOMAIN_URL>/api/flights/priceAndSave",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
         "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "POST",
-          "uri":"<DOMAIN_URL>/api/flights/priceAndSave"
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
         }
       }
     },
@@ -8066,21 +8180,78 @@
         }
       }
     },
-    "/server/api/flights/reschedule/searchInit": {
+    "/server/api/flights/searchInit": {
       "post": {
-        "produces": [
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri":"<DOMAIN_URL>/api/flights/searchInit",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
         "x-amazon-apigateway-integration": {
-          "passthroughBehavior": "WHEN_NO_MATCH",
-          "type": "HTTP_PROXY",
-          "httpMethod": "POST",
-          "uri":"<DOMAIN_URL>/api/flights/reschedule/searchInit"
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
         }
       }
     },
@@ -9602,9 +9773,6 @@
           "200": {
             "description": "200 response",
             "headers": {
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
