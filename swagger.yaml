@@ -3756,6 +3756,10 @@
         "parameters": [{
           "in": "header",
           "name": "Cookie"
+		  },
+		  {
+          "in": "path",
+          "name": "category"
         }],
         "requestParameters": {
            "integration.request.path.category": "method.request.path.category"
@@ -3793,10 +3797,7 @@
           "200": {
             "description": "200 response",
             "headers": {
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Origin": {
+             "Access-Control-Allow-Origin": {
                 "type": "string"
               },
               "Access-Control-Allow-Methods": {
@@ -3813,10 +3814,9 @@
             "default": {
               "statusCode": "200",
               "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
                 "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
               }
             }
           },
@@ -6078,7 +6078,9 @@
         ],
         "parameters": [{
 		  "name": "Cookie",
-          "in": "header",
+          "in": "header"
+		  },
+		  {
           "name": "sessionId",
 		  "in": "path"
         }],
@@ -6250,6 +6252,10 @@
         "parameters": [{
           "in": "header",
           "name": "Cookie"
+		  },
+		  {
+            "name": "sessionIdId",
+            "in": "path",
         }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
@@ -6283,13 +6289,14 @@
         "produces": [
           "application/json"
         ],
+        "parameters": [{
+            "name": "sessionId",
+            "in": "path"
+          }],
         "responses": {
           "200": {
             "description": "200 response",
             "headers": {
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
@@ -6307,10 +6314,9 @@
             "default": {
               "statusCode": "200",
               "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
                 "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
               }
             }
           },
