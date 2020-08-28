@@ -6072,10 +6072,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "name": "sessionId",
-	  "in": "path"
-        }],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
