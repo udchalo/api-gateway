@@ -3754,8 +3754,8 @@
           "application/json"
         ],
         "parameters": [{
-          "in": "path",
-          "name": "category"
+          "in": "header",
+          "name": "Cookie"
         }],
         "requestParameters": {
            "integration.request.path.category": "method.request.path.category"
@@ -3793,7 +3793,10 @@
           "200": {
             "description": "200 response",
             "headers": {
-             "Access-Control-Allow-Origin": {
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Origin": {
                 "type": "string"
               },
               "Access-Control-Allow-Methods": {
@@ -3810,9 +3813,10 @@
             "default": {
               "statusCode": "200",
               "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
                 "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
               }
             }
           },
@@ -3830,8 +3834,8 @@
           "application/json"
         ],
         "parameters": [{
-          "in": "path",
-          "name": "travellerId"
+          "in": "header",
+          "name": "Cookie"
         }],
         "requestParameters": {
            "integration.request.path.travellerId": "method.request.path.travellerId"
@@ -3869,6 +3873,9 @@
           "200": {
             "description": "200 response",
             "headers": {
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
@@ -3886,9 +3893,10 @@
             "default": {
               "statusCode": "200",
               "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
                 "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
               }
             }
           },
@@ -6069,10 +6077,6 @@
           "application/json"
         ],
         "parameters": [{
-		  "name": "Cookie",
-          "in": "header"
-		  },
-		  {
           "name": "sessionId",
 		  "in": "path"
         }],
@@ -6093,14 +6097,8 @@
           "uri":"<DOMAIN_URL>/api/flights/getRequest/{sessionId}",
           "responses": {
             "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-              }
+              "statusCode": "200"
             }
-          },
-          "requestParameters": {
-            "integration.request.path.sessionId": "method.request.path.sessionId"
           },
           "passthroughBehavior": "when_no_match",
           "httpMethod": "GET",
@@ -6113,13 +6111,6 @@
         ],
         "produces": [
           "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "sessionId",
-            "in": "path",
-            "type": "string"
-          }
         ],
         "responses": {
           "200": {
@@ -6242,8 +6233,8 @@
           "application/json"
         ],
         "parameters": [{
-            "name": "sessionIdId",
-            "in": "path",
+          "in": "header",
+          "name": "Cookie"
         }],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
@@ -6277,14 +6268,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-            "name": "sessionId",
-            "in": "path"
-          }],
         "responses": {
           "200": {
             "description": "200 response",
             "headers": {
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
@@ -6302,9 +6292,10 @@
             "default": {
               "statusCode": "200",
               "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
                 "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
               }
             }
           },
