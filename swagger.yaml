@@ -9458,10 +9458,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "product",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId",
            "integration.request.path.product": "method.request.path.product"
