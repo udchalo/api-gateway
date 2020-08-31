@@ -744,7 +744,7 @@
               "Access-Control-Allow-Credentials": {
                 "type": "string"
               },
-			  "Access-Control-Allow-Origin": {
+              "Access-Control-Allow-Origin": {
                 "type": "string"
               },
               "Access-Control-Allow-Methods": {
@@ -6137,6 +6137,9 @@
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
               "Access-Control-Allow-Methods": {
                 "type": "string"
               },
@@ -6151,9 +6154,10 @@
             "default": {
               "statusCode": "200",
               "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
                 "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
+                "method.response.header.Access-Control-Allow-Origin": "'<ORIGIN_URL>'"
               }
             }
           },
