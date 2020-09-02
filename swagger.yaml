@@ -3588,10 +3588,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.userId": "method.request.path.userId"
         },
@@ -3668,10 +3677,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -3748,10 +3766,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -3917,10 +3944,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "travellerId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.travellerId": "method.request.path.travellerId"
         },
@@ -3997,10 +4033,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.category": "method.request.path.category"
         },
@@ -4077,10 +4122,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "flightId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId",
            "integration.request.path.flightId": "method.request.path.flightId"
@@ -4158,10 +4217,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "otp",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.otp": "method.request.path.otp"
         },
@@ -4238,10 +4306,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "responses": {},
         "requestParameters": {
             "integration.request.path.userId": "method.request.path.userId"
@@ -4306,10 +4383,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "travellerId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "200 response",
@@ -4383,10 +4469,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "travellerId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
             "integration.request.path.travellerId": "method.request.path.travellerId"
         },
@@ -4451,10 +4546,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr",
            "integration.request.path.email": "method.request.path.email"
@@ -4532,10 +4641,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr",
            "integration.request.path.email": "method.request.path.email"
@@ -4613,10 +4736,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr",
            "integration.request.path.email": "method.request.path.email"
@@ -4694,10 +4831,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr"
         },
@@ -4774,10 +4920,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr"
         },
@@ -4854,10 +5009,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.pnr": "method.request.path.pnr"
         },
@@ -4934,10 +5098,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.version": "method.request.path.version"
         },
@@ -5014,10 +5187,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.version": "method.request.path.version"
         },
@@ -5094,10 +5276,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -5174,10 +5365,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -5254,10 +5454,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "hotelName",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.type": "method.request.path.type",
            "integration.request.path.hotelName": "method.request.path.hotelName"
@@ -5335,10 +5549,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "destinationCountryCode",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
         },
@@ -5415,10 +5638,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "destinationCountryCode",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.destinationCountryCode": "method.request.path.destinationCountryCode"
         },
@@ -6577,10 +6809,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -6657,10 +6898,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId"
         },
@@ -6887,10 +7137,22 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "requestParameters": {
+           "integration.request.path.orderId": "method.request.path.bookingId"
+        },
         "responses": {
           "200": {
             "description": "200 response",
@@ -7653,6 +7915,11 @@
         ],
         "parameters": [
           {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
             "name": "sessionId",
             "in": "path",
             "type": "string"
@@ -7741,10 +8008,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.sessionId": "method.request.path.sessionId"
         },
@@ -7898,10 +8174,35 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+
+        "parameters": [
+          {
+            "name": "month",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "batch",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.month": "method.request.path.month",
            "integration.request.path.year": "method.request.path.year",
@@ -7981,10 +8282,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.value": "method.request.path.value",
            "integration.request.path.token": "method.request.path.token"
@@ -8062,10 +8377,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.value": "method.request.path.value",
            "integration.request.path.token": "method.request.path.token"
@@ -8143,10 +8472,29 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "duration",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.duration": "method.request.path.duration",
            "integration.request.path.value": "method.request.path.value",
@@ -8225,10 +8573,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -8619,10 +8976,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId",
            "integration.request.path.pnr": "method.request.path.pnr"
@@ -9010,10 +9381,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.orderId": "method.request.path.orderId"
         },
@@ -9378,10 +9758,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "date",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.date": "method.request.path.date"
         },
@@ -9703,10 +10092,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.code": "method.request.path.code"
         },
@@ -9933,10 +10331,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.token": "method.request.path.token"
         },
@@ -10179,10 +10586,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "careerId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.careerId": "method.request.path.careerId"
         },
@@ -10713,10 +11129,19 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "pnr",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "200 response",
@@ -10790,10 +11215,24 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [{
-          "in": "header",
-          "name": "Cookie"
-        }],
+        "parameters": [
+          {
+            "name": "bookingId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "flightId",
+            "in": "path",
+            "type": "string"
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "requestParameters": {
            "integration.request.path.bookingId": "method.request.path.bookingId",
            "integration.request.path.flightId": "method.request.path.flightId"
