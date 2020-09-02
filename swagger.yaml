@@ -11212,31 +11212,26 @@
     },
     "/server/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
-          {
-            "name": "bookingId",
-            "in": "path",
-            "type": "string"
-          },
-          {
-            "name": "flightId",
-            "in": "path",
-            "type": "string"
-          },
           {
             "name": "Cookie",
             "in": "header",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "flightId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "bookingId",
+            "in": "path",
+            "required": true,
+            "type": "string"
           }
         ],
-        "requestParameters": {
-           "integration.request.path.bookingId": "method.request.path.bookingId",
-           "integration.request.path.flightId": "method.request.path.flightId"
-        },
         "responses": {
           "200": {
             "description": "200 response",
@@ -11248,35 +11243,36 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri":"<DOMAIN_URL>/api/cancellations/listRefundModes/{bookingId}/{flightId}",
+          "type": "http_proxy",
+          "uri": "<DOMAIN_URL>/api/cancellations/listRefundModes/{bookingId}/{flightId}",
           "responses": {
             "default": {
               "statusCode": "200"
             }
           },
+          "requestParameters": {
+            "integration.request.path.bookingId": "method.request.path.bookingId",
+            "integration.request.path.flightId": "method.request.path.flightId"
+          },
           "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
+          "httpMethod": "GET"
         }
       },
       "options": {
         "consumes": [
           "application/json"
         ],
-        "produces": [
-          "application/json"
-        ],
         "responses": {
           "200": {
             "description": "200 response",
             "headers": {
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
               "Access-Control-Allow-Origin": {
                 "type": "string"
               },
               "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
                 "type": "string"
               },
               "Access-Control-Allow-Headers": {
@@ -11286,6 +11282,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
+          "type": "mock",
           "responses": {
             "default": {
               "statusCode": "200",
@@ -11300,8 +11297,7 @@
           "requestTemplates": {
             "application/json": "{\"statusCode\": 200}"
           },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
+          "passthroughBehavior": "when_no_match"
         }
       }
     },
