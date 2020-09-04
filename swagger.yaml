@@ -10985,7 +10985,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/logout",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11060,7 +11060,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/count",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11135,7 +11135,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/deferredBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11210,7 +11210,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/estimatedRefund",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11285,7 +11285,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/failedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11360,7 +11360,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getAllBookingsByAgents",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11447,7 +11447,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getBooking/{bookingId}/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11526,7 +11526,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11613,7 +11613,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getBookingsByUserId/{userId}/{type}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11692,7 +11692,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getOfflineBookingDetails",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11767,7 +11767,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getUserPendingBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11842,7 +11842,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/initializedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11917,7 +11917,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/rebookedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11992,7 +11992,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/rescheduledBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12067,7 +12067,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/savedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12142,7 +12142,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/updateCollectionStatus",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12217,7 +12217,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/verifyPnr",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12292,7 +12292,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/add",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12367,7 +12367,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/count",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12442,7 +12442,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/getRequests",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12517,7 +12517,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/later",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12604,7 +12604,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/listRefundModes/{bookingId}/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12683,7 +12683,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/pending-later",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12758,7 +12758,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/processCancellation",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12833,7 +12833,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/coupon/generate",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12914,7 +12914,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/coupon/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -12992,7 +12992,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/getAll",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13073,7 +13073,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/ifsc/validate/{code}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13151,7 +13151,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/update",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13238,7 +13238,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/{userId}/{Id}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13329,7 +13329,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/notes/getAll/{userId}/{bookingId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13408,7 +13408,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/notifications/sendMail",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13483,7 +13483,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/refunds/getRequests",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13558,7 +13558,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/refunds/later",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13633,7 +13633,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/refunds/process",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13708,7 +13708,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/search/init",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13789,7 +13789,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/search/result/{searchId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13867,7 +13867,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/supplier/all",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -13948,7 +13948,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/supplier/get/{supplierId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14026,7 +14026,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/add",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14101,7 +14101,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/cashDeposits",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14176,7 +14176,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/checkAndAddUser",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14263,7 +14263,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/disable/{userId}/{isEnabled}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14348,7 +14348,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/get/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14426,7 +14426,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/sendLoginOtp",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14501,7 +14501,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/update",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14582,7 +14582,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/wallet/balance/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -14660,7 +14660,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/wallet/update",
           "responses": {
             "default": {
               "statusCode": "200"
