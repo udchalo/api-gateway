@@ -10835,7 +10835,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/authenticated",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -10985,7 +10985,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/login",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11043,7 +11043,7 @@
       "post": {
         "parameters": [
           {
-            "name": "Cookie",
+            "name": "Cookie",/api/common/careers/getAll
             "in": "header",
             "required": false,
             "type": "string"
