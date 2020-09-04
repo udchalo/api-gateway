@@ -26,7 +26,7 @@
         ],
         "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri": "http://ucbeanstalkapplications-<NODE_ENV>.eba-emtxm8qt.ap-south-1.elasticbeanstalk.com:8081/{proxy}",
+          "uri": "<DOMAIN_URL>:8081/{proxy}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -10910,7 +10910,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/login",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -10985,7 +10985,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/admin/auth/login",
+          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -11043,7 +11043,7 @@
       "post": {
         "parameters": [
           {
-            "name": "Cookie",/api/common/careers/getAll
+            "name": "Cookie",
             "in": "header",
             "required": false,
             "type": "string"
