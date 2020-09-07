@@ -8,5 +8,7 @@
     "https"
   ],
   "paths": {
-    $ref: ./admin.yaml
+    $ref: ./admin.yaml,
     $ref: ./server.yaml
+  }
+}
