@@ -2,13 +2,13 @@
   "swagger": "2.0",
   "info": {
     "description": "Serverless Api Gateway proxy for uc-server, uc-server-admin and hotels",
-    "title": "<NODE_ENV>-api-gateway-proxy"
+    "title": "stage-api-gateway-proxy"
   },
   "schemes": [
     "https"
   ],
   "paths": {
-    $ref: ./admin.yaml,
+    $ref: ./admin.yaml
     $ref: ./server.yaml
   }
 }
