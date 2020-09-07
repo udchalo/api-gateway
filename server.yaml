@@ -3,7 +3,7 @@
   "info": {
     "description": "Serverless Api Gateway proxy for uc-server, uc-server-admin and hotels",
     "title": "stage-api-gateway-proxy"
-  },\]
+  },
   "schemes": [
     "https"
   ],
