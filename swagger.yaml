@@ -9,4 +9,4 @@
   ],
   "paths": {
     $ref: ./admin.yaml
-    $ref: ./sever.yaml
+    $ref: ./server.yaml
