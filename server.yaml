@@ -8,7 +8,7 @@
     "https"
   ],
   "paths": {
-    "/server/api/cancellations/add": {
+    "/api/cancellations/add": {
       "post": {
         "parameters": [
           {
@@ -83,7 +83,7 @@
         }
       }
     },
-    "/server/api/cancellations/addCancellation": {
+    "/api/cancellations/addCancellation": {
       "post": {
         "parameters": [
           {
@@ -158,7 +158,7 @@
         }
       }
     },
-    "/server/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
+    "/api/cancellations/listRefundModes/{bookingId}/{flightId}": {
       "get": {
         "parameters": [
           {
@@ -249,7 +249,7 @@
         }
       }
     },
-    "/server/api/cancellations/update": {
+    "/api/cancellations/update": {
       "post": {
         "parameters": [
           {
@@ -324,7 +324,7 @@
         }
       }
     },
-    "/server/api/cancellations/{pnr}": {
+    "/api/cancellations/{pnr}": {
       "get": {
         "parameters": [
           {
@@ -408,7 +408,7 @@
         }
       }
     },
-    "/server/api/common/careers/get/{careerId}": {
+    "/api/common/careers/get/{careerId}": {
       "get": {
         "parameters": [
           {
@@ -492,7 +492,7 @@
         }
       }
     },
-    "/server/api/common/careers/getAll": {
+    "/api/common/careers/getAll": {
       "get": {
         "parameters": [
           {
@@ -567,7 +567,7 @@
         }
       }
     },
-    "/server/api/common/jobApplication": {
+    "/api/common/jobApplication": {
       "post": {
         "parameters": [
           {
@@ -642,7 +642,7 @@
         }
       }
     },
-    "/server/api/common/locations/getAll": {
+    "/api/common/locations/getAll": {
       "get": {
         "parameters": [
           {
@@ -717,7 +717,7 @@
         }
       }
     },
-    "/server/api/common/news/getAll": {
+    "/api/common/news/getAll": {
       "get": {
         "parameters": [
           {
@@ -792,7 +792,7 @@
         }
       }
     },
-    "/server/api/coupon": {
+    "/api/coupon": {
       "post": {
         "parameters": [
           {
@@ -867,7 +867,7 @@
         }
       }
     },
-    "/server/api/coupon/all/{token}": {
+    "/api/coupon/all/{token}": {
       "get": {
         "parameters": [
           {
@@ -951,7 +951,7 @@
         }
       }
     },
-    "/server/api/coupon/generateEmployeeCoupon/{sessionId}": {
+    "/api/coupon/generateEmployeeCoupon/{sessionId}": {
       "get": {
         "parameters": [
           {
@@ -1035,7 +1035,7 @@
         }
       }
     },
-    "/server/api/coupon/list": {
+    "/api/coupon/list": {
       "post": {
         "parameters": [
           {
@@ -1110,7 +1110,7 @@
         }
       }
     },
-    "/server/api/flights/accountPendingCount": {
+    "/api/flights/accountPendingCount": {
       "get": {
         "parameters": [
           {
@@ -1185,7 +1185,7 @@
         }
       }
     },
-    "/server/api/flights/add": {
+    "/api/flights/add": {
       "post": {
         "parameters": [
           {
@@ -1260,7 +1260,7 @@
         }
       }
     },
-    "/server/api/flights/addAirports": {
+    "/api/flights/addAirports": {
       "post": {
         "parameters": [
           {
@@ -1335,7 +1335,7 @@
         }
       }
     },
-    "/server/api/flights/addPaymentCollentionDetails": {
+    "/api/flights/addPaymentCollentionDetails": {
       "post": {
         "parameters": [
           {
@@ -1410,7 +1410,7 @@
         }
       }
     },
-    "/server/api/flights/airlines/rules/{bookingId}/{pnr}": {
+    "/api/flights/airlines/rules/{bookingId}/{pnr}": {
       "get": {
         "parameters": [
           {
@@ -1501,7 +1501,7 @@
         }
       }
     },
-    "/server/api/flights/airports": {
+    "/api/flights/airports": {
       "get": {
         "parameters": [
           {
@@ -1576,7 +1576,7 @@
         }
       }
     },
-    "/server/api/flights/airports/invalidate": {
+    "/api/flights/airports/invalidate": {
       "get": {
         "parameters": [
           {
@@ -1651,7 +1651,7 @@
         }
       }
     },
-    "/server/api/flights/all": {
+    "/api/flights/all": {
       "get": {
         "parameters": [
           {
@@ -1726,7 +1726,7 @@
         }
       }
     },
-    "/server/api/flights/bookResult/{bookingId}": {
+    "/api/flights/bookResult/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -1810,7 +1810,7 @@
         }
       }
     },
-    "/server/api/flights/bookStatus/{bookingId}": {
+    "/api/flights/bookStatus/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -1894,7 +1894,7 @@
         }
       }
     },
-    "/server/api/flights/bookingFailedClean/{token}": {
+    "/api/flights/bookingFailedClean/{token}": {
       "get": {
         "parameters": [
           {
@@ -1978,7 +1978,7 @@
         }
       }
     },
-    "/server/api/flights/bookingReports/{duration}/{value}/{token}": {
+    "/api/flights/bookingReports/{duration}/{value}/{token}": {
       "get": {
         "parameters": [
           {
@@ -2076,7 +2076,7 @@
         }
       }
     },
-    "/server/api/flights/cabins": {
+    "/api/flights/cabins": {
       "get": {
         "parameters": [
           {
@@ -2151,7 +2151,7 @@
         }
       }
     },
-    "/server/api/flights/check-in": {
+    "/api/flights/check-in": {
       "get": {
         "parameters": [
           {
@@ -2221,7 +2221,7 @@
         }
       }
     },
-    "/server/api/flights/collectLaterCount": {
+    "/api/flights/collectLaterCount": {
       "get": {
         "parameters": [
           {
@@ -2296,7 +2296,7 @@
         }
       }
     },
-    "/server/api/flights/createBooking": {
+    "/api/flights/createBooking": {
       "post": {
         "parameters": [
           {
@@ -2371,7 +2371,7 @@
         }
       }
     },
-    "/server/api/flights/dailyRefunds/{value}/{token}": {
+    "/api/flights/dailyRefunds/{value}/{token}": {
       "get": {
         "parameters": [
           {
@@ -2462,7 +2462,7 @@
         }
       }
     },
-    "/server/api/flights/estimatedRefund": {
+    "/api/flights/estimatedRefund": {
       "post": {
         "parameters": [
           {
@@ -2537,7 +2537,7 @@
         }
       }
     },
-    "/server/api/flights/getAirports": {
+    "/api/flights/getAirports": {
       "get": {
         "parameters": [
           {
@@ -2612,7 +2612,7 @@
         }
       }
     },
-    "/server/api/flights/getRequest/{sessionId}": {
+    "/api/flights/getRequest/{sessionId}": {
       "get": {
         "parameters": [
           {
@@ -2696,7 +2696,7 @@
         }
       }
     },
-    "/server/api/flights/getTicket/{bookingId}": {
+    "/api/flights/getTicket/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -2780,7 +2780,7 @@
         }
       }
     },
-    "/server/api/flights/getToken": {
+    "/api/flights/getToken": {
       "get": {
         "parameters": [
           {
@@ -2855,7 +2855,7 @@
         }
       }
     },
-    "/server/api/flights/health": {
+    "/api/flights/health": {
       "get": {
         "parameters": [
           {
@@ -2930,7 +2930,7 @@
         }
       }
     },
-    "/server/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
+    "/api/flights/monthlyBookings/{month}/{year}/{batch}/{token}": {
       "get": {
         "parameters": [
           {
@@ -3029,7 +3029,7 @@
         }
       }
     },
-    "/server/api/flights/monthlyRefunds/{value}/{token}": {
+    "/api/flights/monthlyRefunds/{value}/{token}": {
       "get": {
         "parameters": [
           {
@@ -3120,7 +3120,7 @@
         }
       }
     },
-    "/server/api/flights/price": {
+    "/api/flights/price": {
       "post": {
         "parameters": [
           {
@@ -3195,7 +3195,7 @@
         }
       }
     },
-    "/server/api/flights/priceAndSave": {
+    "/api/flights/priceAndSave": {
       "post": {
         "parameters": [
           {
@@ -3270,7 +3270,7 @@
         }
       }
     },
-    "/server/api/flights/rebooking": {
+    "/api/flights/rebooking": {
       "get": {
         "parameters": [
           {
@@ -3345,7 +3345,7 @@
         }
       }
     },
-    "/server/api/flights/requestRescheduling": {
+    "/api/flights/requestRescheduling": {
       "post": {
         "parameters": [
           {
@@ -3420,7 +3420,7 @@
         }
       }
     },
-    "/server/api/flights/reschedule/saveBooking": {
+    "/api/flights/reschedule/saveBooking": {
       "post": {
         "parameters": [
           {
@@ -3495,7 +3495,7 @@
         }
       }
     },
-    "/server/api/flights/reschedule/searchResult/{sessionId}": {
+    "/api/flights/reschedule/searchResult/{sessionId}": {
       "get": {
         "parameters": [
           {
@@ -3579,7 +3579,7 @@
         }
       }
     },
-    "/server/api/flights/saveBooking": {
+    "/api/flights/saveBooking": {
       "post": {
         "parameters": [
           {
@@ -3654,7 +3654,7 @@
         }
       }
     },
-    "/server/api/flights/savedBooking/{sessionId}": {
+    "/api/flights/savedBooking/{sessionId}": {
       "get": {
         "parameters": [
           {
@@ -3738,7 +3738,7 @@
         }
       }
     },
-    "/server/api/flights/savedBooking/{sessionId}/{bookingId}": {
+    "/api/flights/savedBooking/{sessionId}/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -3829,7 +3829,7 @@
         }
       }
     },
-    "/server/api/flights/searchInit": {
+    "/api/flights/searchInit": {
       "post": {
         "parameters": [
           {
@@ -3904,7 +3904,7 @@
         }
       }
     },
-    "/server/api/flights/searchResult/{sessionId}": {
+    "/api/flights/searchResult/{sessionId}": {
       "get": {
         "parameters": [
           {
@@ -3988,7 +3988,7 @@
         }
       }
     },
-    "/server/api/flights/searchStatus/{sessionId}": {
+    "/api/flights/searchStatus/{sessionId}": {
       "get": {
         "parameters": [
           {
@@ -4069,7 +4069,7 @@
         }
       }
     },
-    "/server/api/flights/update": {
+    "/api/flights/update": {
       "post": {
         "parameters": [
           {
@@ -4144,7 +4144,7 @@
         }
       }
     },
-    "/server/api/flights/updateBooking": {
+    "/api/flights/updateBooking": {
       "post": {
         "parameters": [
           {
@@ -4219,7 +4219,7 @@
         }
       }
     },
-    "/server/api/flights/{proxy+}": {
+    "/api/flights/{proxy+}": {
       "x-amazon-apigateway-any-method": {
         "responses": {},
         "x-amazon-apigateway-integration": {
@@ -4230,7 +4230,7 @@
         }
       }
     },
-    "/server/api/neft/add": {
+    "/api/neft/add": {
       "post": {
         "parameters": [
           {
@@ -4305,7 +4305,7 @@
         }
       }
     },
-    "/server/api/neft/add/cashLedger": {
+    "/api/neft/add/cashLedger": {
       "post": {
         "parameters": [
           {
@@ -4380,7 +4380,7 @@
         }
       }
     },
-    "/server/api/neft/validateIFSC/{code}": {
+    "/api/neft/validateIFSC/{code}": {
       "get": {
         "parameters": [
           {
@@ -4464,7 +4464,7 @@
         }
       }
     },
-    "/server/api/payments/add": {
+    "/api/payments/add": {
       "post": {
         "parameters": [
           {
@@ -4539,7 +4539,7 @@
         }
       }
     },
-    "/server/api/payments/cancel": {
+    "/api/payments/cancel": {
       "post": {
         "parameters": [
           {
@@ -4614,7 +4614,7 @@
         }
       }
     },
-    "/server/api/payments/fail": {
+    "/api/payments/fail": {
       "post": {
         "parameters": [
           {
@@ -4689,7 +4689,7 @@
         }
       }
     },
-    "/server/api/payments/newPaymentInit": {
+    "/api/payments/newPaymentInit": {
       "post": {
         "parameters": [
           {
@@ -4764,7 +4764,7 @@
         }
       }
     },
-    "/server/api/payments/paymentInit": {
+    "/api/payments/paymentInit": {
       "post": {
         "parameters": [
           {
@@ -4839,7 +4839,7 @@
         }
       }
     },
-    "/server/api/payments/paymentProviders/{sessionId}/{product}": {
+    "/api/payments/paymentProviders/{sessionId}/{product}": {
       "get": {
         "parameters": [
           {
@@ -4930,7 +4930,7 @@
         }
       }
     },
-    "/server/api/payments/success": {
+    "/api/payments/success": {
       "post": {
         "parameters": [
           {
@@ -5005,7 +5005,7 @@
         }
       }
     },
-    "/server/api/payments/success/{orderId}": {
+    "/api/payments/success/{orderId}": {
       "post": {
         "parameters": [
           {
@@ -5080,7 +5080,7 @@
         }
       }
     },
-    "/server/api/payments/transactions/{date}": {
+    "/api/payments/transactions/{date}": {
       "get": {
         "parameters": [
           {
@@ -5164,7 +5164,7 @@
         }
       }
     },
-    "/server/api/referral": {
+    "/api/referral": {
       "get": {
         "parameters": [
           {
@@ -5239,7 +5239,7 @@
         }
       }
     },
-    "/server/api/support/allok/{bookingId}": {
+    "/api/support/allok/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -5323,7 +5323,7 @@
         }
       }
     },
-    "/server/api/support/emailInvoice/{pnr}": {
+    "/api/support/emailInvoice/{pnr}": {
       "get": {
         "parameters": [
           {
@@ -5407,7 +5407,7 @@
         }
       }
     },
-    "/server/api/support/getBookingDetails/{pnr}/{email}": {
+    "/api/support/getBookingDetails/{pnr}/{email}": {
       "get": {
         "parameters": [
           {
@@ -5498,7 +5498,7 @@
         }
       }
     },
-    "/server/api/support/getInvoicePdf/{pnr}/{email}": {
+    "/api/support/getInvoicePdf/{pnr}/{email}": {
       "get": {
         "parameters": [
           {
@@ -5589,7 +5589,7 @@
         }
       }
     },
-    "/server/api/support/getLTC/{bookingId}": {
+    "/api/support/getLTC/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -5673,7 +5673,7 @@
         }
       }
     },
-    "/server/api/support/getPdf/{pnr}/{email}": {
+    "/api/support/getPdf/{pnr}/{email}": {
       "get": {
         "parameters": [
           {
@@ -5764,7 +5764,7 @@
         }
       }
     },
-    "/server/api/support/getPolicies/{type}/{hotelName}": {
+    "/api/support/getPolicies/{type}/{hotelName}": {
       "get": {
         "parameters": [
           {
@@ -5855,7 +5855,7 @@
         }
       }
     },
-    "/server/api/support/getVisaRequirements/{destinationCountryCode}": {
+    "/api/support/getVisaRequirements/{destinationCountryCode}": {
       "post": {
         "parameters": [
           {
@@ -5930,7 +5930,7 @@
         }
       }
     },
-    "/server/api/support/isLatest/{version}": {
+    "/api/support/isLatest/{version}": {
       "get": {
         "parameters": [
           {
@@ -6014,7 +6014,7 @@
         }
       }
     },
-    "/server/api/support/isLatestIOS/{version}": {
+    "/api/support/isLatestIOS/{version}": {
       "get": {
         "parameters": [
           {
@@ -6098,7 +6098,7 @@
         }
       }
     },
-    "/server/api/support/log": {
+    "/api/support/log": {
       "post": {
         "parameters": [
           {
@@ -6173,7 +6173,7 @@
         }
       }
     },
-    "/server/api/support/notifySupport": {
+    "/api/support/notifySupport": {
       "post": {
         "parameters": [
           {
@@ -6239,7 +6239,7 @@
         }
       }
     },
-    "/server/api/support/sendEmail/{pnr}": {
+    "/api/support/sendEmail/{pnr}": {
       "get": {
         "parameters": [
           {
@@ -6323,7 +6323,7 @@
         }
       }
     },
-    "/server/api/support/sendSms/{pnr}": {
+    "/api/support/sendSms/{pnr}": {
       "get": {
         "parameters": [
           {
@@ -6407,7 +6407,7 @@
         }
       }
     },
-    "/server/api/user/addTraveller": {
+    "/api/user/addTraveller": {
       "post": {
         "parameters": [
           {
@@ -6482,7 +6482,7 @@
         }
       }
     },
-    "/server/api/user/auth/facebook": {
+    "/api/user/auth/facebook": {
       "get": {
         "parameters": [
           {
@@ -6557,7 +6557,7 @@
         }
       }
     },
-    "/server/api/user/auth/facebook/callback": {
+    "/api/user/auth/facebook/callback": {
       "get": {
         "parameters": [
           {
@@ -6632,7 +6632,7 @@
         }
       }
     },
-    "/server/api/user/auth/google": {
+    "/api/user/auth/google": {
       "get": {
         "parameters": [
           {
@@ -6707,7 +6707,7 @@
         }
       }
     },
-    "/server/api/user/auth/google/callback": {
+    "/api/user/auth/google/callback": {
       "get": {
         "parameters": [
           {
@@ -6782,7 +6782,7 @@
         }
       }
     },
-    "/server/api/user/auth/linkedin": {
+    "/api/user/auth/linkedin": {
       "get": {
         "parameters": [
           {
@@ -6857,7 +6857,7 @@
         }
       }
     },
-    "/server/api/user/auth/linkedin/callback": {
+    "/api/user/auth/linkedin/callback": {
       "get": {
         "parameters": [
           {
@@ -6932,7 +6932,7 @@
         }
       }
     },
-    "/server/api/user/authenticated": {
+    "/api/user/authenticated": {
       "get": {
         "parameters": [
           {
@@ -7010,7 +7010,7 @@
         }
       }
     },
-    "/server/api/user/cashDeposit": {
+    "/api/user/cashDeposit": {
       "post": {
         "parameters": [
           {
@@ -7085,7 +7085,7 @@
         }
       }
     },
-    "/server/api/user/cashDeposits": {
+    "/api/user/cashDeposits": {
       "get": {
         "parameters": [
           {
@@ -7160,7 +7160,7 @@
         }
       }
     },
-    "/server/api/user/cashDeposits/count": {
+    "/api/user/cashDeposits/count": {
       "get": {
         "parameters": [
           {
@@ -7235,7 +7235,7 @@
         }
       }
     },
-    "/server/api/user/cashDeposits/update": {
+    "/api/user/cashDeposits/update": {
       "post": {
         "parameters": [
           {
@@ -7310,7 +7310,7 @@
         }
       }
     },
-    "/server/api/user/createAgent": {
+    "/api/user/createAgent": {
       "post": {
         "parameters": [
           {
@@ -7385,7 +7385,7 @@
         }
       }
     },
-    "/server/api/user/deleteAccount": {
+    "/api/user/deleteAccount": {
       "get": {
         "parameters": [
           {
@@ -7460,7 +7460,7 @@
         }
       }
     },
-    "/server/api/user/deleteTraveller/{travellerId}": {
+    "/api/user/deleteTraveller/{travellerId}": {
       "get": {
         "parameters": [
           {
@@ -7544,7 +7544,7 @@
         }
       }
     },
-    "/server/api/user/forgotPassword": {
+    "/api/user/forgotPassword": {
       "post": {
         "parameters": [
           {
@@ -7619,7 +7619,7 @@
         }
       }
     },
-    "/server/api/user/getAllBookings": {
+    "/api/user/getAllBookings": {
       "post": {
         "parameters": [
           {
@@ -7694,7 +7694,7 @@
         }
       }
     },
-    "/server/api/user/getBooking": {
+    "/api/user/getBooking": {
       "post": {
         "parameters": [
           {
@@ -7769,7 +7769,7 @@
         }
       }
     },
-    "/server/api/user/getBookingDetails/{bookingId}/{flightId}": {
+    "/api/user/getBookingDetails/{bookingId}/{flightId}": {
       "get": {
         "parameters": [
           {
@@ -7860,7 +7860,7 @@
         }
       }
     },
-    "/server/api/user/getCancellations": {
+    "/api/user/getCancellations": {
       "get": {
         "parameters": [
           {
@@ -7935,7 +7935,7 @@
         }
       }
     },
-    "/server/api/user/getProfile": {
+    "/api/user/getProfile": {
       "get": {
         "parameters": [
           {
@@ -8010,7 +8010,7 @@
         }
       }
     },
-    "/server/api/user/getTravellerDetails/{travellerId}": {
+    "/api/user/getTravellerDetails/{travellerId}": {
       "get": {
         "parameters": [
           {
@@ -8094,7 +8094,7 @@
         }
       }
     },
-    "/server/api/user/getTravellers": {
+    "/api/user/getTravellers": {
       "get": {
         "parameters": [
           {
@@ -8169,7 +8169,7 @@
         }
       }
     },
-    "/server/api/user/getTravellersCount/{category}": {
+    "/api/user/getTravellersCount/{category}": {
       "get": {
         "parameters": [
           {
@@ -8253,7 +8253,7 @@
         }
       }
     },
-    "/server/api/user/getTripsCount/{category}": {
+    "/api/user/getTripsCount/{category}": {
       "get": {
         "parameters": [
           {
@@ -8337,7 +8337,7 @@
         }
       }
     },
-    "/server/api/user/getTripsTillDate": {
+    "/api/user/getTripsTillDate": {
       "post": {
         "parameters": [
           {
@@ -8412,7 +8412,7 @@
         }
       }
     },
-    "/server/api/user/getUserDetails/{userId}": {
+    "/api/user/getUserDetails/{userId}": {
       "post": {
         "parameters": [
           {
@@ -8487,7 +8487,7 @@
         }
       }
     },
-    "/server/api/user/login": {
+    "/api/user/login": {
       "post": {
         "parameters": [
           {
@@ -8562,7 +8562,7 @@
         }
       }
     },
-    "/server/api/user/loginViaOtp": {
+    "/api/user/loginViaOtp": {
       "post": {
         "parameters": [
           {
@@ -8637,7 +8637,7 @@
         }
       }
     },
-    "/server/api/user/logout": {
+    "/api/user/logout": {
       "get": {
         "parameters": [
           {
@@ -8712,7 +8712,7 @@
         }
       }
     },
-    "/server/api/user/merge": {
+    "/api/user/merge": {
       "post": {
         "parameters": [
           {
@@ -8787,7 +8787,7 @@
         }
       }
     },
-    "/server/api/user/profile": {
+    "/api/user/profile": {
       "get": {
         "parameters": [
           {
@@ -8858,7 +8858,7 @@
         }
       }
     },
-    "/server/api/user/requestTravellerVerification/{travellerId}": {
+    "/api/user/requestTravellerVerification/{travellerId}": {
       "post": {
         "parameters": [
           {
@@ -8930,7 +8930,7 @@
         }
       }
     },
-    "/server/api/user/requestUsercategoryVerification": {
+    "/api/user/requestUsercategoryVerification": {
       "post": {
         "parameters": [
           {
@@ -9005,7 +9005,7 @@
         }
       }
     },
-    "/server/api/user/sendEmailVerificationLink": {
+    "/api/user/sendEmailVerificationLink": {
       "get": {
         "parameters": [
           {
@@ -9080,7 +9080,7 @@
         }
       }
     },
-    "/server/api/user/sendOtp": {
+    "/api/user/sendOtp": {
       "post": {
         "parameters": [
           {
@@ -9155,7 +9155,7 @@
         }
       }
     },
-    "/server/api/user/sendOtpForLogin": {
+    "/api/user/sendOtpForLogin": {
       "post": {
         "parameters": [
           {
@@ -9230,7 +9230,7 @@
         }
       }
     },
-    "/server/api/user/sendOtpForSignup": {
+    "/api/user/sendOtpForSignup": {
       "post": {
         "parameters": [
           {
@@ -9305,7 +9305,7 @@
         }
       }
     },
-    "/server/api/user/signup": {
+    "/api/user/signup": {
       "post": {
         "parameters": [
           {
@@ -9380,7 +9380,7 @@
         }
       }
     },
-    "/server/api/user/signupViaOtp": {
+    "/api/user/signupViaOtp": {
       "post": {
         "parameters": [
           {
@@ -9455,7 +9455,7 @@
         }
       }
     },
-    "/server/api/user/updatePassword": {
+    "/api/user/updatePassword": {
       "post": {
         "parameters": [
           {
@@ -9530,7 +9530,7 @@
         }
       }
     },
-    "/server/api/user/updatePasswordViaForgotLink": {
+    "/api/user/updatePasswordViaForgotLink": {
       "post": {
         "parameters": [
           {
@@ -9605,7 +9605,7 @@
         }
       }
     },
-    "/server/api/user/updateProfile": {
+    "/api/user/updateProfile": {
       "post": {
         "parameters": [
           {
@@ -9680,7 +9680,7 @@
         }
       }
     },
-    "/server/api/user/updateProfilePic": {
+    "/api/user/updateProfilePic": {
       "post": {
         "parameters": [
           {
@@ -9755,7 +9755,7 @@
         }
       }
     },
-    "/server/api/user/updateSettings": {
+    "/api/user/updateSettings": {
       "post": {
         "parameters": [
           {
@@ -9830,7 +9830,7 @@
         }
       }
     },
-    "/server/api/user/updateTraveller": {
+    "/api/user/updateTraveller": {
       "post": {
         "parameters": [
           {
@@ -9905,7 +9905,7 @@
         }
       }
     },
-    "/server/api/user/verifyEmail": {
+    "/api/user/verifyEmail": {
       "post": {
         "parameters": [
           {
@@ -9980,7 +9980,7 @@
         }
       }
     },
-    "/server/api/user/verifyOtp/{otp}": {
+    "/api/user/verifyOtp/{otp}": {
       "get": {
         "parameters": [
           {
@@ -10064,7 +10064,7 @@
         }
       }
     },
-    "/server/api/user/verifyPasswordResetLink": {
+    "/api/user/verifyPasswordResetLink": {
       "post": {
         "parameters": [
           {
@@ -10139,7 +10139,7 @@
         }
       }
     },
-    "/server/api/verification/categoryVerification": {
+    "/api/verification/categoryVerification": {
       "post": {
         "parameters": [
           {
@@ -10214,7 +10214,7 @@
         }
       }
     },
-    "/server/api/wallet/closingBalance/{token}": {
+    "/api/wallet/closingBalance/{token}": {
       "get": {
         "parameters": [
           {
@@ -10298,7 +10298,7 @@
         }
       }
     },
-    "/server/api/wallet/create/{userId}": {
+    "/api/wallet/create/{userId}": {
       "get": {
         "parameters": [
           {
@@ -10382,7 +10382,7 @@
         }
       }
     },
-    "/server/api/wallet/getBalance": {
+    "/api/wallet/getBalance": {
       "get": {
         "parameters": [
           {
@@ -10457,7 +10457,7 @@
         }
       }
     },
-    "/server/api/wallet/getTransactions": {
+    "/api/wallet/getTransactions": {
       "post": {
         "parameters": [
           {
@@ -10532,7 +10532,7 @@
         }
       }
     },
-    "/server/api/wallet/refund": {
+    "/api/wallet/refund": {
       "get": {
         "parameters": [
           {
@@ -10607,7 +10607,7 @@
         }
       }
     },
-    "/server/api/wallet/sendBalAlert": {
+    "/api/wallet/sendBalAlert": {
       "post": {
         "parameters": [
           {
@@ -10682,7 +10682,7 @@
         }
       }
     },
-    "/server/api/wallet/walletReconcile/{token}": {
+    "/api/wallet/walletReconcile/{token}": {
       "get": {
         "parameters": [
           {
@@ -10774,3906 +10774,6 @@
           "passthroughBehavior": "when_no_match",
           "httpMethod": "ANY",
           "type": "http_proxy"
-        }
-      }
-    },
-    "/admin/api/admin/auth/authenticated": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/auth/login": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/auth/logout": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/count": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/deferredBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/estimatedRefund": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/failedBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/getAllBookingsByAgents": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/getBooking/{bookingId}/{userId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "bookingId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.bookingId": "method.request.path.bookingId",
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/getBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/getBookingsByUserId/{userId}/{type}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "type",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.type": "method.request.path.type",
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/getOfflineBookingDetails": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/getUserPendingBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/initializedBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/rebookedBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/rescheduledBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/savedBookings": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/updateCollectionStatus": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/bookings/verifyPnr": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/add": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/count": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/getRequests": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/later": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/listRefundModes/{bookingId}/{userId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "bookingId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.bookingId": "method.request.path.bookingId",
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/pending-later": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/cancellations/processCancellation": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/coupon/generate": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/coupon/{userId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/neft/getAll": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/neft/ifsc/validate/{code}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "code",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.code": "method.request.path.code"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/neft/update": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/neft/{userId}/{Id}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.id": "method.request.path.Id",
-            "integration.request.path.bookingId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/notes/getAll/{userId}/{bookingId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "bookingId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.bookingId": "method.request.path.bookingId",
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/notifications/sendMail": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/refunds/getRequests": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/refunds/later": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/refunds/process": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/search/init": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/search/result/{searchId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "searchId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.searchId": "method.request.path.searchId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/supplier/all": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/supplier/get/{supplierId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "supplierId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.supplierId": "method.request.path.supplierId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/add": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/cashDeposits": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/checkAndAddUser": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/disable/{userId}/{isEnabled}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "isEnabled",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.isEnabled": "method.request.path.isEnabled",
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/get/{userId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/sendLoginOtp": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/users/update": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/wallet/balance/{userId}": {
-      "get": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "requestParameters": {
-            "integration.request.path.userId": "method.request.path.userId"
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
-        }
-      }
-    },
-    "/admin/api/admin/wallet/update": {
-      "post": {
-        "parameters": [
-          {
-            "name": "Cookie",
-            "in": "header",
-            "required": false,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
-          "responses": {
-            "default": {
-              "statusCode": "200"
-            }
-          },
-          "passthroughBehavior": "when_no_match",
-          "httpMethod": "POST",
-          "type": "http_proxy"
-        }
-      },
-      "options": {
-        "consumes": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "200 response",
-            "headers": {
-              "Access-Control-Allow-Origin": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Methods": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Credentials": {
-                "type": "string"
-              },
-              "Access-Control-Allow-Headers": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        "x-amazon-apigateway-integration": {
-          "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
-                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
-              }
-            }
-          },
-          "requestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "passthroughBehavior": "when_no_match",
-          "type": "mock"
         }
       }
     }
