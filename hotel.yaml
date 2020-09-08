@@ -8,7 +8,7 @@
     "https"
   ],
   "paths": {
-    "/hotel/{proxy+}": {
+    "/hotel/": {
       "x-amazon-apigateway-any-method": {
         "parameters": [
           {
@@ -26,7 +26,7 @@
         ],
         "responses": {},
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:8081/{proxy}",
+          "uri": "<DOMAIN_URL>:8081/",
           "responses": {
             "default": {
               "statusCode": "200"
