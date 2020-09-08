@@ -5,21 +5,40 @@ Globals:
   Api:
     OpenApiVersion: 3.0.1
 Resources:
-  ApiGateway<NODE_ENV>:
+  ApiGatewayServer<NODE_ENV>:
     Type: AWS::Serverless::Api
     Properties:
       StageName: <NODE_ENV>
-      DefinitionUri: ./swagger.yaml
+      DefinitionUri: ./server.yaml
+  ApiGatewayAdmin<NODE_ENV>:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: <NODE_ENV>
+      DefinitionUri: ./admin.yaml
 Outputs:
-  ApiGateway<NODE_ENV>:
+  ApiGatewayServer<NODE_ENV>:
     Description: 'API Gateway endpoint URL'
-    Value: !Sub 'https://${ApiGateway<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
-  ApiGateway<NODE_ENV>RestApiId:
+    Value: !Sub 'https://${ApiGatewayServer<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
+  ApiGatewayServer<NODE_ENV>RestApiId:
     Description: 'API Gateway ARN for Basic AWS API Gateway'
-    Value: !Ref ApiGateway<NODE_ENV>
+    Value: !Ref ApiGatewayServer<NODE_ENV>
     Export:
-      Name:  ApiGateway<NODE_ENV>-RestApiId
+      Name:  ApiGatewayServer<NODE_ENV>-RestApiId
   ApiGateway<NODE_ENV>RootResourceId:
-    Value: !GetAtt  ApiGateway<NODE_ENV>.RootResourceId
+    Value: !GetAtt  ApiGatewayServer<NODE_ENV>.RootResourceId
     Export:
-      Name:  ApiGateway<NODE_ENV>-RootResourceId
+      Name:  ApiGatewayServer<NODE_ENV>-RootResourceId
+      
+  ApiGatewayAdmin<NODE_ENV>:
+    Description: 'API Gateway endpoint URL'
+    Value: !Sub 'https://${ApiGatewayAdmin<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
+  ApiGatewayAdmin<NODE_ENV>RestApiId:
+    Description: 'API Gateway ARN for Basic AWS API Gateway'
+    Value: !Ref ApiGatewayAdmin<NODE_ENV>
+    Export:
+      Name:  ApiGatewayAdmin<NODE_ENV>-RestApiId
+  ApiGatewayAdmin<NODE_ENV>RootResourceId:
+    Value: !GetAtt  ApiGatewayAdmin<NODE_ENV>.RootResourceId
+    Export:
+      Name:  ApiGatewayAdmin<NODE_ENV>-RootResourceId
+      
