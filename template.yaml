@@ -17,11 +17,6 @@ Resources:
       StageName: <NODE_ENV>
       DefinitionUri: ./admin.yaml
       
-  ApiGatewayHotel<NODE_ENV>:
-    Type: AWS::Serverless::Api
-    Properties:
-      StageName: <NODE_ENV>
-      DefinitionUri: ./hotel.yaml
 Outputs:
   ApiGatewayServer<NODE_ENV>:
     Description: 'API Gateway For Server endpoint URL'
