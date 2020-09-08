@@ -8,7 +8,7 @@
     "https"
   ],
   "paths": {
-    "/api/auth/authenticated": {
+    "/api/admin/auth/authenticated": {
       "get": {
         "parameters": [
           {
@@ -29,7 +29,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/authenticated",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -83,7 +83,7 @@
         }
       }
     },
-    "/api/auth/login": {
+    "/api/admin/auth/login": {
       "post": {
         "parameters": [
           {
@@ -104,7 +104,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/login",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -158,7 +158,7 @@
         }
       }
     },
-    "/api/auth/logout": {
+    "/api/admin/auth/logout": {
       "get": {
         "parameters": [
           {
@@ -179,7 +179,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/auth/logout",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -233,7 +233,7 @@
         }
       }
     },
-    "/api/bookings/count": {
+    "/api/admin/bookings/count": {
       "post": {
         "parameters": [
           {
@@ -254,7 +254,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/count",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -308,7 +308,7 @@
         }
       }
     },
-    "/api/bookings/deferredBookings": {
+    "/api/admin/bookings/deferredBookings": {
       "post": {
         "parameters": [
           {
@@ -329,7 +329,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/deferredBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -383,7 +383,7 @@
         }
       }
     },
-    "/api/bookings/estimatedRefund": {
+    "/api/admin/bookings/estimatedRefund": {
       "post": {
         "parameters": [
           {
@@ -404,7 +404,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/estimatedRefund",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -458,7 +458,7 @@
         }
       }
     },
-    "/api/bookings/failedBookings": {
+    "/api/admin/bookings/failedBookings": {
       "post": {
         "parameters": [
           {
@@ -479,7 +479,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/failedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -533,7 +533,7 @@
         }
       }
     },
-    "/api/bookings/getAllBookingsByAgents": {
+    "/api/admin/bookings/getAllBookingsByAgents": {
       "get": {
         "parameters": [
           {
@@ -554,7 +554,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getAllBookingsByAgents",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -608,7 +608,7 @@
         }
       }
     },
-    "/api/bookings/getBooking/{bookingId}/{userId}": {
+    "/api/admin/bookings/getBooking/{bookingId}/{userId}": {
       "get": {
         "parameters": [
           {
@@ -641,7 +641,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getBooking/{bookingId}/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -699,7 +699,7 @@
         }
       }
     },
-    "/api/bookings/getBookings": {
+    "/api/admin/bookings/getBookings": {
       "post": {
         "parameters": [
           {
@@ -720,7 +720,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -774,7 +774,7 @@
         }
       }
     },
-    "/api/bookings/getBookingsByUserId/{userId}/{type}": {
+    "/api/admin/bookings/getBookingsByUserId/{userId}/{type}": {
       "get": {
         "parameters": [
           {
@@ -807,7 +807,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getBookingsByUserId/{userId}/{type}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -865,7 +865,7 @@
         }
       }
     },
-    "/api/bookings/getOfflineBookingDetails": {
+    "/api/admin/bookings/getOfflineBookingDetails": {
       "post": {
         "parameters": [
           {
@@ -886,7 +886,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getOfflineBookingDetails",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -940,7 +940,7 @@
         }
       }
     },
-    "/api/bookings/getUserPendingBookings": {
+    "/api/admin/bookings/getUserPendingBookings": {
       "post": {
         "parameters": [
           {
@@ -961,7 +961,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/getUserPendingBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1015,7 +1015,7 @@
         }
       }
     },
-    "/api/bookings/initializedBookings": {
+    "/api/admin/bookings/initializedBookings": {
       "post": {
         "parameters": [
           {
@@ -1036,7 +1036,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/initializedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1090,7 +1090,7 @@
         }
       }
     },
-    "/api/bookings/rebookedBookings": {
+    "/api/admin/bookings/rebookedBookings": {
       "post": {
         "parameters": [
           {
@@ -1111,7 +1111,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/rebookedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1165,7 +1165,7 @@
         }
       }
     },
-    "/api/bookings/rescheduledBookings": {
+    "/api/admin/bookings/rescheduledBookings": {
       "post": {
         "parameters": [
           {
@@ -1186,7 +1186,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/rescheduledBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1240,7 +1240,7 @@
         }
       }
     },
-    "/api/bookings/savedBookings": {
+    "/api/admin/bookings/savedBookings": {
       "post": {
         "parameters": [
           {
@@ -1261,7 +1261,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/savedBookings",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1315,7 +1315,7 @@
         }
       }
     },
-    "/api/bookings/updateCollectionStatus": {
+    "/api/admin/bookings/updateCollectionStatus": {
       "post": {
         "parameters": [
           {
@@ -1336,7 +1336,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/updateCollectionStatus",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1390,7 +1390,7 @@
         }
       }
     },
-    "/api/bookings/verifyPnr": {
+    "/api/admin/bookings/verifyPnr": {
       "post": {
         "parameters": [
           {
@@ -1411,7 +1411,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/bookings/verifyPnr",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1465,7 +1465,7 @@
         }
       }
     },
-    "/api/cancellations/add": {
+    "/api/admin/cancellations/add": {
       "post": {
         "parameters": [
           {
@@ -1486,7 +1486,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/add",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1540,7 +1540,7 @@
         }
       }
     },
-    "/api/cancellations/count": {
+    "/api/admin/cancellations/count": {
       "post": {
         "parameters": [
           {
@@ -1561,7 +1561,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/count",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1615,7 +1615,7 @@
         }
       }
     },
-    "/api/cancellations/getRequests": {
+    "/api/admin/cancellations/getRequests": {
       "post": {
         "parameters": [
           {
@@ -1636,7 +1636,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/getRequests",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1690,7 +1690,7 @@
         }
       }
     },
-    "/api/cancellations/later": {
+    "/api/admin/cancellations/later": {
       "get": {
         "parameters": [
           {
@@ -1711,7 +1711,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/later",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1765,7 +1765,7 @@
         }
       }
     },
-    "/api/cancellations/listRefundModes/{bookingId}/{userId}": {
+    "/api/admin/cancellations/listRefundModes/{bookingId}/{userId}": {
       "get": {
         "parameters": [
           {
@@ -1798,7 +1798,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/listRefundModes/{bookingId}/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1856,7 +1856,7 @@
         }
       }
     },
-    "/api/cancellations/pending-later": {
+    "/api/admin/cancellations/pending-later": {
       "get": {
         "parameters": [
           {
@@ -1877,7 +1877,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/pending-later",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -1931,7 +1931,7 @@
         }
       }
     },
-    "/api/cancellations/processCancellation": {
+    "/api/admin/cancellations/processCancellation": {
       "post": {
         "parameters": [
           {
@@ -1952,7 +1952,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/cancellations/processCancellation",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2006,7 +2006,7 @@
         }
       }
     },
-    "/api/coupon/generate": {
+    "/api/admin/coupon/generate": {
       "post": {
         "parameters": [
           {
@@ -2027,7 +2027,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/coupon/generate",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2081,7 +2081,7 @@
         }
       }
     },
-    "/api/coupon/{userId}": {
+    "/api/admin/coupon/{userId}": {
       "get": {
         "parameters": [
           {
@@ -2108,7 +2108,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/coupon/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2165,7 +2165,7 @@
         }
       }
     },
-    "/api/neft/getAll": {
+    "/api/admin/neft/getAll": {
       "post": {
         "parameters": [
           {
@@ -2186,7 +2186,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/getAll",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2240,7 +2240,7 @@
         }
       }
     },
-    "/api/neft/ifsc/validate/{code}": {
+    "/api/admin/neft/ifsc/validate/{code}": {
       "get": {
         "parameters": [
           {
@@ -2267,7 +2267,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/ifsc/validate/{code}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2324,7 +2324,7 @@
         }
       }
     },
-    "/api/neft/update": {
+    "/api/admin/neft/update": {
       "post": {
         "parameters": [
           {
@@ -2345,7 +2345,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/update",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2399,7 +2399,7 @@
         }
       }
     },
-    "/api/neft/{userId}/{Id}": {
+    "/api/admin/neft/{userId}/{Id}": {
       "get": {
         "parameters": [
           {
@@ -2432,7 +2432,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/neft/{userId}/{Id}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2490,7 +2490,7 @@
         }
       }
     },
-    "/api/notes/getAll/{userId}/{bookingId}": {
+    "/api/admin/notes/getAll/{userId}/{bookingId}": {
       "get": {
         "parameters": [
           {
@@ -2523,7 +2523,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/notes/getAll/{userId}/{bookingId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2581,7 +2581,7 @@
         }
       }
     },
-    "/api/notifications/sendMail": {
+    "/api/admin/notifications/sendMail": {
       "post": {
         "parameters": [
           {
@@ -2602,7 +2602,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/notifications/sendMail",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2656,7 +2656,7 @@
         }
       }
     },
-    "/api/refunds/getRequests": {
+    "/api/admin/refunds/getRequests": {
       "post": {
         "parameters": [
           {
@@ -2677,7 +2677,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/refunds/getRequests",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2731,7 +2731,7 @@
         }
       }
     },
-    "/api/refunds/later": {
+    "/api/admin/refunds/later": {
       "get": {
         "parameters": [
           {
@@ -2752,7 +2752,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/refunds/later",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2806,7 +2806,7 @@
         }
       }
     },
-    "/api/refunds/process": {
+    "/api/admin/refunds/process": {
       "post": {
         "parameters": [
           {
@@ -2827,7 +2827,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/refunds/process",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2881,7 +2881,7 @@
         }
       }
     },
-    "/api/search/init": {
+    "/api/admin/search/init": {
       "post": {
         "parameters": [
           {
@@ -2902,7 +2902,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/search/init",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -2956,7 +2956,7 @@
         }
       }
     },
-    "/api/search/result/{searchId}": {
+    "/api/admin/search/result/{searchId}": {
       "get": {
         "parameters": [
           {
@@ -2983,7 +2983,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/search/result/{searchId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3040,8 +3040,8 @@
         }
       }
     },
-    "/api/supplier/all": {
-      "get": {
+    "/api/admin/supplier/all": {
+      "post": {
         "parameters": [
           {
             "name": "Cookie",
@@ -3061,14 +3061,14 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/supplier/all",
           "responses": {
             "default": {
               "statusCode": "200"
             }
           },
           "passthroughBehavior": "when_no_match",
-          "httpMethod": "GET",
+          "httpMethod": "POST",
           "type": "http_proxy"
         }
       },
@@ -3101,7 +3101,7 @@
               "statusCode": "200",
               "responseParameters": {
                 "method.response.header.Access-Control-Allow-Credentials": "'true'",
-                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
                 "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
                 "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
               }
@@ -3115,7 +3115,7 @@
         }
       }
     },
-    "/api/supplier/get/{supplierId}": {
+    "/api/admin/supplier/get/{supplierId}": {
       "get": {
         "parameters": [
           {
@@ -3142,7 +3142,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/supplier/get/{supplierId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3199,7 +3199,7 @@
         }
       }
     },
-    "/api/users/add": {
+    "/api/admin/users/add": {
       "post": {
         "parameters": [
           {
@@ -3220,7 +3220,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/add",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3274,7 +3274,7 @@
         }
       }
     },
-    "/api/users/cashDeposits": {
+    "/api/admin/users/cashDeposits": {
       "get": {
         "parameters": [
           {
@@ -3295,7 +3295,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/getAll",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/cashDeposits",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3349,7 +3349,7 @@
         }
       }
     },
-    "/api/users/checkAndAddUser": {
+    "/api/admin/users/checkAndAddUser": {
       "post": {
         "parameters": [
           {
@@ -3370,7 +3370,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/checkAndAddUser",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3424,7 +3424,7 @@
         }
       }
     },
-    "/api/users/disable/{userId}/{isEnabled}": {
+    "/api/admin/users/disable/{userId}/{isEnabled}": {
       "get": {
         "parameters": [
           {
@@ -3457,7 +3457,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/disable/{userId}/{isEnabled}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3515,7 +3515,7 @@
         }
       }
     },
-    "/api/users/get/{userId}": {
+    "/api/admin/users/get/{userId}": {
       "get": {
         "parameters": [
           {
@@ -3542,7 +3542,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/get/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3599,7 +3599,7 @@
         }
       }
     },
-    "/api/users/sendLoginOtp": {
+    "/api/admin/users/sendLoginOtp": {
       "post": {
         "parameters": [
           {
@@ -3620,7 +3620,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/sendLoginOtp",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3674,7 +3674,7 @@
         }
       }
     },
-    "/api/users/update": {
+    "/api/admin/users/update": {
       "post": {
         "parameters": [
           {
@@ -3695,7 +3695,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/users/update",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3749,7 +3749,82 @@
         }
       }
     },
-    "/api/wallet/balance/{userId}": {
+    "/api/admin/users/getAll": {
+      "post": {
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "<DOMAIN_URL>:80/api/admin/users/getAll",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    },
+    "/api/admin/wallet/balance/{userId}": {
       "get": {
         "parameters": [
           {
@@ -3776,7 +3851,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/common/careers/get/{careerId}",
+          "uri": "<DOMAIN_URL>:80/api/admin/wallet/balance/{userId}",
           "responses": {
             "default": {
               "statusCode": "200"
@@ -3833,7 +3908,7 @@
         }
       }
     },
-    "/api/wallet/update": {
+    "/api/admin/locations/all": {
       "post": {
         "parameters": [
           {
@@ -3854,7 +3929,307 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "<DOMAIN_URL>:80/api/cancellations/add",
+          "uri": "<DOMAIN_URL>:80/api/admin/locations/all",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    },
+    "/api/admin/feeConfig/all": {
+      "post": {
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "<DOMAIN_URL>:80/api/admin/feeConfig/all",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    },
+    "/api/admin/quickBook/getTokenCount": {
+      "get": {
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "<DOMAIN_URL>:80/api/admin/quickBook/getTokenCount",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "GET",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    },
+    "/api/admin/payments/getAllCashBalance": {
+      "get": {
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "<DOMAIN_URL>:80/api/admin/payments/getAllCashBalance",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "GET",
+          "type": "http_proxy"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    },
+    "/api/admin/wallet/update": {
+      "post": {
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "<DOMAIN_URL>:80/api/admin/wallet/update",
           "responses": {
             "default": {
               "statusCode": "200"
