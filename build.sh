@@ -14,10 +14,15 @@ DOMAIN_URL="http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elastic
 #ORIGIN_URL="https://$1-ui.udchalo.com"
 echo $ORIGIN_URL
 
-#sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" swagger.yaml
+sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" server.yaml
 #sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
-#sed -i -e "s@<ORIGIN_URL>@$ORIGIN_URL@g" swagger.yaml
-#sed -i='' "s/<NODE_ENV>/$1/g" swagger.yaml
+#sed -i -e "s@<ORIGIN_URL>@$ORIGIN_URL@g" server.yaml
+sed -i='' "s/<NODE_ENV>/$1/g" sever.yaml
+
+sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" admin.yaml
+#sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
+sed -i='' "s/<NODE_ENV>/$1/g" admin.yaml
+
 sed -i='' "s/<NODE_ENV>/$1/g" template.yaml
 
 #aws s3 mb s3://$BUCKET
