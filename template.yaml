@@ -48,17 +48,3 @@ Outputs:
     Value: !GetAtt  ApiGatewayAdmin<NODE_ENV>.RootResourceId
     Export:
       Name:  ApiGatewayAdmin<NODE_ENV>-RootResourceId
-      
-    ApiGatewayHotel<NODE_ENV>:
-    Description: 'Hotel API Gateway endpoint URL'
-    Value: !Sub 'https://${ApiGatewayHotel<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
-  ApiGatewayHotel<NODE_ENV>RestApiId:
-    Description: 'Hotel API Gateway ARN for Basic AWS API Gateway'
-    Value: !Ref ApiGatewayHotel<NODE_ENV>
-    Export:
-      Name:  ApiGatewayHotel<NODE_ENV>-RestApiId
-  ApiGatewayHotel<NODE_ENV>RootResourceId:
-    Value: !GetAtt  ApiGatewayHotel<NODE_ENV>.RootResourceId
-    Export:
-      Name:  ApiGatewayHotel<NODE_ENV>-RootResourceId
-      
