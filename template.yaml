@@ -10,14 +10,21 @@ Resources:
     Properties:
       StageName: <NODE_ENV>
       DefinitionUri: ./server.yaml
+      
   ApiGatewayAdmin<NODE_ENV>:
     Type: AWS::Serverless::Api
     Properties:
       StageName: <NODE_ENV>
       DefinitionUri: ./admin.yaml
+      
+  ApiGatewayHotel<NODE_ENV>:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: <NODE_ENV>
+      DefinitionUri: ./hotel.yaml
 Outputs:
   ApiGatewayServer<NODE_ENV>:
-    Description: 'API Gateway endpoint URL'
+    Description: 'API Gateway For Server endpoint URL'
     Value: !Sub 'https://${ApiGatewayServer<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
   ApiGatewayServer<NODE_ENV>RestApiId:
     Description: 'API Gateway ARN for Basic AWS API Gateway'
@@ -41,4 +48,17 @@ Outputs:
     Value: !GetAtt  ApiGatewayAdmin<NODE_ENV>.RootResourceId
     Export:
       Name:  ApiGatewayAdmin<NODE_ENV>-RootResourceId
+      
+    ApiGatewayHotel<NODE_ENV>:
+    Description: 'Hotel API Gateway endpoint URL'
+    Value: !Sub 'https://${ApiGatewayHotel<NODE_ENV>}.execute-api.${AWS::Region}.amazonaws.com/<NODE_ENV>/'
+  ApiGatewayHotel<NODE_ENV>RestApiId:
+    Description: 'Hotel API Gateway ARN for Basic AWS API Gateway'
+    Value: !Ref ApiGatewayHotel<NODE_ENV>
+    Export:
+      Name:  ApiGatewayAdmin<NODE_ENV>-RestApiId
+  ApiGatewayHotel<NODE_ENV>RootResourceId:
+    Value: !GetAtt  ApiGatewayHotel<NODE_ENV>.RootResourceId
+    Export:
+      Name:  ApiGatewayHotel<NODE_ENV>-RootResourceId
       
