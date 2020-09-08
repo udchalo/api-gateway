@@ -56,7 +56,7 @@ Outputs:
     Description: 'Hotel API Gateway ARN for Basic AWS API Gateway'
     Value: !Ref ApiGatewayHotel<NODE_ENV>
     Export:
-      Name:  ApiGatewayAdmin<NODE_ENV>-RestApiId
+      Name:  ApiGatewayHotel<NODE_ENV>-RestApiId
   ApiGatewayHotel<NODE_ENV>RootResourceId:
     Value: !GetAtt  ApiGatewayHotel<NODE_ENV>.RootResourceId
     Export:
