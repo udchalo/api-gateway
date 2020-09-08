@@ -2,8 +2,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Serverless API Gateway for uc-server",
-    "title": "<NODE_ENV>-api-gateway-proxy"
+    "description": "Serverless API Gateway for Hotels",
+    "title": "<NODE_ENV>-api-hotels-proxy"
   },
   "schemes": [
     "https"
