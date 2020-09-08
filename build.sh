@@ -17,7 +17,7 @@ echo $ORIGIN_URL
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" server.yaml
 #sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
 #sed -i -e "s@<ORIGIN_URL>@$ORIGIN_URL@g" server.yaml
-sed -i='' "s/<NODE_ENV>/$1/g" sever.yaml
+sed -i='' "s/<NODE_ENV>/$1/g" server.yaml
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" admin.yaml
 #sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
