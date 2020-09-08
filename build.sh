@@ -20,8 +20,10 @@ sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" server.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" server.yaml
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" admin.yaml
-#sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" admin.yaml
+
+sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" hotel.yaml
+sed -i='' "s/<NODE_ENV>/$1/g" hotel.yaml
 
 sed -i='' "s/<NODE_ENV>/$1/g" template.yaml
 
