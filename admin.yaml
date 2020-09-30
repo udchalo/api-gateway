@@ -2186,7 +2186,7 @@
 
     },
 
-    "/api/admin/bookings/": {
+    "/api/admin/bookings/ ": {
 
       "post": {
 
@@ -11070,7 +11070,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/all",
+          "uri": "<SUPPLIER_SLS_URL>/admin/supplier/all",
 
           "responses": {
 
@@ -11282,7 +11282,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/add",
+          "uri": "<SUPPLIER_SLS_URL>/supplier/add",
 
           "responses": {
 
@@ -11432,7 +11432,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/update",
+          "uri": "<SUPPLIER_SLS_URL>/supplier/update",
 
           "responses": {
 
@@ -11594,7 +11594,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/get/{supplierId}",
+          "uri": "<SUPPLIER_SLS_URL>/supplier/get/{supplierId}",
 
           "responses": {
 
@@ -11750,7 +11750,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/getCount",
+          "uri": "<SUPPLIER_SLS_URL>/supplier/getCount",
 
           "responses": {
 
@@ -11924,7 +11924,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/disable/{supplierId}/{isEnabled}",
+          "uri": "<SUPPLIER_SLS_URL>/supplier/disable/{supplierId}/{isEnabled}",
 
           "responses": {
 
@@ -12826,7 +12826,7 @@
 
     },
 
-    "/api/admin/users/get/{userId}": {
+    "/api/admin/users/{userId}": {
 
       "get": {
 
@@ -15712,7 +15712,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/locations/add",
+          "uri": "<SUPPORT_SLS_URL>/locations/add",
 
           "responses": {
 
@@ -15862,7 +15862,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/locations/update",
+          "uri": "<SUPPORT_SLS_URL>/locations/update",
 
           "responses": {
 
@@ -16012,7 +16012,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/locations/all",
+          "uri": "<SUPPORT_SLS_URL>/locations/all",
 
           "responses": {
 
@@ -16186,7 +16186,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/locations/disable/{locationId}/{isEnabled}",
+          "uri": "<SUPPORT_SLS_URL>/locations/disable/{locationId}/{isEnabled}",
 
           "responses": {
 
@@ -16356,7 +16356,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/locations/get/{locationId}",
+          "uri": "<SUPPORT_SLS_URL>/locations/get/{locationId}",
 
           "responses": {
 
@@ -16520,7 +16520,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/feeConfig/all",
+          "uri": "<SUPPLIER_SLS_URL>/feeConfig/all",
 
           "responses": {
 
@@ -16670,7 +16670,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/feeConfig/add",
+          "uri": "<SUPPLIER_SLS_URL>/feeConfig/add",
 
           "responses": {
 
@@ -16820,7 +16820,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/feeConfig/update",
+          "uri": "<SUPPLIER_SLS_URL>/feeConfig/update",
 
           "responses": {
 
@@ -16982,7 +16982,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<DOMAIN_URL>:80/api/admin/feeConfig/get/{feeId}",
+          "uri": "<SUPPLIER_SLS_URL>/feeConfig/get/{feeId}",
 
           "responses": {
 
@@ -17096,7 +17096,187 @@
 
     },
 
+    "/api/admin/feeConfig/disable/{feeId}/{isEnabled}": {
 
+      "get": {
+
+        "parameters": [
+
+          {
+
+            "name": "Cookie",
+
+            "in": "header",
+
+            "required": false,
+
+            "type": "string"
+
+          },
+
+          {
+
+            "name": "feeId",
+
+            "in": "path",
+
+            "required": true,
+
+            "type": "string"
+
+          },
+
+          {
+
+            "name": "isEnabled",
+
+            "in": "path",
+
+            "required": true,
+
+            "type": "string"
+
+          }
+
+        ],
+
+        "responses": {
+
+          "200": {
+
+            "description": "200 response",
+
+            "headers": {
+
+              "Access-Control-Allow-Origin": {
+
+                "type": "string"
+
+              }
+
+            }
+
+          }
+
+        },
+
+        "x-amazon-apigateway-integration": {
+
+          "uri": "<SUPPLIER_SLS_URL>/feeConfig/disable/{feeId}/{isEnabled}",
+
+          "responses": {
+
+            "default": {
+
+              "statusCode": "200"
+
+            }
+
+          },
+
+          "requestParameters": {
+
+            "integration.request.path.supplierId": "method.request.path.feeId",
+
+            "integration.request.path.isEnabled": "method.request.path.isEnabled"
+
+          },
+
+          "passthroughBehavior": "when_no_match",
+
+          "httpMethod": "GET",
+
+          "type": "http_proxy"
+
+        }
+
+      },
+
+      "options": {
+
+        "consumes": [
+
+          "application/json"
+
+        ],
+
+        "responses": {
+
+          "200": {
+
+            "description": "200 response",
+
+            "headers": {
+
+              "Access-Control-Allow-Origin": {
+
+                "type": "string"
+
+              },
+
+              "Access-Control-Allow-Methods": {
+
+                "type": "string"
+
+              },
+
+              "Access-Control-Allow-Credentials": {
+
+                "type": "string"
+
+              },
+
+              "Access-Control-Allow-Headers": {
+
+                "type": "string"
+
+              }
+
+            }
+
+          }
+
+        },
+
+        "x-amazon-apigateway-integration": {
+
+          "responses": {
+
+            "default": {
+
+              "statusCode": "200",
+
+              "responseParameters": {
+
+                "method.response.header.Access-Control-Allow-Credentials": "'true'",
+
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,usersessionid,platform,source,udchalotoken'",
+
+                "method.response.header.Access-Control-Allow-Origin": "'https://<NODE_ENV>-admin.udchalo.com'"
+
+              }
+
+            }
+
+          },
+
+          "requestTemplates": {
+
+            "application/json": "{\"statusCode\": 200}"
+
+          },
+
+          "passthroughBehavior": "when_no_match",
+
+          "type": "mock"
+
+        }
+
+      }
+
+    },
 
 
 
