@@ -14,7 +14,7 @@ DOMAIN_URL="http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elastic
 #ORIGIN_URL="https://$1-ui.udchalo.com"
 echo $ORIGIN_URL
 
-USERS_SLS_URL="https://users-$1-api.udchalo.com"
+USERS_SLS_URL="https://users-dev-api.udchalo.com"
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" server.yaml
 #sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml

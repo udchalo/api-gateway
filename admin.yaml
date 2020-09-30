@@ -2186,7 +2186,7 @@
 
     },
 
-    "/api/admin/bookings/generatePnr": {
+    "/api/admin/bookings/ ": {
 
       "post": {
 
@@ -12044,7 +12044,7 @@
 
 
 
-    "/admin/add": {
+    "/api/admin/users/add": {
 
       "post": {
 
@@ -12086,7 +12086,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/add",
+          "uri": "<USERS_SLS_URL>/admin/add",
 
           "responses": {
 
@@ -12344,7 +12344,7 @@
 
     },
 
-    "/admin/roles": {
+    "/api/admin/users/roles": {
 
       "get": {
 
@@ -12386,7 +12386,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/roles",
+          "uri": "<USERS_SLS_URL>/admin/roles",
 
           "responses": {
 
@@ -12494,7 +12494,7 @@
 
     },
 
-    "/admin/checkAndAddUser": {
+    "/api/admin/users/checkAndAddUser": {
 
       "post": {
 
@@ -12536,7 +12536,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/checkAndAddUser",
+          "uri": "<USERS_SLS_URL>/admin/checkAndAddUser",
 
           "responses": {
 
@@ -12644,7 +12644,7 @@
 
     },
 
-    "/admin/disable/{userId}/{isEnabled}": {
+    "/api/admin/users/disable/{userId}/{isEnabled}": {
 
       "get": {
 
@@ -12710,7 +12710,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/disable/{userId}/{isEnabled}",
+          "uri": "<USERS_SLS_URL>/admin/disable/{userId}/{isEnabled}",
 
           "responses": {
 
@@ -12826,7 +12826,7 @@
 
     },
 
-    "/admin/user/{userId}": {
+    "/api/admin/users/{userId}": {
 
       "get": {
 
@@ -12880,7 +12880,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/user/{userId}",
+          "uri": "<USERS_SLS_URL>/admin/user/{userId}",
 
           "responses": {
 
@@ -12994,7 +12994,7 @@
 
     },
 
-    "/admin/name/{userId}": {
+    "/api/admin/users/name/{userId}": {
 
       "get": {
 
@@ -13048,7 +13048,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/name/{userId}",
+          "uri": "<USERS_SLS_URL>/admin/name/{userId}",
 
           "responses": {
 
@@ -13162,7 +13162,7 @@
 
     },
 
-    "/admin/contact/{phoneNumber}": {
+    "/api/admin/users/{phoneNumber}": {
 
       "get": {
 
@@ -13216,7 +13216,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/contact/{phoneNumber}",
+          "uri": "<USERS_SLS_URL>/admin/contact/{phoneNumber}",
 
           "responses": {
 
@@ -13330,7 +13330,7 @@
 
     },
 
-    "/admin/update": {
+    "/api/admin/users/update": {
 
       "post": {
 
@@ -13372,7 +13372,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/update",
+          "uri": "<USERS_SLS_URL>/admin/update",
 
           "responses": {
 
@@ -13480,7 +13480,7 @@
 
     },
 
-    "/admin/verify": {
+    "/api/admin/users/verify": {
 
       "post": {
 
@@ -13522,7 +13522,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/verify",
+          "uri": "<USERS_SLS_URL>/admin/verify",
 
           "responses": {
 
@@ -13630,7 +13630,7 @@
 
     },
 
-    "/admin/all": {
+    "/api/admin/users/getAll": {
 
       "post": {
 
@@ -13672,7 +13672,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/all",
+          "uri": "<USERS_SLS_URL>/admin/all",
 
           "responses": {
 
@@ -14230,7 +14230,7 @@
 
     },
 
-    "/admin/getUsers ": {
+    "/api/admin/users/getUsers ": {
 
       "post": {
 
@@ -14272,7 +14272,7 @@
 
         "x-amazon-apigateway-integration": {
 
-          "uri": "<USERS_SLS_URL>:80/admin/getUsers",
+          "uri": "<USERS_SLS_URL>/admin/getUsers",
 
           "responses": {
 
