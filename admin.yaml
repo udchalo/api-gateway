@@ -2186,7 +2186,7 @@
 
     },
 
-    "/api/admin/bookings/ ": {
+    "/api/admin/bookings/generatePnr": {
 
       "post": {
 
