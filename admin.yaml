@@ -2186,7 +2186,7 @@
 
     },
 
-    "/api/admin/bookings/ ": {
+    "/api/admin/bookings/": {
 
       "post": {
 
@@ -12826,7 +12826,7 @@
 
     },
 
-    "/api/admin/users/{userId}": {
+    "/api/admin/users/get/{userId}": {
 
       "get": {
 
