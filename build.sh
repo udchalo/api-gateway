@@ -15,6 +15,8 @@ DOMAIN_URL="http://ucbeanstalkapplications-stage.eba-emtxm8qt.ap-south-1.elastic
 echo $ORIGIN_URL
 
 USERS_SLS_URL="https://users-dev-api.udchalo.com"
+SUPPORT_SLS_URL="https://support-dev-api.udchalo.com"
+SUPPLIER_SLS_URL="https://supplier-dev-api.udchalo.com"
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" server.yaml
 #sed -i='' "s@<USER_URL>@$USER_URL@g" swagger.yaml
@@ -24,6 +26,8 @@ sed -i='' "s/<NODE_ENV>/$1/g" server.yaml
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" admin.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" admin.yaml
 sed -i='' "s@<USERS_SLS_URL>@$USERS_SLS_URL@g" admin.yaml
+sed -i='' "s@<SUPPLIER_SLS_URL>@$SUPPLIER_SLS_URL@g" admin.yaml
+sed -i='' "s@<SUPPORT_SLS_URL>@$SUPPORT_SLS_URL@g" admin.yaml
 
 sed -i='' "s@<DOMAIN_URL>@$DOMAIN_URL@g" hotel.yaml
 sed -i='' "s/<NODE_ENV>/$1/g" hotel.yaml
