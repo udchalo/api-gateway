@@ -11092,68 +11092,6 @@
 
       },
 
-      "get": {
-
-        "parameters": [
-
-          {
-
-            "name": "Cookie",
-
-            "in": "header",
-
-            "required": false,
-
-            "type": "string"
-
-          }
-
-        ],
-
-        "responses": {
-
-          "200": {
-
-            "description": "200 response",
-
-            "headers": {
-
-              "Access-Control-Allow-Origin": {
-
-                "type": "string"
-
-              }
-
-            }
-
-          }
-
-        },
-
-        "x-amazon-apigateway-integration": {
-
-          "uri": "<DOMAIN_URL>:80/api/admin/supplier/all",
-
-          "responses": {
-
-            "default": {
-
-              "statusCode": "200"
-
-            }
-
-          },
-
-          "passthroughBehavior": "when_no_match",
-
-          "httpMethod": "GET",
-
-          "type": "http_proxy"
-
-        }
-
-      },
-
       "options": {
 
         "consumes": [
